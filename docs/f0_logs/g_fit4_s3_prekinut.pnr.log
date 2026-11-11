@@ -1,0 +1,305 @@
+Info: Using uarch 'gatemate' for device 'CCGM1A1'
+Info: Using timing mode 'WORST'.
+Info: Using performance mode 'ECONOMY'.
+
+Info: Detected regions..
+Info:     top G_dvi.genblk1.ddr0_blue u
+Info:     top G_dvi.genblk1.ddr0_clock u
+Info:     top G_dvi.genblk1.ddr0_green u
+Info:     top G_dvi.genblk1.ddr0_red u
+Info:     top clk_dvi_usb_inst g0_own.g1_own.p1 genblk1.genblk1.g48.u pll
+Info:     top clk_dvi_usb_inst g0_own.p0 genblk1.g125.u pll
+Info:     top clk_dvi_usb_inst g3_own.p3 genblk1.genblk1.genblk1.genblk1.g25.u pll
+Info:     top clk_sdram_sys_inst p2 genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.g214.u pll
+Info:     top
+Info: Parsing CCF file..
+Info: Assign cell region based on attributes..
+Info: Packing constants..
+Info: Running cleanups..
+Info:         24 CC_DFF cells removed (iteration 1)
+Info: Packing IOs..
+Warning: IO '$iopadmap$top.usb_fpga_pu_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_pu_dp' to pad 'IO_SA_A0'.
+Warning: IO '$iopadmap$top.usb_fpga_pu_dn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_pu_dn' to pad 'IO_SA_B0'.
+Warning: IO '$iopadmap$top.usb_fpga_otg_id' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_otg_id' to pad 'IO_SA_A1'.
+Warning: IO '$iopadmap$top.usb_fpga_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_dp' to pad 'IO_SA_B1'.
+Warning: IO '$iopadmap$top.usb_fpga_bd_dp[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_bd_dp[0]' to pad 'IO_SA_A2'.
+Warning: IO '$iopadmap$top.usb_fpga_bd_dn[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_bd_dn[0]' to pad 'IO_SA_B2'.
+Warning: IO '$iopadmap$top.sdram_wen' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_wen' to pad 'IO_SA_A3'.
+Warning: IO '$iopadmap$top.sdram_rasn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_rasn' to pad 'IO_SA_B3'.
+Warning: IO '$iopadmap$top.sdram_dqm_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_dqm_1' to pad 'IO_SA_A4'.
+Warning: IO '$iopadmap$top.sdram_dqm' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_dqm' to pad 'IO_SA_B4'.
+Warning: IO '$iopadmap$top.sdram_d[9]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[9]' to pad 'IO_SA_A5'.
+Warning: IO '$iopadmap$top.sdram_d[8]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[8]' to pad 'IO_SA_B5'.
+Warning: IO '$iopadmap$top.sdram_d[7]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[7]' to pad 'IO_SA_A6'.
+Warning: IO '$iopadmap$top.sdram_d[6]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[6]' to pad 'IO_SA_B6'.
+Warning: IO '$iopadmap$top.sdram_d[5]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[5]' to pad 'IO_SA_A7'.
+Warning: IO '$iopadmap$top.sdram_d[4]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[4]' to pad 'IO_SA_B7'.
+Warning: IO '$iopadmap$top.sdram_d[3]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[3]' to pad 'IO_SA_A8'.
+Warning: IO '$iopadmap$top.sdram_d[2]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[2]' to pad 'IO_SA_B8'.
+Warning: IO '$iopadmap$top.sdram_d[1]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[1]' to pad 'IO_SB_A0'.
+Warning: IO '$iopadmap$top.sdram_d[15]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[15]' to pad 'IO_SB_B0'.
+Warning: IO '$iopadmap$top.sdram_d[14]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[14]' to pad 'IO_SB_A1'.
+Warning: IO '$iopadmap$top.sdram_d[13]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[13]' to pad 'IO_SB_B1'.
+Warning: IO '$iopadmap$top.sdram_d[12]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[12]' to pad 'IO_SB_A2'.
+Warning: IO '$iopadmap$top.sdram_d[11]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[11]' to pad 'IO_SB_B2'.
+Warning: IO '$iopadmap$top.sdram_d[10]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[10]' to pad 'IO_SB_A3'.
+Warning: IO '$iopadmap$top.sdram_d[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[0]' to pad 'IO_SB_B3'.
+Warning: IO '$iopadmap$top.sdram_csn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_csn' to pad 'IO_SB_A4'.
+Warning: IO '$iopadmap$top.sdram_clk' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_clk' to pad 'IO_SB_B4'.
+Warning: IO '$iopadmap$top.sdram_cke' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_cke' to pad 'IO_SB_A5'.
+Warning: IO '$iopadmap$top.sdram_casn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_casn' to pad 'IO_SB_B5'.
+Warning: IO '$iopadmap$top.sdram_ba_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_ba_1' to pad 'IO_SB_A6'.
+Warning: IO '$iopadmap$top.sdram_ba' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_ba' to pad 'IO_SB_B6'.
+Warning: IO '$iopadmap$top.sdram_a_9' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_9' to pad 'IO_SB_A7'.
+Warning: IO '$iopadmap$top.sdram_a_8' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_8' to pad 'IO_SB_B7'.
+Warning: IO '$iopadmap$top.sdram_a_7' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_7' to pad 'IO_SB_B8'.
+Warning: IO '$iopadmap$top.sdram_a_6' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_6' to pad 'IO_WA_A0'.
+Warning: IO '$iopadmap$top.sdram_a_5' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_5' to pad 'IO_WA_B0'.
+Warning: IO '$iopadmap$top.sdram_a_4' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_4' to pad 'IO_WA_A1'.
+Warning: IO '$iopadmap$top.sdram_a_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_3' to pad 'IO_WA_B1'.
+Warning: IO '$iopadmap$top.sdram_a_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_2' to pad 'IO_WA_A2'.
+Warning: IO '$iopadmap$top.sdram_a_12' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_12' to pad 'IO_WA_B2'.
+Warning: IO '$iopadmap$top.sdram_a_11' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_11' to pad 'IO_WA_A3'.
+Warning: IO '$iopadmap$top.sdram_a_10' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_10' to pad 'IO_WA_B3'.
+Warning: IO '$iopadmap$top.sdram_a_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_1' to pad 'IO_WA_A4'.
+Warning: IO '$iopadmap$top.sdram_a' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a' to pad 'IO_WA_B4'.
+Warning: IO '$iopadmap$top.n_extrst' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.n_extrst' to pad 'IO_WA_A5'.
+Warning: IO '$iopadmap$top.led_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_3' to pad 'IO_WA_B5'.
+Warning: IO '$iopadmap$top.led_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_2' to pad 'IO_WA_A6'.
+Warning: IO '$iopadmap$top.led_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_1' to pad 'IO_WA_B6'.
+Warning: IO '$iopadmap$top.led' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led' to pad 'IO_WA_A7'.
+Warning: IO '$iopadmap$top.gpio_9' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_9' to pad 'IO_WA_B7'.
+Warning: IO '$iopadmap$top.gpio_8' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_8' to pad 'IO_WA_A8'.
+Warning: IO '$iopadmap$top.gpio_7' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_7' to pad 'IO_WA_B8'.
+Warning: IO '$iopadmap$top.gpio_6' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_6' to pad 'IO_WB_A0'.
+Warning: IO '$iopadmap$top.gpio_5' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_5' to pad 'IO_EA_A0'.
+Warning: IO '$iopadmap$top.gpio_4' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_4' to pad 'IO_WB_B0'.
+Warning: IO '$iopadmap$top.gpio_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_3' to pad 'IO_EA_B0'.
+Warning: IO '$iopadmap$top.gpio_27' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_27' to pad 'IO_WB_A1'.
+Warning: IO '$iopadmap$top.gpio_26' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_26' to pad 'IO_EA_A1'.
+Warning: IO '$iopadmap$top.gpio_25' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_25' to pad 'IO_WB_B1'.
+Warning: IO '$iopadmap$top.gpio_24' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_24' to pad 'IO_EA_B1'.
+Warning: IO '$iopadmap$top.gpio_23' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_23' to pad 'IO_WB_A2'.
+Warning: IO '$iopadmap$top.gpio_22' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_22' to pad 'IO_EA_A2'.
+Warning: IO '$iopadmap$top.gpio_21' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_21' to pad 'IO_WB_B2'.
+Warning: IO '$iopadmap$top.gpio_20' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_20' to pad 'IO_EA_B2'.
+Warning: IO '$iopadmap$top.gpio_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_2' to pad 'IO_WB_A3'.
+Warning: IO '$iopadmap$top.gpio_19' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_19' to pad 'IO_EA_A3'.
+Warning: IO '$iopadmap$top.gpio_18' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_18' to pad 'IO_WB_B3'.
+Warning: IO '$iopadmap$top.gpio_17' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_17' to pad 'IO_EA_B3'.
+Warning: IO '$iopadmap$top.gpio_16' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_16' to pad 'IO_WB_A4'.
+Warning: IO '$iopadmap$top.gpio_15' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_15' to pad 'IO_EA_A4'.
+Warning: IO '$iopadmap$top.gpio_14' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_14' to pad 'IO_WB_B4'.
+Warning: IO '$iopadmap$top.gpio_13' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_13' to pad 'IO_EA_B4'.
+Warning: IO '$iopadmap$top.gpio_12' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_12' to pad 'IO_WB_A5'.
+Warning: IO '$iopadmap$top.gpio_11' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_11' to pad 'IO_EA_A5'.
+Warning: IO '$iopadmap$top.gpio_10' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_10' to pad 'IO_WB_B5'.
+Warning: IO '$iopadmap$top.gpio_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_1' to pad 'IO_EA_B5'.
+Warning: IO '$iopadmap$top.gpio' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio' to pad 'IO_WB_A6'.
+Warning: IO '$iopadmap$top.gpdi_dp_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_3' to pad 'IO_EA_A6'.
+Warning: IO '$iopadmap$top.gpdi_dp_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_2' to pad 'IO_WB_B6'.
+Warning: IO '$iopadmap$top.gpdi_dp_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_1' to pad 'IO_EA_B6'.
+Warning: IO '$iopadmap$top.gpdi_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp' to pad 'IO_WB_A7'.
+Warning: IO '$iopadmap$top.flash_wpn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_wpn' to pad 'IO_EA_A7'.
+Warning: IO '$iopadmap$top.flash_mosi' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_mosi' to pad 'IO_WB_B7'.
+Warning: IO '$iopadmap$top.flash_miso' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_miso' to pad 'IO_EA_B7'.
+Warning: IO '$iopadmap$top.flash_holdn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_holdn' to pad 'IO_WB_A8'.
+Warning: IO '$iopadmap$top.flash_csn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_csn' to pad 'IO_EA_A8'.
+Info:     Constraining '$iopadmap$top.clk_25mhz' to pad 'IO_SB_A8'.
+Warning: IO '$iopadmap$top.btn_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.btn_1' to pad 'IO_WB_B8'.
+Warning: IO '$iopadmap$top.btn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.btn' to pad 'IO_EA_B8'.
+Info: Insert clocking cells..
+Info: Packing PLLs..
+Info:     PLL fout= 21.4286 MHz (fout error 0.00000% of requested 21.4286 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161560' to 21.43 MHz
+Info:     PLL fout= 25.0000 MHz (fout error 0.00000% of requested 25.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161562' to 25.00 MHz
+Info:     PLL fout= 125.0000 MHz (fout error 0.00000% of requested 125.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161564' to 125.00 MHz
+Info:     PLL fout= 47.9167 MHz (fout error 0.17361% of requested 48.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161566' to 48.00 MHz
+Info: Sort BUFGs..
+Info: Packing BUFGs..
+Info: Packing IO SELs..
+Info: Packing misc..
+Info: Packing RAMs..
+Info: Packing SERDES..
+Info: Packing multipliers...
+Info:     Configuring '$flatten\nes_i.\multi_mapper.\snd_n163.\n163.$mappers/Namco.sv:343$mul$5029' as a 8-bit * 8-bit = 8-bit multiplier.
+Info:         Created 41 CPEs.
+Info:     Configuring '$flatten\nes_i.\multi_mapper.\mmc5.$mappers/MMC5.sv:83$mul$3855' as a 12-bit * 12-bit = 16-bit multiplier.
+Info:         Created 73 CPEs.
+Info: Packing ADDFs..
+Info: Packing CPEs..
+Info: Removing unused constants..
+Info:     Removed unused VCC cell.
+Info:     Removed unused GND cell.
+Info: Fix cell assigned regions..
+Info: Checksum: 0x280361d5
+
+Info: Device utilisation:
+Info: 	            USR_RSTN:       0/      1     0%
+Info: 	            CPE_COMP:      50/  20480     0%
+Info: 	         CPE_CPLINES:     317/  20480     1%
+Info: 	               IOSEL:      90/    162    55%
+Info: 	                GPIO:      90/    162    55%
+Info: 	               CLKIN:       1/      1   100%
+Info: 	              GLBOUT:       1/      1   100%
+Info: 	                 PLL:       4/      4   100%
+Info: 	            CFG_CTRL:       0/      1     0%
+Info: 	              SERDES:       0/      1     0%
+Info: 	              CPE_LT:   20880/  40960    50%
+Info: 	              CPE_FF:    5131/  40960    12%
+Info: 	           CPE_RAMIO:    1590/  40960     3%
+Info: 	            RAM_HALF:      42/     64    65%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 14750 cells, random placement wirelen = 2138154.
+Info: Running main analytical placer, max placement attempts per cell = 103622408.
+Info: HeAP Placer Time: 83.42s
+Info:   of which solving equations: 19.60s
+Info:   of which spreading cells: 3.99s
+Info:   of which strict legalisation: 50.34s
+
+Info: Running simulated annealing placer for refinement.
+Info: SA placement time 81.86s
+
+Info: Max frequency for clock      'G_dvi.genblk1.ddr0_blue.SCLK': 67.76 MHz (FAIL at 125.00 MHz)
+Info: Max frequency for clock 'G_dvi.vga2dvid_instance.clk_pixel': 43.38 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock                         'clk_48MHz': 105.98 MHz (PASS at 48.00 MHz)
+Info: Max frequency for clock                 'G_dvi.vga_i.I_CLK': 26.31 MHz (PASS at 21.43 MHz)
+
+Info: Max delay <async>                                   -> posedge G_dvi.vga_i.I_CLK           : 17.36 ns
+Info: Max delay <async>                                   -> posedge clk_48MHz                   : 7.16 ns
+Info: Max delay posedge G_dvi.vga2dvid_instance.clk_pixel -> posedge G_dvi.genblk1.ddr0_blue.SCLK: 2.01 ns
+Info: Max delay posedge clk_48MHz                         -> posedge G_dvi.vga_i.I_CLK           : 2.95 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 18 endpoint(s)
+Info:          + represents [1,18) endpoint(s)
+Info: [ -8579,  -5860) |+
+Info: [ -5860,  -3141) |+
+Info: [ -3141,   -422) |+
+Info: [  -422,   2297) |+
+Info: [  2297,   5016) |+
+Info: [  5016,   7735) |+
+Info: [  7735,  10454) |+
+Info: [ 10454,  13173) |***+
+Info: [ 13173,  15892) |***************+
+Info: [ 15892,  18611) |************************* 
+Info: [ 18611,  21330) |*************************+
+Info: [ 21330,  24049) |**************************+
+Info: [ 24049,  26768) |*************************************************+
+Info: [ 26768,  29487) |************************************************************ 
+Info: [ 29487,  32206) |****************************************************+
+Info: [ 32206,  34925) |*************************************************+
+Info: [ 34925,  37644) |**************************************************+
+Info: [ 37644,  40363) |************************************+
+Info: [ 40363,  43082) |******************+
+Info: [ 43082,  45801) |**************+
+Info: Checksum: 0x70b43a02
+Info: Repacking RAMs..
+Info: Repacking CPEs..
+Info: Remove unused clocking cells..
+Info: Routing multipliers...
+Info: Routing clock nets...
+Info:     routing net 'clk_48MHz' to 405 users
+Info:     routing net 'G_dvi.genblk1.ddr0_blue.SCLK' to 46 users
+Info:     routing net 'G_dvi.vga2dvid_instance.clk_pixel' to 177 users
+Info:     routing net 'G_dvi.vga_i.I_CLK' to 4552 users
+Info: Clock router time 42.44s.
+Info: Running router2...
+Info: Setting up routing resources...
+Info: Running main router loop...
+# F0: prekinuto rucno nakon iteracije:
+Info:     iter=623 wires=908424 overused=1 overuse=1 resources=36368 overused=0 overuse=0 archfail=NA

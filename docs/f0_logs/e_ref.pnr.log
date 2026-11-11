@@ -1,0 +1,964 @@
+Info: constraining clock net 'clk_25mhz' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:     11190/24288    46%
+Info:         logic LUTs:   9064/24288    37%
+Info:         carry LUTs:   1640/24288     6%
+Info:           RAM LUTs:    324/ 3036    10%
+Info:          RAMW LUTs:    162/ 6072     2%
+
+Info:      Total DFFs:      4269/24288    17%
+
+Info: Packing IOs..
+Info: $usb_fpga_bd_dp$iobuf_i: usb_fpga_bd_dp_$_TBUF__Y.Y
+Info: pin 'usb_fpga_bd_dp$tr_io' constrained to Bel 'X53/Y0/PIOA'.
+Info: $usb_fpga_bd_dn$iobuf_i: usb_fpga_bd_dn_$_TBUF__Y.Y
+Info: pin 'usb_fpga_bd_dn$tr_io' constrained to Bel 'X53/Y0/PIOB'.
+Info: $sdram_d[15]$iobuf_i: sdram_d_$_TBUF__Y.Y
+Info: pin 'sdram_d[15]$tr_io' constrained to Bel 'X72/Y11/PIOC'.
+Info: $sdram_d[14]$iobuf_i: sdram_d_$_TBUF__Y_15.Y
+Info: pin 'sdram_d[14]$tr_io' constrained to Bel 'X72/Y23/PIOB'.
+Info: $sdram_d[13]$iobuf_i: sdram_d_$_TBUF__Y_14.Y
+Info: pin 'sdram_d[13]$tr_io' constrained to Bel 'X72/Y11/PIOD'.
+Info: $sdram_d[12]$iobuf_i: sdram_d_$_TBUF__Y_13.Y
+Info: pin 'sdram_d[12]$tr_io' constrained to Bel 'X72/Y11/PIOA'.
+Info: $sdram_d[11]$iobuf_i: sdram_d_$_TBUF__Y_12.Y
+Info: pin 'sdram_d[11]$tr_io' constrained to Bel 'X72/Y20/PIOC'.
+Info: $sdram_d[10]$iobuf_i: sdram_d_$_TBUF__Y_11.Y
+Info: pin 'sdram_d[10]$tr_io' constrained to Bel 'X72/Y20/PIOD'.
+Info: $sdram_d[9]$iobuf_i: sdram_d_$_TBUF__Y_10.Y
+Info: pin 'sdram_d[9]$tr_io' constrained to Bel 'X72/Y23/PIOA'.
+Info: $sdram_d[8]$iobuf_i: sdram_d_$_TBUF__Y_9.Y
+Info: pin 'sdram_d[8]$tr_io' constrained to Bel 'X72/Y20/PIOB'.
+Info: $sdram_d[7]$iobuf_i: sdram_d_$_TBUF__Y_8.Y
+Info: pin 'sdram_d[7]$tr_io' constrained to Bel 'X72/Y38/PIOC'.
+Info: $sdram_d[6]$iobuf_i: sdram_d_$_TBUF__Y_7.Y
+Info: pin 'sdram_d[6]$tr_io' constrained to Bel 'X72/Y41/PIOB'.
+Info: $sdram_d[5]$iobuf_i: sdram_d_$_TBUF__Y_6.Y
+Info: pin 'sdram_d[5]$tr_io' constrained to Bel 'X72/Y47/PIOD'.
+Info: $sdram_d[4]$iobuf_i: sdram_d_$_TBUF__Y_5.Y
+Info: pin 'sdram_d[4]$tr_io' constrained to Bel 'X72/Y44/PIOD'.
+Info: $sdram_d[3]$iobuf_i: sdram_d_$_TBUF__Y_4.Y
+Info: pin 'sdram_d[3]$tr_io' constrained to Bel 'X72/Y44/PIOA'.
+Info: $sdram_d[2]$iobuf_i: sdram_d_$_TBUF__Y_3.Y
+Info: pin 'sdram_d[2]$tr_io' constrained to Bel 'X72/Y44/PIOC'.
+Info: $sdram_d[1]$iobuf_i: sdram_d_$_TBUF__Y_2.Y
+Info: pin 'sdram_d[1]$tr_io' constrained to Bel 'X72/Y41/PIOC'.
+Info: $sdram_d[0]$iobuf_i: sdram_d_$_TBUF__Y_1.Y
+Info: pin 'sdram_d[0]$tr_io' constrained to Bel 'X72/Y41/PIOD'.
+Info: pin 'usb_fpga_pu_dp$tr_io' constrained to Bel 'X0/Y14/PIOA'.
+Info: pin 'usb_fpga_pu_dn$tr_io' constrained to Bel 'X0/Y5/PIOC'.
+Info: pin 'usb_fpga_otg_id$tr_io' constrained to Bel 'X0/Y2/PIOA'.
+Info: pin 'usb_fpga_dp$tr_io' constrained to Bel 'X72/Y2/PIOC'.
+Info: pin 'sdram_wen$tr_io' constrained to Bel 'X72/Y38/PIOB'.
+Info: pin 'sdram_rasn$tr_io' constrained to Bel 'X72/Y29/PIOD'.
+Info: pin 'sdram_dqm[1]$tr_io' constrained to Bel 'X72/Y14/PIOB'.
+Info: pin 'sdram_dqm[0]$tr_io' constrained to Bel 'X72/Y41/PIOA'.
+Info: pin 'sdram_csn$tr_io' constrained to Bel 'X72/Y38/PIOD'.
+Info: pin 'sdram_clk$tr_io' constrained to Bel 'X72/Y20/PIOA'.
+Info: pin 'sdram_cke$tr_io' constrained to Bel 'X72/Y17/PIOD'.
+Info: pin 'sdram_casn$tr_io' constrained to Bel 'X72/Y32/PIOC'.
+Info: pin 'sdram_ba[1]$tr_io' constrained to Bel 'X72/Y26/PIOB'.
+Info: pin 'sdram_ba[0]$tr_io' constrained to Bel 'X72/Y29/PIOC'.
+Info: pin 'sdram_a[12]$tr_io' constrained to Bel 'X72/Y5/PIOC'.
+Info: pin 'sdram_a[11]$tr_io' constrained to Bel 'X72/Y14/PIOC'.
+Info: pin 'sdram_a[10]$tr_io' constrained to Bel 'X72/Y38/PIOA'.
+Info: pin 'sdram_a[9]$tr_io' constrained to Bel 'X72/Y14/PIOA'.
+Info: pin 'sdram_a[8]$tr_io' constrained to Bel 'X72/Y17/PIOA'.
+Info: pin 'sdram_a[7]$tr_io' constrained to Bel 'X72/Y17/PIOB'.
+Info: pin 'sdram_a[6]$tr_io' constrained to Bel 'X72/Y14/PIOD'.
+Info: pin 'sdram_a[5]$tr_io' constrained to Bel 'X72/Y5/PIOD'.
+Info: pin 'sdram_a[4]$tr_io' constrained to Bel 'X72/Y17/PIOC'.
+Info: pin 'sdram_a[3]$tr_io' constrained to Bel 'X72/Y11/PIOB'.
+Info: pin 'sdram_a[2]$tr_io' constrained to Bel 'X72/Y26/PIOD'.
+Info: pin 'sdram_a[1]$tr_io' constrained to Bel 'X72/Y26/PIOA'.
+Info: pin 'sdram_a[0]$tr_io' constrained to Bel 'X72/Y26/PIOC'.
+Info: pin 'n_extrst$tr_io' constrained to Bel 'X72/Y47/PIOC'.
+Info: pin 'led[3]$tr_io' constrained to Bel 'X0/Y17/PIOA'.
+Info: pin 'led[2]$tr_io' constrained to Bel 'X0/Y5/PIOD'.
+Info: pin 'led[1]$tr_io' constrained to Bel 'X0/Y14/PIOB'.
+Info: pin 'led[0]$tr_io' constrained to Bel 'X0/Y14/PIOC'.
+Info: pin 'gpio[27]$tr_io' constrained to Bel 'X72/Y32/PIOA'.
+Info: pin 'gpio[26]$tr_io' constrained to Bel 'X6/Y50/PIOB'.
+Info: pin 'gpio[25]$tr_io' constrained to Bel 'X0/Y38/PIOD'.
+Info: pin 'gpio[24]$tr_io' constrained to Bel 'X0/Y41/PIOA'.
+Info: pin 'gpio[23]$tr_io' constrained to Bel 'X0/Y38/PIOC'.
+Info: pin 'gpio[22]$tr_io' constrained to Bel 'X72/Y47/PIOA'.
+Info: pin 'gpio[21]$tr_io' constrained to Bel 'X0/Y8/PIOB'.
+Info: pin 'gpio[20]$tr_io' constrained to Bel 'X0/Y8/PIOA'.
+Info: pin 'gpio[19]$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'gpio[18]$tr_io' constrained to Bel 'X0/Y38/PIOB'.
+Info: pin 'gpio[17]$tr_io' constrained to Bel 'X72/Y32/PIOB'.
+Info: pin 'gpio[16]$tr_io' constrained to Bel 'X0/Y5/PIOB'.
+Info: pin 'gpio[15]$tr_io' constrained to Bel 'X0/Y35/PIOD'.
+Info: pin 'gpio[14]$tr_io' constrained to Bel 'X0/Y35/PIOC'.
+Info: pin 'gpio[13]$tr_io' constrained to Bel 'X4/Y50/PIOB'.
+Info: pin 'gpio[12]$tr_io' constrained to Bel 'X0/Y5/PIOA'.
+Info: pin 'gpio[11]$tr_io' constrained to Bel 'X72/Y29/PIOA'.
+Info: pin 'gpio[10]$tr_io' constrained to Bel 'X72/Y35/PIOA'.
+Info: pin 'gpio[9]$tr_io' constrained to Bel 'X72/Y8/PIOC'.
+Info: pin 'gpio[8]$tr_io' constrained to Bel 'X0/Y47/PIOD'.
+Info: pin 'gpio[7]$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: pin 'gpio[6]$tr_io' constrained to Bel 'X4/Y50/PIOA'.
+Info: pin 'gpio[5]$tr_io' constrained to Bel 'X72/Y8/PIOD'.
+Info: pin 'gpio[4]$tr_io' constrained to Bel 'X0/Y35/PIOA'.
+Info: pin 'gpio[3]$tr_io' constrained to Bel 'X0/Y29/PIOB'.
+Info: pin 'gpio[2]$tr_io' constrained to Bel 'X0/Y35/PIOB'.
+Info: pin 'gpio[1]$tr_io' constrained to Bel 'X72/Y35/PIOD'.
+Info: pin 'gpio[0]$tr_io' constrained to Bel 'X72/Y35/PIOC'.
+Info: pin 'gpdi_dp[3]$tr_io' constrained to Bel 'X72/Y23/PIOC'.
+Info: pin 'gpdi_dp[2]$tr_io' constrained to Bel 'X72/Y2/PIOA'.
+Info: pin 'gpdi_dp[1]$tr_io' constrained to Bel 'X72/Y5/PIOA'.
+Info: pin 'gpdi_dp[0]$tr_io' constrained to Bel 'X72/Y8/PIOA'.
+Info: pin 'flash_wpn$tr_io' constrained to Bel 'X9/Y50/PIOB'.
+Info: pin 'flash_mosi$tr_io' constrained to Bel 'X11/Y50/PIOB'.
+Info: pin 'flash_miso$tr_io' constrained to Bel 'X11/Y50/PIOA'.
+Info: pin 'flash_holdn$tr_io' constrained to Bel 'X9/Y50/PIOA'.
+Info: pin 'flash_csn$tr_io' constrained to Bel 'X15/Y50/PIOA'.
+Info: pin 'clk_25mhz$tr_io' constrained to Bel 'X0/Y26/PIOA'.
+Info: pin 'btn[1]$tr_io' constrained to Bel 'X0/Y14/PIOD'.
+Info: pin 'btn[0]$tr_io' constrained to Bel 'X0/Y8/PIOC'.
+Info: IOLOGIC component G_dvi.genblk1.ddr0_red connected to PIO Bel X72/Y2/PIOA
+Info: IOLOGIC component G_dvi.genblk1.ddr0_green connected to PIO Bel X72/Y5/PIOA
+Info: IOLOGIC component G_dvi.genblk1.ddr0_clock connected to PIO Bel X72/Y23/PIOC
+Info: IOLOGIC component G_dvi.genblk1.ddr0_blue connected to PIO Bel X72/Y8/PIOA
+Info: placed PLL 'clk_sdram_sys_inst.pll_inst' at bel 'X2/Y49/EHXPLL_LL'
+Info: placed PLL 'clk_dvi_usb_inst.pll_inst' at bel 'X70/Y49/EHXPLL_LR'
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     1855 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info:     Input frequency of PLL 'clk_sdram_sys_inst.pll_inst' is constrained to 25.0 MHz
+Info:     Derived frequency constraint of 85.7 MHz for net clk_sdram_sys_inst.CLKOP
+Info:     Derived frequency constraint of 85.7 MHz for net sdram_clk$TRELLIS_IO_OUT
+Info:     Derived frequency constraint of 21.4 MHz for net clk_sdram_sys_inst.clk_o[2]
+Info:     Derived frequency constraint of 21.4 MHz for net clk_sdram_sys_inst.clk_o[3]
+Info:     Input frequency of PLL 'clk_dvi_usb_inst.pll_inst' is constrained to 25.0 MHz
+Info:     Derived frequency constraint of 125.0 MHz for net clk_dvi_usb_inst.clk_o[0]
+Info:     Derived frequency constraint of 48.1 MHz for net clk_dvi_usb_inst.clk_o[1]
+Info:     Derived frequency constraint of 6.0 MHz for net clk_6MHz
+Info:     Derived frequency constraint of 25.0 MHz for net gpio[0]$TRELLIS_IO_OUT
+Info: Promoting globals...
+Info:     promoting clock net clk_sdram_sys_inst.clk_o[2] to global network
+Info:     promoting clock net clk_dvi_usb_inst.clk_o[1] to global network
+Info:     promoting clock net gpio[0]$TRELLIS_IO_OUT to global network
+Info:     promoting clock net clk_dvi_usb_inst.clk_o[0] to global network
+Info:     promoting clock net clk_sdram_sys_inst.CLKOP to global network
+Info: Checksum: 0xa15d32c2
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:      90/    197    45%
+Info: 	                DCCA:       5/     56     8%
+Info: 	              DP16KD:      52/     56    92%
+Info: 	          MULT18X18D:       2/     28     7%
+Info: 	              ALU54B:       0/     14     0%
+Info: 	             EHXPLLL:       2/      2   100%
+Info: 	             EXTREFB:       0/      1     0%
+Info: 	                DCUA:       0/      1     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       4/    128     3%
+Info: 	            SIOLOGIC:       0/     69     0%
+Info: 	                 GSR:       0/      1     0%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       1/      1   100%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/      8     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:    4269/  24288    17%
+Info: 	        TRELLIS_COMB:   11842/  24288    48%
+Info: 	        TRELLIS_RAMW:      81/   3036     2%
+
+Info: Placed 96 cells based on constraints.
+Info: Creating initial analytic placement for 10048 cells, random placement wirelen = 615196.
+Info: Running main analytical placer, max placement attempts per cell = 33407138.
+Info: HeAP Placer Time: 44.99s
+Info:   of which solving equations: 15.49s
+Info:   of which spreading cells: 3.43s
+Info:   of which strict legalisation: 17.20s
+
+Info: Running simulated annealing placer for refinement.
+Info: SA placement time 57.40s
+
+Info: Max frequency for clock    '$glbnet$clk_sdram_sys_inst.CLKOP': 130.94 MHz (PASS at 85.72 MHz)
+Info: Max frequency for clock   '$glbnet$clk_dvi_usb_inst.clk_o[1]': 144.30 MHz (PASS at 48.08 MHz)
+Info: Max frequency for clock '$glbnet$clk_sdram_sys_inst.clk_o[2]': 44.76 MHz (PASS at 21.43 MHz)
+Info: Max frequency for clock   '$glbnet$clk_dvi_usb_inst.clk_o[0]': 136.67 MHz (PASS at 125.00 MHz)
+Info: Max frequency for clock      '$glbnet$gpio[0]$TRELLIS_IO_OUT': 40.80 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                                     -> posedge $glbnet$clk_dvi_usb_inst.clk_o[1]  : 6.00 ns
+Info: Max delay <async>                                     -> posedge $glbnet$clk_sdram_sys_inst.CLKOP   : 8.96 ns
+Info: Max delay <async>                                     -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 3.36 ns
+Info: Max delay posedge $glbnet$clk_dvi_usb_inst.clk_o[1]   -> <async>                                    : 6.20 ns
+Info: Max delay posedge $glbnet$clk_dvi_usb_inst.clk_o[1]   -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 1.40 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.CLKOP    -> <async>                                    : 15.08 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.CLKOP    -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 9.64 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.clk_o[2] -> <async>                                    : 28.40 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.clk_o[2] -> posedge $glbnet$clk_sdram_sys_inst.CLKOP   : 17.45 ns
+Info: Max delay posedge $glbnet$gpio[0]$TRELLIS_IO_OUT      -> <async>                                    : 26.48 ns
+Info: Max delay posedge $glbnet$gpio[0]$TRELLIS_IO_OUT      -> posedge $glbnet$clk_dvi_usb_inst.clk_o[0]  : 2.36 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 39 endpoint(s)
+Info:          + represents [1,39) endpoint(s)
+Info: [   683,   2945) |+
+Info: [  2945,   5207) |+
+Info: [  5207,   7469) |*+
+Info: [  7469,   9731) |+
+Info: [  9731,  11993) |+
+Info: [ 11993,  14255) |+
+Info: [ 14255,  16517) |******+
+Info: [ 16517,  18779) |***********+
+Info: [ 18779,  21041) |*****+
+Info: [ 21041,  23303) |+
+Info: [ 23303,  25565) |+
+Info: [ 25565,  27827) |****+
+Info: [ 27827,  30089) |************************+
+Info: [ 30089,  32351) |*********************************+
+Info: [ 32351,  34613) |************************************************************ 
+Info: [ 34613,  36875) |********************************+
+Info: [ 36875,  39137) |**************************+
+Info: [ 39137,  41399) |****************************+
+Info: [ 41399,  43661) |************************************+
+Info: [ 43661,  45923) |*********************************+
+Info: Checksum: 0xef9327c4
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk_sdram_sys_inst.CLKOP using global 0
+Info:     routing clock net $glbnet$clk_dvi_usb_inst.clk_o[0] using global 1
+Info:     routing clock net $glbnet$gpio[0]$TRELLIS_IO_OUT using global 2
+Info:     routing clock net $glbnet$clk_dvi_usb_inst.clk_o[1] using global 3
+Info:     routing clock net $glbnet$clk_sdram_sys_inst.clk_o[2] using global 4
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 49031 arcs.
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info: Routing complete.
+Info: Router1 time 32.51s
+Info: Checksum: 0xc783ac6f
+
+Info: Critical path report for clock '$glbnet$clk_sdram_sys_inst.CLKOP' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source sdram_i.q_TRELLIS_FF_Q.Q
+Info:    routing  1.00  1.52 Net sdram_i.q[1] (69,23) -> (69,24)
+Info:                          Sink sdram_i.clkref_last_LUT4_D_Z_LUT4_Z.B
+Info:                          Defined in:
+Info:                               sdram.v:78.11-78.12
+Info:      logic  0.24  1.76 Source sdram_i.clkref_last_LUT4_D_Z_LUT4_Z.F
+Info:    routing  3.39  5.15 Net sdram_i.clkref_last_LUT4_D_Z[1] (69,24) -> (28,14)
+Info:                          Sink sdram_i.clkref_last_LUT4_D_Z_LUT4_C_1.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  5.39 Source sdram_i.clkref_last_LUT4_D_Z_LUT4_C_1.F
+Info:    routing  0.65  6.04 Net sdram_i.clkref_last_LUT4_D_Z_LUT4_C_1_Z (28,14) -> (29,14)
+Info:                          Sink nes_i.ppumem_din_TRELLIS_FF_Q_6.CE
+Info:      setup  0.00  6.04 Source nes_i.ppumem_din_TRELLIS_FF_Q_6.CE
+Info: 1.00 ns logic, 5.04 ns routing
+
+Info: Critical path report for clock '$glbnet$clk_dvi_usb_inst.clk_o[1]' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_5.Q
+Info:    routing  1.13  1.65 Net genblk3.us2_hid_host_inst.R_bytes_remaining[15] (15,8) -> (14,7)
+Info:                          Sink genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z_1.A
+Info:                          Defined in:
+Info:                               usb/usbhost/usbh_host_hid.v:132.12-132.29
+Info:      logic  0.24  1.89 Source genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z_1.F
+Info:    routing  0.81  2.70 Net genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D[2] (14,7) -> (14,7)
+Info:                          Sink genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z_D_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  2.94 Source genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.44  3.37 Net genblk3.us2_hid_host_inst.R_advance_data_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_Z_D[3] (14,7) -> (14,7)
+Info:                          Sink genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  3.61 Source genblk3.us2_hid_host_inst.data_idx_i_TRELLIS_FF_Q_CE_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.72  4.33 Net genblk3.us2_hid_host_inst.R_advance_data_LUT4_D_Z_PFUMX_BLUT_Z[3] (14,7) -> (15,6)
+Info:                          Sink genblk3.us2_hid_host_inst.R_advance_data_LUT4_C.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  4.59 Source genblk3.us2_hid_host_inst.R_advance_data_LUT4_C.OFX
+Info:    routing  0.42  5.01 Net genblk3.us2_hid_host_inst.R_advance_data_LUT4_C_Z_PFUMX_BLUT_Z[4] (15,6) -> (14,6)
+Info:                          Sink genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_CE_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  5.26 Source genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_CE_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.18  5.45 Net genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_CE[0] (14,6) -> (14,6)
+Info:                          Sink genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_LSR_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  5.68 Source genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_LSR_LUT4_Z.F
+Info:    routing  0.83  6.51 Net genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_4_LSR (14,6) -> (14,3)
+Info:                          Sink genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_13.LSR
+Info:      setup  0.42  6.93 Source genblk3.us2_hid_host_inst.R_bytes_remaining_TRELLIS_FF_Q_13.LSR
+Info: 2.40 ns logic, 4.53 ns routing
+
+Info: Critical path report for clock '$glbnet$clk_sdram_sys_inst.clk_o[2]' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source nes_i.ppu.sprite_gen.sprite5.x_coord_TRELLIS_FF_Q_5.Q
+Info:    routing  0.90  1.43 Net nes_i.ppu.sprite_gen.sprite4.x_coord_TRELLIS_FF_Q_5_DI_LUT4_Z_C[0] (5,14) -> (4,14)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1_D_PFUMX_Z_C0_LUT4_Z.C
+Info:                          Defined in:
+Info:                               ppu.sv:213.11-213.18
+Info:      logic  0.24  1.66 Source nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1_D_PFUMX_Z_C0_LUT4_Z.F
+Info:    routing  0.72  2.38 Net nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1_D_PFUMX_Z_C0[4] (4,14) -> (4,12)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1_D_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  2.64 Source nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  1.86  4.50 Net nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D_Z_LUT4_D_C_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D[2] (4,12) -> (21,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.73 Source nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z_LUT4_Z_1.F
+Info:    routing  0.68  5.41 Net nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_D[2] (21,8) -> (21,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  5.64 Source nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B.F
+Info:    routing  0.45  6.09 Net nes_i.ppu.sprite_gen.sprite7.aprio_LUT4_B_Z[4] (21,8) -> (22,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite5.aprio_LUT4_B.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  6.35 Source nes_i.ppu.sprite_gen.sprite5.aprio_LUT4_B.OFX
+Info:    routing  0.38  6.73 Net nes_i.ppu.sprite_gen.sprite5.aprio_LUT4_B_Z_PFUMX_BLUT_Z[4] (22,8) -> (22,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A_D_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  6.99 Source nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.41  7.40 Net nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A_D[3] (22,8) -> (24,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  7.64 Source nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A.F
+Info:    routing  0.42  8.05 Net nes_i.ppu.sprite_gen.sprite1.aprio_LUT4_A_Z[3] (24,8) -> (24,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  8.29 Source nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A.F
+Info:    routing  0.21  8.50 Net nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z[3] (24,8) -> (24,8)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  8.74 Source nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D.F
+Info:    routing  1.01  9.74 Net nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D_Z[3] (24,8) -> (21,9)
+Info:                          Sink nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D_Z_LUT4_D.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  9.98 Source nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D_Z_LUT4_D.F
+Info:    routing  0.89  10.87 Net nes_i.ppu.sprite_gen.sprite0.aprio_LUT4_A_Z_LUT4_D_Z_LUT4_D_Z[2] (21,9) -> (21,11)
+Info:                          Sink nes_i.ppu.playfield_clip_LUT4_A_Z_LUT4_B_Z_LUT4_D_Z_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  11.10 Source nes_i.ppu.playfield_clip_LUT4_A_Z_LUT4_B_Z_LUT4_D_Z_LUT4_Z_1.F
+Info:    routing  0.43  11.53 Net nes_i.ppu.playfield_clip_LUT4_A_Z_LUT4_B_Z_LUT4_D_Z[2] (21,11) -> (21,11)
+Info:                          Sink nes_i.ppu.sprite_gen.bits0_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  11.78 Source nes_i.ppu.sprite_gen.bits0_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D.OFX
+Info:    routing  1.08  12.86 Net nes_i.ppu.sprite_gen.bits0_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_BLUT_Z (21,11) -> (22,12)
+Info:                          Sink nes_i.ppu.palette_ram.palette.0.2$DPRAM_COMB1.C
+Info:      logic  0.24  13.10 Source nes_i.ppu.palette_ram.palette.0.2$DPRAM_COMB1.F
+Info:    routing  1.15  14.24 Net nes_i.ppu.palette_ram.palette.0.2_DO_3[4] (22,12) -> (22,15)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.mem.0.1_DIA0_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  14.48 Source G_dvi.vga_i.framebuffer_i.mem.0.1_DIA0_LUT4_Z.F
+Info:    routing  4.19  18.66 Net G_dvi.vga_i.framebuffer_i.mem.0.1_DIA0 (22,15) -> (62,37)
+Info:                          Sink G_gpi.vga_i2.framebuffer_i.mem.0.19.DIA0
+Info:      setup  0.22  18.88 Source G_gpi.vga_i2.framebuffer_i.mem.0.19.DIA0
+Info: 4.13 ns logic, 14.76 ns routing
+
+Info: Critical path report for clock '$glbnet$clk_dvi_usb_inst.clk_o[0]' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source G_dvi.vga2dvid_instance.shift_clock_TRELLIS_FF_Q_5.Q
+Info:    routing  2.98  3.51 Net G_dvi.vga2dvid_instance.shift_clock[5] (60,10) -> (15,10)
+Info:                          Sink G_dvi.vga2dvid_instance.shift_clock_LUT4_D.D
+Info:                          Defined in:
+Info:                               vga2dvid.v:96.11-96.22
+Info:      logic  0.24  3.74 Source G_dvi.vga2dvid_instance.shift_clock_LUT4_D.F
+Info:    routing  1.26  5.01 Net G_dvi.vga2dvid_instance.shift_clock_LUT4_D_Z[2] (15,10) -> (26,10)
+Info:                          Sink G_dvi.vga2dvid_instance.shift_green_TRELLIS_FF_Q_2_DI_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  5.24 Source G_dvi.vga2dvid_instance.shift_green_TRELLIS_FF_Q_2_DI_LUT4_Z.F
+Info:    routing  0.13  5.37 Net G_dvi.vga2dvid_instance.shift_green_TRELLIS_FF_Q_2_DI (26,10) -> (26,10)
+Info:                          Sink G_dvi.vga2dvid_instance.shift_green_TRELLIS_FF_Q_2.DI
+Info:      setup  0.00  5.37 Source G_dvi.vga2dvid_instance.shift_green_TRELLIS_FF_Q_2.DI
+Info: 1.00 ns logic, 4.37 ns routing
+
+Info: Critical path report for clock '$glbnet$gpio[0]$TRELLIS_IO_OUT' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  5.83  5.83 Source G_dvi.vga_i.framebuffer_i.mem.0.10.DOB0
+Info:    routing  1.21  7.04 Net G_dvi.vga_i.framebuffer_i.mem.0.4_DOB0[0] (35,37) -> (33,36)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.mem.0.22_DOB0_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  7.27 Source G_dvi.vga_i.framebuffer_i.mem.0.22_DOB0_LUT4_Z.F
+Info:    routing  3.08  10.35 Net G_dvi.vga_i.framebuffer_i.mem.0.22_DOB0[4] (33,36) -> (14,15)
+Info:                          Sink G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_B_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  10.61 Source G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_B_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.90  11.51 Net G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_Z_D[1] (14,15) -> (13,14)
+Info:                          Sink G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_D_Z_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  11.74 Source G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_D_Z_LUT4_Z.F
+Info:    routing  0.85  12.60 Net G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_Z_C[1] (13,14) -> (14,14)
+Info:                          Sink G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z_2.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  12.83 Source G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z_2.F
+Info:    routing  0.42  13.25 Net G_dvi.vga2dvid_instance.u21.encoded_TRELLIS_FF_Q_5_DI_LUT4_Z_C_LUT4_Z_C_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_D[2] (14,14) -> (14,14)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_Z_LUT4_Z_1_D_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  13.49 Source G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_Z_LUT4_Z_1_D_LUT4_Z.F
+Info:    routing  0.79  14.27 Net G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_Z_LUT4_Z_1_D[2] (14,14) -> (15,11)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_Z_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  14.51 Source G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_Z_LUT4_Z_1.F
+Info:    routing  0.94  15.45 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0[0] (15,11) -> (17,12)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_A_LUT4_D_Z_LUT4_C.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  15.71 Source G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_A_LUT4_D_Z_LUT4_C.OFX
+Info:    routing  0.69  16.40 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD[1] (17,12) -> (18,11)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_A_LUT4_D_Z_LUT4_C_Z_PFUMX_BLUT_Z_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  16.63 Source G_dvi.vga_i.framebuffer_i.address_b_TRELLIS_FF_Q_4_DI_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_C_Z_LUT4_D_Z_LUT4_Z_C_L6MUX21_SD_Z_LUT4_D_A_LUT4_D_Z_LUT4_C_Z_PFUMX_BLUT_Z_LUT4_Z_1.F
+Info:    routing  0.91  17.55 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0[4] (18,11) -> (17,11)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  17.78 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  17.78 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT (17,11) -> (17,11)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.30-141.32
+Info:      logic  0.17  17.95 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  17.95 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1 (17,11) -> (17,11)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.38-141.40
+Info:      logic  0.24  18.19 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_L6MUX21_Z_SD_PFUMX_Z_C0_L6MUX21_SD_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.68  18.87 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z_B_LUT4_Z_D[5] (17,11) -> (18,10)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_D_Z_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  19.11 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_D_Z_LUT4_Z_1.F
+Info:    routing  0.68  19.79 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z_B_LUT4_D_Z[0] (18,10) -> (17,10)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z_B_LUT4_Z_D_PFUMX_C0_Z_L6MUX21_D1_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  20.04 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z_B_LUT4_Z_D_PFUMX_C0_Z_L6MUX21_D1_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.47  20.51 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z_B_LUT4_D_Z[3] (17,10) -> (18,9)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  20.75 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  20.75 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_ALUT (18,9) -> (18,9)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.30-141.32
+Info:      logic  0.17  20.91 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  20.91 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1 (18,9) -> (18,9)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.38-141.40
+Info:      logic  0.24  21.16 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.55  21.71 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z_D[1] (18,9) -> (18,9)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  21.94 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI_LUT4_Z.F
+Info:    routing  0.13  22.08 Net G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2_DI (18,9) -> (18,9)
+Info:                          Sink G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2.DI
+Info:      setup  0.00  22.08 Source G_dvi.vga2dvid_instance.u22.dc_bias_TRELLIS_FF_Q_2.DI
+Info: 9.77 ns logic, 12.30 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk_dvi_usb_inst.clk_o[1]':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source usb_fpga_bd_dn$tr_io.O
+Info:    routing  2.93  2.93 Net usb_fpga_bd_dn$TRELLIS_IO_IN (53,0) -> (16,3)
+Info:                          Sink usb_fpga_bd_dp_LUT4_D.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/e_ref/top.v:47.10-47.24
+Info:      logic  0.24  3.17 Source usb_fpga_bd_dp_LUT4_D.F
+Info:    routing  1.04  4.21 Net usb_fpga_bd_dp_LUT4_D_Z (16,3) -> (11,4)
+Info:                          Sink genblk3.us2_hid_host_inst.E_usb11_phy.E_rx_phy_emard.S_linebit_TRELLIS_FF_Q.CE
+Info:      setup  0.00  4.21 Source genblk3.us2_hid_host_inst.E_usb11_phy.E_rx_phy_emard.S_linebit_TRELLIS_FF_Q.CE
+Info: 0.24 ns logic, 3.97 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk_sdram_sys_inst.CLKOP':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source sdram_d[4]$tr_io.O
+Info:    routing  4.01  4.01 Net sdram_d[4]$TRELLIS_IO_IN (72,44) -> (47,18)
+Info:                          Sink nes_i.cpumem_din_TRELLIS_FF_Q_4_DI_LUT4_Z.C
+Info:                          Defined in:
+Info:                               sdram.v:27.16-27.26
+Info:      logic  0.24  4.25 Source nes_i.cpumem_din_TRELLIS_FF_Q_4_DI_LUT4_Z.F
+Info:    routing  1.89  6.14 Net nes_i.cpumem_din_TRELLIS_FF_Q_4_DI (47,18) -> (28,14)
+Info:                          Sink nes_i.ppumem_din_TRELLIS_FF_Q_4.M
+Info:      setup  0.00  6.14 Source nes_i.ppumem_din_TRELLIS_FF_Q_4.M
+Info: 0.24 ns logic, 5.90 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk_sdram_sys_inst.clk_o[2]':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source flash_miso$tr_io.O
+Info:    routing  2.46  2.46 Net flash_miso$TRELLIS_IO_IN (11,50) -> (6,32)
+Info:                          Sink flash_miso_LUT4_A.A
+Info:                          Defined in:
+Info:                               flashmem.v:14.8-14.16
+Info:      logic  0.24  2.70 Source flash_miso_LUT4_A.F
+Info:    routing  0.13  2.83 Net flash_miso_LUT4_A_Z (6,32) -> (6,32)
+Info:                          Sink genblk4.flash_load_i.flashmem_i.buffer_TRELLIS_FF_Q_1.DI
+Info:      setup  0.00  2.83 Source genblk4.flash_load_i.flashmem_i.buffer_TRELLIS_FF_Q_1.DI
+Info: 0.24 ns logic, 2.59 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_dvi_usb_inst.clk_o[1]' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source genblk3.us2_hid_host_inst.E_usb11_phy.i_tx_phy.txoe_TRELLIS_FF_Q.Q
+Info:    routing  0.78  1.30 Net genblk3.us2_hid_host_inst.E_usb11_phy.txoe (19,2) -> (23,2)
+Info:                          Sink usb_fpga_bd_dp_$_TBUF__Y_E_LUT4_Z.D
+Info:                          Defined in:
+Info:                               usb/usb11_phy_vhdl/usb_phy.v:76.13-76.17
+Info:      logic  0.24  1.54 Source usb_fpga_bd_dp_$_TBUF__Y_E_LUT4_Z.F
+Info:    routing  2.37  3.91 Net usb_fpga_bd_dp_$_TBUF__Y_E (23,2) -> (53,2)
+Info:                          Sink usb_fpga_bd_dp$tr_io$invert_T.A
+Info:      logic  0.24  4.15 Source usb_fpga_bd_dp$tr_io$invert_T.F
+Info:    routing  0.95  5.10 Net usb_fpga_bd_dp$tr_io$invert_T$conn$Z (53,2) -> (53,0)
+Info:                          Sink usb_fpga_bd_dp$tr_io.T
+Info: 1.00 ns logic, 4.10 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_dvi_usb_inst.clk_o[1]' -> 'posedge $glbnet$clk_sdram_sys_inst.clk_o[2]':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source led_TRELLIS_FF_Q_1.Q
+Info:    routing  0.70  1.22 Net led[1]$TRELLIS_IO_OUT (2,10) -> (2,11)
+Info:                          Sink joypad_bits_TRELLIS_FF_Q_5_DI_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/e_ref/top.v:30.17-30.20
+Info:      logic  0.24  1.46 Source joypad_bits_TRELLIS_FF_Q_5_DI_LUT4_Z.F
+Info:    routing  0.13  1.59 Net joypad_bits_TRELLIS_FF_Q_5_DI (2,11) -> (2,11)
+Info:                          Sink joypad_bits_TRELLIS_FF_Q_5.DI
+Info:      setup  0.00  1.59 Source joypad_bits_TRELLIS_FF_Q_5.DI
+Info: 0.76 ns logic, 0.83 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_sdram_sys_inst.CLKOP' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source sdram_i.reset_TRELLIS_FF_Q_13.Q
+Info:    routing  0.88  1.41 Net sdram_i.reset[13] (69,27) -> (70,27)
+Info:                          Sink nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_Z.D
+Info:                          Defined in:
+Info:                               sdram.v:96.12-96.17
+Info:      logic  0.24  1.64 Source nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_Z.F
+Info:    routing  0.73  2.37 Net nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_PFUMX_Z_C0[4] (70,27) -> (69,28)
+Info:                          Sink nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  2.62 Source nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.38  3.01 Net nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D[2] (69,28) -> (69,28)
+Info:                          Sink nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  3.25 Source nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.73  3.97 Net nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D[2] (69,28) -> (69,26)
+Info:                          Sink nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_D_Z_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.21 Source nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_D_Z_LUT4_Z.F
+Info:    routing  0.23  4.44 Net nes_i.multi_mapper.jycompany.ppu_conf_LUT4_C_Z_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_A0_LUT4_C_Z_LUT4_Z_C_LUT4_A_Z_LUT4_D_Z_LUT4_C_Z_LUT4_Z_1_D_PFUMX_Z_1_C0_LUT4_C_Z_LUT4_Z_D_LUT4_D_Z[3] (69,26) -> (69,26)
+Info:                          Sink loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_2.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.67 Source loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_2.F
+Info:    routing  3.19  7.86 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z[2] (69,26) -> (44,15)
+Info:                          Sink nes_i.multi_mapper.mmc3.mirroring_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D_Z_LUT4_Z_D_LUT4_D_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_Z_1.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  8.10 Source nes_i.multi_mapper.mmc3.mirroring_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D_Z_LUT4_Z_D_LUT4_D_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z_LUT4_Z_1.F
+Info:    routing  2.04  10.14 Net nes_i.multi_mapper.mmc3.mirroring_LUT4_B_Z_PFUMX_BLUT_Z_LUT4_D_Z_LUT4_Z_D_LUT4_D_Z_PFUMX_BLUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z[1] (44,15) -> (58,12)
+Info:                          Sink sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  10.38 Source sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  10.38 Net sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_ALUT (58,12) -> (58,12)
+Info:                          Sink sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.30-141.32
+Info:      logic  0.17  10.54 Source sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  10.54 Net sdram_a_L6MUX21_Z_4_D1 (58,12) -> (58,12)
+Info:                          Sink sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:141.38-141.40
+Info:      logic  0.24  10.78 Source sdram_a_L6MUX21_Z_4_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  1.97  12.75 Net sdram_a[6]$TRELLIS_IO_OUT (58,12) -> (72,14)
+Info:                          Sink sdram_a[6]$tr_io.I
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/e_ref/top.v:38.17-38.24
+Info: 2.60 ns logic, 10.14 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_sdram_sys_inst.CLKOP' -> 'posedge $glbnet$clk_sdram_sys_inst.clk_o[2]':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source nes_i.cpumem_din_TRELLIS_FF_Q_5.Q
+Info:    routing  0.76  1.29 Net nes_i.cpumem_din[5] (45,20) -> (45,18)
+Info:                          Sink nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  1.52 Source nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  1.52 Net nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT (45,18) -> (45,18)
+Info:                          Sink nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:157.30-157.32
+Info:      logic  0.17  1.69 Source nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  1.69 Net nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1 (45,18) -> (45,18)
+Info:                          Sink nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:157.54-157.56
+Info:      logic  0.24  1.93 Source nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.00  1.93 Net nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_D0 (45,18) -> (45,18)
+Info:                          Sink nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D.FXA
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:157.66-157.68
+Info:      logic  0.24  2.17 Source nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D.OFX
+Info:    routing  1.02  3.19 Net nes_i.multi_mapper.map225.ram.0.0_DO_LUT4_C_Z_LUT4_Z_4_D_LUT4_Z_D_LUT4_D_Z_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_D0_Z_L6MUX21_D1_Z[5] (45,18) -> (35,18)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_S1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  3.44 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_S1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  1.01  4.46 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_S1_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_C_Z[2] (35,18) -> (35,24)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_B1_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.69 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_B1_LUT4_Z.F
+Info:    routing  1.16  5.85 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_B1 (35,24) -> (35,22)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB1.B
+Info:      logic  0.45  6.30 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB1.FCO
+Info:    routing  0.00  6.30 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_COUT (35,22) -> (36,22)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  6.37 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB0.FCO
+Info:    routing  0.00  6.37 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_FCI_INT (36,22) -> (36,22)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB1.FCI
+Info:      logic  0.40  6.77 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0$CCU2_COMB1.F
+Info:    routing  0.76  7.53 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_C_Z_CCU2C_S0_S1[4] (36,22) -> (37,21)
+Info:                          Sink nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_D_LUT4_D_Z_LUT4_Z_B_LUT4_C_Z_LUT4_Z_2_D_LUT4_D_Z_LUT4_Z_1_C_CCU2C_S0_1_COUT_CCU2C_CIN_S1_LUT4_C_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_PFUMX_BLUT_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  7.79 Source nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_D_LUT4_D_Z_LUT4_Z_B_LUT4_C_Z_LUT4_Z_2_D_LUT4_D_Z_LUT4_Z_1_C_CCU2C_S0_1_COUT_CCU2C_CIN_S1_LUT4_C_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_PFUMX_BLUT_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q_DI_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.43  8.22 Net nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_D_LUT4_D_Z_LUT4_Z_B_LUT4_C_Z_LUT4_Z_2_D_LUT4_D_Z_LUT4_Z_1_C_CCU2C_S0_1_COUT_CCU2C_CIN_S1_LUT4_C_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_PFUMX_BLUT_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q_DI (37,21) -> (38,21)
+Info:                          Sink nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_D_LUT4_D_Z_LUT4_Z_B_LUT4_C_Z_LUT4_Z_2_D_LUT4_D_Z_LUT4_Z_1_C_CCU2C_S0_1_COUT_CCU2C_CIN_S1_LUT4_C_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_PFUMX_BLUT_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q.M
+Info:      setup  0.00  8.22 Source nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_D_LUT4_D_Z_LUT4_Z_B_LUT4_C_Z_LUT4_Z_2_D_LUT4_D_Z_LUT4_Z_1_C_CCU2C_S0_1_COUT_CCU2C_CIN_S1_LUT4_C_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_PFUMX_BLUT_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q.M
+Info: 3.08 ns logic, 5.14 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_sdram_sys_inst.clk_o[2]' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source nes_i.multi_mapper.map163.ppuflags_TRELLIS_FF_Q_6.Q
+Info:    routing  0.89  1.42 Net nes_i.multi_mapper.map163.ppuflags[16] (30,9) -> (29,9)
+Info:                          Sink nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.A
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.45  1.86 Source nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  1.86 Net nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT_CIN (29,9) -> (29,9)
+Info:                          Sink nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ppu.sv:624.43-624.57
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  1.93 Source nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  1.93 Net nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT$CCU2_FCI_INT (29,9) -> (29,9)
+Info:                          Sink nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  1.93 Source nes_i.ppu.rendering_enabled_LUT4_C_D_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  1.93 Net $nextpnr_CCU2C_89$CIN (29,9) -> (29,9)
+Info:                          Sink $nextpnr_CCU2C_89$CCU2_COMB0.FCI
+Info:      logic  0.44  2.38 Source $nextpnr_CCU2C_89$CCU2_COMB0.F
+Info:    routing  0.48  2.85 Net nes_i.ppu.rendering_enabled_LUT4_C_D (29,9) -> (29,8)
+Info:                          Sink nes_i.ppu.rendering_enabled_LUT4_C.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  3.09 Source nes_i.ppu.rendering_enabled_LUT4_C.F
+Info:    routing  1.07  4.16 Net nes_i.ppu_dout_TRELLIS_FF_Q_7_DI_LUT4_Z_C[1] (29,8) -> (35,7)
+Info:                          Sink nes_i.ppu.bg_patt_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.40 Source nes_i.ppu.bg_patt_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_D.F
+Info:    routing  1.91  6.31 Net sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D[0] (35,7) -> (44,11)
+Info:                          Sink game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  6.55 Source game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D_LUT4_Z.F
+Info:    routing  1.60  8.15 Net game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z_D[1] (44,11) -> (60,9)
+Info:                          Sink game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  8.39 Source game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_LUT4_Z.F
+Info:    routing  2.06  10.44 Net game_loader_i.ines.0.10_DO_LUT4_D_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D[3] (60,9) -> (62,3)
+Info:                          Sink sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  10.68 Source sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.87  11.55 Net sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D[3] (62,3) -> (62,4)
+Info:                          Sink sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_D_2.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  11.78 Source sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_D_2.F
+Info:    routing  0.88  12.66 Net sdram_a_LUT4_Z_3_D_LUT4_Z_D_PFUMX_Z_C0_LUT4_D_Z_LUT4_D_Z_LUT4_Z_D_LUT4_Z_1_D_LUT4_Z_1_D_LUT4_Z_D_LUT4_D_2_Z[1] (62,4) -> (61,4)
+Info:                          Sink nes_i.multi_mapper.mmc2.mirroring_LUT4_B_D_LUT4_B_C_LUT4_D_B_LUT4_D_C_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_Z_1_C_LUT4_D_C_LUT4_D_1_Z_LUT4_Z_2.B
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  12.90 Source nes_i.multi_mapper.mmc2.mirroring_LUT4_B_D_LUT4_B_C_LUT4_D_B_LUT4_D_C_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_Z_1_C_LUT4_D_C_LUT4_D_1_Z_LUT4_Z_2.F
+Info:    routing  1.01  13.91 Net nes_i.multi_mapper.mmc2.mirroring_LUT4_B_D_LUT4_B_C_LUT4_D_B_LUT4_D_C_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_Z_1_C_LUT4_D_C_LUT4_D_1_Z[3] (61,4) -> (59,6)
+Info:                          Sink nes_i.multi_mapper.n163.n163.chr_en_LUT4_B_Z_PFUMX_ALUT_Z_LUT4_Z_2.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  14.15 Source nes_i.multi_mapper.n163.n163.chr_en_LUT4_B_Z_PFUMX_ALUT_Z_LUT4_Z_2.F
+Info:    routing  1.83  15.98 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_Z_1_D[1] (59,6) -> (53,14)
+Info:                          Sink nes_i.multi_mapper.n163.n163.mirror_LUT4_B_Z_PFUMX_ALUT_C0_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  16.23 Source nes_i.multi_mapper.n163.n163.mirror_LUT4_B_Z_PFUMX_ALUT_C0_LUT4_B_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.04  16.27 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_Z_1_D[2] (53,14) -> (53,14)
+Info:                          Sink loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_Z_1.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  16.51 Source loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_Z_1.F
+Info:    routing  0.65  17.16 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z[2] (53,14) -> (54,15)
+Info:                          Sink loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  17.39 Source loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C.F
+Info:    routing  1.77  19.16 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z[4] (54,15) -> (68,15)
+Info:                          Sink loader_write_mem_LUT4_C.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  19.40 Source loader_write_mem_LUT4_C.F
+Info:    routing  3.29  22.69 Net loader_write_mem_LUT4_C_Z (68,15) -> (70,47)
+Info:                          Sink sdram_d[5]$tr_io$invert_T.A
+Info:      logic  0.24  22.93 Source sdram_d[5]$tr_io$invert_T.F
+Info:    routing  0.86  23.79 Net sdram_d[5]$tr_io$invert_T$conn$Z (70,47) -> (72,47)
+Info:                          Sink sdram_d[5]$tr_io.T
+Info: 4.57 ns logic, 19.21 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk_sdram_sys_inst.clk_o[2]' -> 'posedge $glbnet$clk_sdram_sys_inst.CLKOP':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source nes_i.cpu.nmi_n_o_LUT4_C_Z_LUT4_D_Z_TRELLIS_FF_DI_Q_TRELLIS_FF_Q.Q
+Info:    routing  0.87  1.39 Net nes_i.cpu.nmi_n_o_LUT4_C_Z_LUT4_D_Z_TRELLIS_FF_DI_Q[1] (49,24) -> (49,24)
+Info:                          Sink nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_Z_LUT4_C_Z_LUT4_Z_2.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  1.63 Source nes_i.dma.sprite_dma_addr_TRELLIS_FF_Q_14_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D_LUT4_D_B_LUT4_C_1_Z_LUT4_D_C_LUT4_C_Z_LUT4_C_Z_LUT4_Z_2.F
+Info:    routing  1.84  3.47 Net nes_i.cpu.irq_n_o_LUT4_C_Z_TRELLIS_FF_DI_CE_TRELLIS_FF_CE_Q_LUT4_Z_1_D_LUT4_Z_1_C_LUT4_D_Z_LUT4_D_Z_LUT4_D_Z_LUT4_Z_2_D_LUT4_Z_D_LUT4_D_1_Z_LUT4_Z_1_D[1] (49,24) -> (34,21)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_S0_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  3.72 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_S0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.75  4.47 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_B0_LUT4_D_Z[6] (34,21) -> (29,21)
+Info:                          Sink nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_CIN_CCU2C_COUT_S1_PFUMX_C0_Z_L6MUX21_D1_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  4.73 Source nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_CIN_CCU2C_COUT_S1_PFUMX_C0_Z_L6MUX21_D1_Z_L6MUX21_D1_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  2.14  6.86 Net nes_i.cpu.nmi_n_o_LUT4_C_1_Z_TRELLIS_FF_DI_Q_LUT4_A_Z_LUT4_C_Z_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S0_LUT4_D_Z_TRELLIS_FF_DI_Q_CCU2C_S0_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_S0_LUT4_D_Z_PFUMX_BLUT_Z_LUT4_Z_D_LUT4_D_Z_LUT4_Z_D[0] (29,21) -> (48,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.A
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.45  7.31 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.31 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN (48,18) -> (48,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               nes.v:323.33-323.46
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  7.38 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  7.38 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (48,18) -> (48,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  7.38 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.38 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN (48,18) -> (48,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               nes.v:323.33-323.46
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  7.45 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  7.45 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (48,18) -> (48,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  7.45 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.45 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN (48,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               nes.v:323.33-323.46
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  7.52 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  7.52 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (49,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  7.52 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.52 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT_CIN (49,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               nes.v:323.33-323.46
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  7.59 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  7.59 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (49,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  7.59 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.59 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN (49,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               nes.v:323.33-323.46
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/arith_map_ccu2c.v:74.7-80.4
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/ccu2c_sim.vh:9.9-9.13
+Info:      logic  0.07  7.67 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  7.67 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_FCI_INT (49,18) -> (49,18)
+Info:                          Sink nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  7.67 Source nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  7.67 Net $nextpnr_CCU2C_43$CIN (49,18) -> (49,18)
+Info:                          Sink $nextpnr_CCU2C_43$CCU2_COMB0.FCI
+Info:      logic  0.44  8.11 Source $nextpnr_CCU2C_43$CCU2_COMB0.F
+Info:    routing  0.79  8.89 Net nes_i.multi_mapper.mmc5.prg_protect_2_LUT4_C_Z_LUT4_Z_C[4] (49,18) -> (55,18)
+Info:                          Sink nes_i.multi_mapper.map228.prg_chip_LUT4_B_Z_LUT4_Z_2_D_LUT4_D_Z_PFUMX_Z_1_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  9.15 Source nes_i.multi_mapper.map228.prg_chip_LUT4_B_Z_LUT4_Z_2_D_LUT4_D_Z_PFUMX_Z_1_BLUT_LUT4_Z.OFX
+Info:    routing  0.38  9.53 Net nes_i.multi_mapper.map228.prg_chip_LUT4_B_Z_LUT4_Z_2_D_LUT4_D_Z[4] (55,18) -> (55,18)
+Info:                          Sink nes_i.multi_mapper.map68.ram_enable_LUT4_B_Z_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  9.78 Source nes_i.multi_mapper.map68.ram_enable_LUT4_B_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.69  10.47 Net nes_i.multi_mapper.map68.ram_enable_LUT4_B_Z[5] (55,18) -> (54,19)
+Info:                          Sink nes_i.apu.FrameInterrupt_LUT4_C_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  10.73 Source nes_i.apu.FrameInterrupt_LUT4_C_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.73  11.46 Net nes_i.apu.FrameInterrupt_LUT4_C_Z_PFUMX_ALUT_Z[4] (54,19) -> (48,19)
+Info:                          Sink loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_3_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  11.69 Source loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_3_D_LUT4_Z.F
+Info:    routing  0.43  12.12 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_3_D[2] (48,19) -> (48,19)
+Info:                          Sink loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_3.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  12.35 Source loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z_LUT4_Z_3.F
+Info:    routing  0.22  12.58 Net loader_write_mem_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_Z[3] (48,19) -> (48,19)
+Info:                          Sink sdram_i.addr0_TRELLIS_FF_Q_CE_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  12.81 Source sdram_i.addr0_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.64  13.46 Net sdram_i.addr0_TRELLIS_FF_Q_CE (48,19) -> (47,19)
+Info:                          Sink sdram_i.addr0_TRELLIS_FF_Q.CE
+Info:      setup  0.00  13.46 Source sdram_i.addr0_TRELLIS_FF_Q.CE
+Info: 3.99 ns logic, 9.47 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$gpio[0]$TRELLIS_IO_OUT' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  5.83  5.83 Source G_gpi.vga_i2.framebuffer_i.mem.0.1.DOB0
+Info:    routing  2.85  8.68 Net G_gpi.vga_i2.framebuffer_i.mem.0.7_DOB0[1] (53,37) -> (33,24)
+Info:                          Sink G_gpi.vga_i2.framebuffer_i.mem.0.13_DOB0_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  8.91 Source G_gpi.vga_i2.framebuffer_i.mem.0.13_DOB0_LUT4_Z.F
+Info:    routing  1.48  10.40 Net G_gpi.vga_i2.framebuffer_i.mem.0.13_DOB0[4] (33,24) -> (25,24)
+Info:                          Sink G_gpi.vga_i2.framebuffer_i.mem.0.18_DOB0_LUT4_D_Z_PFUMX_BLUT_Z_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  10.65 Source G_gpi.vga_i2.framebuffer_i.mem.0.18_DOB0_LUT4_D_Z_PFUMX_BLUT_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  1.81  12.46 Net gpio_LUT4_Z_12_D_LUT4_Z_2_D[0] (25,24) -> (7,24)
+Info:                          Sink gpio_LUT4_Z_5_C_LUT4_Z_C_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  12.70 Source gpio_LUT4_Z_5_C_LUT4_Z_C_LUT4_Z.F
+Info:    routing  1.66  14.36 Net gpio_LUT4_Z_5_C_LUT4_Z_C[1] (7,24) -> (6,23)
+Info:                          Sink gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  14.60 Source gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C.F
+Info:    routing  0.90  15.50 Net gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C_Z[2] (6,23) -> (7,23)
+Info:                          Sink gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C_Z_LUT4_D_1.D
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  15.73 Source gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C_Z_LUT4_D_1.F
+Info:    routing  0.67  16.40 Net gpio_LUT4_Z_4_D_LUT4_Z_D_LUT4_C_Z_LUT4_D_1_Z[4] (7,23) -> (8,23)
+Info:                          Sink gpio_PFUMX_Z_1_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20260928/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  16.65 Source gpio_PFUMX_Z_1_BLUT_LUT4_Z.OFX
+Info:    routing  5.30  21.95 Net gpio[22]$TRELLIS_IO_OUT (8,23) -> (72,47)
+Info:                          Sink gpio[22]$tr_io.I
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/e_ref/top.v:56.18-56.22
+Info: 7.29 ns logic, 14.66 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$gpio[0]$TRELLIS_IO_OUT' -> 'posedge $glbnet$clk_dvi_usb_inst.clk_o[0]':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source G_dvi.vga2dvid_instance.latched_blue_TRELLIS_FF_Q_9.Q
+Info:    routing  1.30  1.83 Net G_dvi.vga2dvid_instance.latched_blue[1] (21,14) -> (19,9)
+Info:                          Sink G_dvi.vga2dvid_instance.shift_blue_TRELLIS_FF_Q_2_DI_LUT4_Z.B
+Info:                          Defined in:
+Info:                               vga2dvid.v:93.73-93.85
+Info:      logic  0.24  2.07 Source G_dvi.vga2dvid_instance.shift_blue_TRELLIS_FF_Q_2_DI_LUT4_Z.F
+Info:    routing  0.13  2.19 Net G_dvi.vga2dvid_instance.shift_blue_TRELLIS_FF_Q_2_DI (19,9) -> (19,9)
+Info:                          Sink G_dvi.vga2dvid_instance.shift_blue_TRELLIS_FF_Q_2.DI
+Info:      setup  0.00  2.19 Source G_dvi.vga2dvid_instance.shift_blue_TRELLIS_FF_Q_2.DI
+Info: 0.76 ns logic, 1.43 ns routing
+
+Info: Max frequency for clock    '$glbnet$clk_sdram_sys_inst.CLKOP': 165.59 MHz (PASS at 85.72 MHz)
+Info: Max frequency for clock   '$glbnet$clk_dvi_usb_inst.clk_o[1]': 144.24 MHz (PASS at 48.08 MHz)
+Info: Max frequency for clock '$glbnet$clk_sdram_sys_inst.clk_o[2]': 52.96 MHz (PASS at 21.43 MHz)
+Info: Max frequency for clock   '$glbnet$clk_dvi_usb_inst.clk_o[0]': 186.19 MHz (PASS at 125.00 MHz)
+Info: Max frequency for clock      '$glbnet$gpio[0]$TRELLIS_IO_OUT': 45.30 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                                     -> posedge $glbnet$clk_dvi_usb_inst.clk_o[1]  : 4.21 ns
+Info: Max delay <async>                                     -> posedge $glbnet$clk_sdram_sys_inst.CLKOP   : 6.14 ns
+Info: Max delay <async>                                     -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 2.83 ns
+Info: Max delay posedge $glbnet$clk_dvi_usb_inst.clk_o[1]   -> <async>                                    : 5.10 ns
+Info: Max delay posedge $glbnet$clk_dvi_usb_inst.clk_o[1]   -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 1.59 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.CLKOP    -> <async>                                    : 12.75 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.CLKOP    -> posedge $glbnet$clk_sdram_sys_inst.clk_o[2]: 8.22 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.clk_o[2] -> <async>                                    : 23.79 ns
+Info: Max delay posedge $glbnet$clk_sdram_sys_inst.clk_o[2] -> posedge $glbnet$clk_sdram_sys_inst.CLKOP   : 13.46 ns
+Info: Max delay posedge $glbnet$gpio[0]$TRELLIS_IO_OUT      -> <async>                                    : 21.95 ns
+Info: Max delay posedge $glbnet$gpio[0]$TRELLIS_IO_OUT      -> posedge $glbnet$clk_dvi_usb_inst.clk_o[0]  : 2.19 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 45 endpoint(s)
+Info:          + represents [1,45) endpoint(s)
+Info: [  2629,   4784) |+
+Info: [  4784,   6939) |+
+Info: [  6939,   9094) |+
+Info: [  9094,  11249) |+
+Info: [ 11249,  13404) | 
+Info: [ 13404,  15559) |***+
+Info: [ 15559,  17714) |*******+
+Info: [ 17714,  19869) |*********+
+Info: [ 19869,  22024) |+
+Info: [ 22024,  24179) |+
+Info: [ 24179,  26334) | 
+Info: [ 26334,  28489) |+
+Info: [ 28489,  30644) |***+
+Info: [ 30644,  32799) |********************+
+Info: [ 32799,  34954) |******************************+
+Info: [ 34954,  37109) |************************************************************ 
+Info: [ 37109,  39264) |**************************+
+Info: [ 39264,  41419) |********************************+
+Info: [ 41419,  43574) |******************************+
+Info: [ 43574,  45729) |**************************************+
+Warning: USRMCLK will not function correctly when MASTER_SPI_PORT is set to ENABLE.
+1 warning, 0 errors
+
+Info: Program finished normally.

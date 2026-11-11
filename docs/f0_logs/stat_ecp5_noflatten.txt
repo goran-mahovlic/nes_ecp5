@@ -1,0 +1,1926 @@
+
+41. Printing statistics.
+
+=== usbh_sie ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      406 wires
+      764 wire bits
+      406 public wires
+      764 public wire bits
+       30 ports
+      111 port bits
+      461 cells
+       29   CCU2C
+       12   L6MUX21
+      250   LUT4
+       44   PFUMX
+      126   TRELLIS_FF
+        2 submodules
+        1   usbh_crc16
+        1   usbh_crc5
+
+=== $paramod$5359f71b467cbf6635b3f48ce9586f35754e58e2\ecp5pll ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       16 wire bits
+       12 public wires
+       16 public wire bits
+        9 ports
+       13 port bits
+        3 cells
+        1   EHXPLLL
+        2   LUT4
+
+=== usbh_crc5 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+       61 wire bits
+       24 public wires
+       61 public wire bits
+        3 ports
+       21 port bits
+       30 cells
+        3   L6MUX21
+       22   LUT4
+        5   PFUMX
+
+=== usbh_crc16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       15 wires
+       60 wire bits
+       15 public wires
+       60 public wire bits
+        3 ports
+       40 port bits
+       28 cells
+        1   L6MUX21
+       23   LUT4
+        4   PFUMX
+
+=== $paramod$18881d6de7f73a9ebac2909d536c3c2c8ed90269\ecp5pll ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       16 wire bits
+       12 public wires
+       16 public wire bits
+        9 ports
+       13 port bits
+        3 cells
+        1   EHXPLLL
+        2   LUT4
+
+=== tmds_encoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      284 wires
+      409 wire bits
+      284 public wires
+      409 public wire bits
+        5 ports
+       22 port bits
+      314 cells
+       44   L6MUX21
+      180   LUT4
+       76   PFUMX
+       14   TRELLIS_FF
+
+=== flashmem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       73 wires
+      159 wire bits
+       73 public wires
+      159 public wire bits
+       10 ports
+       40 port bits
+       95 cells
+        1   L6MUX21
+       53   LUT4
+       11   PFUMX
+       30   TRELLIS_FF
+
+=== $paramod\vga2dvid\c_shift_clock_synchronizer=1'0\c_ddr=1'1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       54 wires
+      218 wire bits
+       54 public wires
+      218 public wire bits
+       15 ports
+       67 port bits
+       95 cells
+       25   LUT4
+       70   TRELLIS_FF
+        3 submodules
+        3   tmds_encoder
+
+=== sigma_delta_dac ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       33 wires
+       65 wire bits
+       33 public wires
+       65 public wire bits
+        5 ports
+       20 port bits
+       28 cells
+        9   CCU2C
+       19   TRELLIS_FF
+
+=== framebuffer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      893 wires
+      963 wire bits
+      893 public wires
+      963 public wire bits
+        7 ports
+       47 port bits
+       72 cells
+       24   DP16KD
+        6   L6MUX21
+       28   LUT4
+       12   PFUMX
+        2   TRELLIS_FF
+
+=== vga2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      312 wires
+      495 wire bits
+      312 public wires
+      495 public wire bits
+       11 ports
+       53 port bits
+      278 cells
+       44   CCU2C
+       21   L6MUX21
+      132   LUT4
+       42   PFUMX
+       39   TRELLIS_FF
+        1 submodules
+        1   framebuffer
+
+=== vga ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      321 wires
+      506 wire bits
+      321 public wires
+      506 public wire bits
+       11 ports
+       53 port bits
+      280 cells
+       46   CCU2C
+       21   L6MUX21
+      130   LUT4
+       44   PFUMX
+       39   TRELLIS_FF
+        1 submodules
+        1   framebuffer
+
+=== PaletteRam ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       35 wires
+       77 wire bits
+       35 public wires
+       77 public wire bits
+        6 ports
+       20 port bits
+       28 cells
+       16   LUT4
+        8   PFUMX
+        4   TRELLIS_DPR16X4
+
+=== flash_loader ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       62 wires
+      123 wire bits
+       62 public wires
+      123 public wire bits
+       10 ports
+       20 port bits
+       53 cells
+       11   CCU2C
+       14   LUT4
+       28   TRELLIS_FF
+        1 submodules
+        1   flashmem
+
+=== game_loader ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      292 wires
+      594 wire bits
+      292 public wires
+      594 public wire bits
+        9 ports
+       75 port bits
+      306 cells
+       32   CCU2C
+       13   L6MUX21
+      157   LUT4
+       38   PFUMX
+       15   TRELLIS_DPR16X4
+       51   TRELLIS_FF
+
+=== sdram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      151 wires
+      365 wire bits
+      151 public wires
+      365 public wire bits
+       23 ports
+      143 port bits
+      192 cells
+        9   CCU2C
+        9   L6MUX21
+      116   LUT4
+       20   PFUMX
+       38   TRELLIS_FF
+
+=== SachenNROM ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       34 wires
+      220 wire bits
+       34 public wires
+      220 public wire bits
+       21 ports
+      181 port bits
+       98 cells
+       89   $_TBUF_
+        9   LUT4
+
+=== SachenJV001 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      162 wires
+      449 wire bits
+      162 public wires
+      449 public wire bits
+       21 ports
+      181 port bits
+      249 cells
+       89   $_TBUF_
+        9   L6MUX21
+       97   LUT4
+       29   PFUMX
+       25   TRELLIS_FF
+
+=== Sachen8259 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      292 wires
+      630 wire bits
+      292 public wires
+      630 public wire bits
+       21 ports
+      181 port bits
+      397 cells
+       89   $_TBUF_
+       33   L6MUX21
+      183   LUT4
+       66   PFUMX
+       26   TRELLIS_FF
+
+=== JYCompany ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      583 wires
+     1193 wire bits
+      583 public wires
+     1193 public wire bits
+       22 ports
+      182 port bits
+      720 cells
+       89   $_TBUF_
+       20   CCU2C
+       56   L6MUX21
+      351   LUT4
+      109   PFUMX
+        8   TRELLIS_DPR16X4
+       87   TRELLIS_FF
+        1 submodules
+        1   multiplier
+
+=== multiplier ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       74 wires
+      166 wire bits
+       74 public wires
+      166 public wire bits
+        7 ports
+       36 port bits
+       90 cells
+        8   CCU2C
+        1   L6MUX21
+       40   LUT4
+        2   PFUMX
+       39   TRELLIS_FF
+
+=== Mapper68 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      169 wires
+      431 wire bits
+      169 public wires
+      431 public wire bits
+       21 ports
+      181 port bits
+      287 cells
+       89   $_TBUF_
+       18   L6MUX21
+       98   LUT4
+       32   PFUMX
+       50   TRELLIS_FF
+
+=== Mapper67 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      252 wires
+      606 wire bits
+      252 public wires
+      606 public wire bits
+       21 ports
+      181 port bits
+      355 cells
+       89   $_TBUF_
+        8   CCU2C
+       22   L6MUX21
+      136   LUT4
+       40   PFUMX
+       60   TRELLIS_FF
+
+=== namco163_sound ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      226 wires
+      367 wire bits
+      226 public wires
+      367 public wire bits
+        8 ports
+       47 port bits
+      164 cells
+       27   CCU2C
+        3   L6MUX21
+       69   LUT4
+        1   MULT18X18D
+        5   PFUMX
+        7   TRELLIS_DPR16X4
+       52   TRELLIS_FF
+        1 submodules
+        1   dpram
+
+=== namco163_mixed ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      111 wires
+      291 wire bits
+      111 public wires
+      291 public wire bits
+       10 ports
+       72 port bits
+      109 cells
+       18   CCU2C
+        5   L6MUX21
+       73   LUT4
+       12   PFUMX
+        1   TRELLIS_FF
+        1 submodules
+        1   namco163_sound
+
+=== MAPN163 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      339 wires
+      771 wire bits
+      339 public wires
+      771 public wire bits
+       36 ports
+      126 port bits
+      484 cells
+        8   CCU2C
+       22   L6MUX21
+      258   LUT4
+       61   PFUMX
+      135   TRELLIS_FF
+
+=== N163 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       68 wires
+      336 wire bits
+       68 public wires
+      336 public wire bits
+       22 ports
+      189 port bits
+      122 cells
+       89   $_TBUF_
+        3   L6MUX21
+       18   LUT4
+        4   PFUMX
+        8   TRELLIS_FF
+        1 submodules
+        1   MAPN163
+
+=== Mapper111 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       33 wires
+      240 wire bits
+       33 public wires
+      240 public wire bits
+       21 ports
+      181 port bits
+      101 cells
+       89   $_TBUF_
+        5   LUT4
+        1   PFUMX
+        6   TRELLIS_FF
+
+=== $paramod$8a703f31ef66e4f51f3ecc7cdf696df00d7aaa47\usbh_host_hid ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      377 wires
+     1085 wire bits
+      377 public wires
+     1085 public wire bits
+       10 ports
+      191 port bits
+      577 cells
+        2   $_TBUF_
+       23   CCU2C
+        1   L6MUX21
+      241   LUT4
+       28   PFUMX
+      282   TRELLIS_FF
+        2 submodules
+        1   usb_phy
+        1   usbh_sie
+
+=== Mapper225 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+      268 wire bits
+       43 public wires
+      268 public wire bits
+       21 ports
+      181 port bits
+      116 cells
+       89   $_TBUF_
+       10   LUT4
+        1   PFUMX
+        1   TRELLIS_DPR16X4
+       15   TRELLIS_FF
+
+=== Nanjing ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      189 wires
+      520 wire bits
+      189 public wires
+      520 public wire bits
+       23 ports
+      202 port bits
+      307 cells
+       89   $_TBUF_
+        4   CCU2C
+        9   L6MUX21
+      125   LUT4
+       30   PFUMX
+       50   TRELLIS_FF
+
+=== Mapper164 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       54 wires
+      253 wire bits
+       54 public wires
+      253 public wire bits
+       21 ports
+      181 port bits
+      123 cells
+       89   $_TBUF_
+        2   L6MUX21
+       22   LUT4
+        4   PFUMX
+        6   TRELLIS_FF
+
+=== Mapper162 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       89 wires
+      326 wire bits
+       89 public wires
+      326 public wire bits
+       21 ports
+      181 port bits
+      160 cells
+       89   $_TBUF_
+        5   L6MUX21
+       43   LUT4
+       13   PFUMX
+       10   TRELLIS_FF
+
+=== Mapper72 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+      252 wire bits
+       41 public wires
+      252 public wire bits
+       21 ports
+      181 port bits
+      111 cells
+       89   $_TBUF_
+       12   LUT4
+       10   TRELLIS_FF
+
+=== Mapper234 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       56 wires
+      264 wire bits
+       56 public wires
+      264 public wire bits
+       21 ports
+      181 port bits
+      128 cells
+       89   $_TBUF_
+        3   L6MUX21
+       21   LUT4
+        6   PFUMX
+        9   TRELLIS_FF
+
+=== Mapper228 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       36 wires
+      244 wire bits
+       36 public wires
+      244 public wire bits
+       21 ports
+      181 port bits
+      110 cells
+       89   $_TBUF_
+        6   LUT4
+       15   TRELLIS_FF
+
+=== Mapper218 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       31 wires
+      217 wire bits
+       31 public wires
+      217 public wire bits
+       21 ports
+      181 port bits
+       97 cells
+       89   $_TBUF_
+        1   L6MUX21
+        5   LUT4
+        2   PFUMX
+
+=== Mapper41 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+      240 wire bits
+       40 public wires
+      240 public wire bits
+       21 ports
+      181 port bits
+      109 cells
+       89   $_TBUF_
+        1   L6MUX21
+        9   LUT4
+        2   PFUMX
+        8   TRELLIS_FF
+
+=== Mapper65 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      238 wires
+      658 wire bits
+      238 public wires
+      658 public wire bits
+       21 ports
+      181 port bits
+      418 cells
+       89   $_TBUF_
+        8   CCU2C
+        1   L6MUX21
+      153   LUT4
+       46   PFUMX
+      121   TRELLIS_FF
+
+=== Mapper42 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       97 wires
+      333 wire bits
+       97 public wires
+      333 public wire bits
+       21 ports
+      181 port bits
+      170 cells
+       89   $_TBUF_
+        8   CCU2C
+        1   L6MUX21
+       42   LUT4
+        4   PFUMX
+       26   TRELLIS_FF
+
+=== Mapper32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      155 wires
+      452 wire bits
+      155 public wires
+      452 public wire bits
+       21 ports
+      181 port bits
+      307 cells
+       89   $_TBUF_
+      104   LUT4
+       38   PFUMX
+       76   TRELLIS_FF
+
+=== Mapper18 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      295 wires
+      705 wire bits
+      295 public wires
+      705 public wire bits
+       21 ports
+      181 port bits
+      503 cells
+       89   $_TBUF_
+       18   L6MUX21
+      211   LUT4
+       58   PFUMX
+      127   TRELLIS_FF
+
+=== $paramod\usbh_report_decoder\c_autofire_hz=s32'00000000000000000000000000001010 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       66 wires
+      268 wire bits
+       66 public wires
+      268 public wire bits
+        4 ports
+      170 port bits
+       73 cells
+       11   CCU2C
+        1   L6MUX21
+       21   LUT4
+        2   PFUMX
+       38   TRELLIS_FF
+
+=== Mapper15 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+      237 wire bits
+       40 public wires
+      237 public wire bits
+       21 ports
+      181 port bits
+      110 cells
+       89   $_TBUF_
+       11   LUT4
+       10   TRELLIS_FF
+
+=== vrc6sound ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      226 wires
+      483 wire bits
+      226 public wires
+      483 public wire bits
+       10 ports
+       42 port bits
+      281 cells
+       29   CCU2C
+        4   L6MUX21
+      124   LUT4
+        7   PFUMX
+      117   TRELLIS_FF
+
+=== vrc6_mixed ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       68 wires
+      138 wire bits
+       68 public wires
+      138 public wire bits
+        9 ports
+       61 port bits
+       50 cells
+       12   CCU2C
+       38   LUT4
+        1 submodules
+        1   vrc6sound
+
+=== usb_tx_phy ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      114 wires
+      192 wire bits
+      114 public wires
+      192 public wire bits
+       11 ports
+       18 port bits
+      129 cells
+        8   CCU2C
+       56   LUT4
+        8   PFUMX
+       57   TRELLIS_FF
+
+=== vrcIRQ ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      101 wires
+      173 wire bits
+      101 public wires
+      173 public wire bits
+        9 ports
+       17 port bits
+      101 cells
+        8   CCU2C
+        4   L6MUX21
+       52   LUT4
+        8   PFUMX
+       29   TRELLIS_FF
+
+=== MAPVRC6 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      149 wires
+      409 wire bits
+      149 public wires
+      409 public wire bits
+       33 ports
+      113 port bits
+      228 cells
+        1   L6MUX21
+      122   LUT4
+       28   PFUMX
+       77   TRELLIS_FF
+        1 submodules
+        1   vrcIRQ
+
+=== usb_rx_phy ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       90 wires
+      161 wire bits
+       90 public wires
+      161 public wire bits
+       14 ports
+       22 port bits
+      115 cells
+        6   L6MUX21
+       53   LUT4
+       10   PFUMX
+       46   TRELLIS_FF
+
+=== VRC6 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       47 wires
+      295 wire bits
+       47 public wires
+      295 public wire bits
+       21 ports
+      181 port bits
+      105 cells
+       89   $_TBUF_
+        8   LUT4
+        8   TRELLIS_FF
+        1 submodules
+        1   MAPVRC6
+
+=== VRC24 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      426 wires
+      811 wire bits
+      426 public wires
+      811 public wire bits
+       21 ports
+      181 port bits
+      603 cells
+       89   $_TBUF_
+       44   L6MUX21
+      273   LUT4
+      112   PFUMX
+       85   TRELLIS_FF
+        1 submodules
+        1   vrcIRQ
+
+=== VRC3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      149 wires
+      455 wire bits
+      149 public wires
+      455 public wire bits
+       21 ports
+      181 port bits
+      238 cells
+       89   $_TBUF_
+        8   CCU2C
+        4   L6MUX21
+       74   LUT4
+       22   PFUMX
+       41   TRELLIS_FF
+
+=== VRC1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      102 wires
+      322 wire bits
+      102 public wires
+      322 public wire bits
+       21 ports
+      181 port bits
+      184 cells
+       89   $_TBUF_
+        7   L6MUX21
+       46   LUT4
+       18   PFUMX
+       24   TRELLIS_FF
+
+=== mmc5_mixed ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       59 wires
+      154 wire bits
+       59 public wires
+      154 public wire bits
+       10 ports
+       69 port bits
+       44 cells
+        9   CCU2C
+        6   L6MUX21
+       20   LUT4
+        8   PFUMX
+        1   TRELLIS_FF
+        1 submodules
+        1   APU
+
+=== MMC5 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      745 wires
+     1926 wire bits
+      745 public wires
+     1926 public wire bits
+       27 ports
+      227 port bits
+     1142 cells
+       97   $_TBUF_
+        9   CCU2C
+        1   DP16KD
+       28   L6MUX21
+      611   LUT4
+        1   MULT18X18D
+      101   PFUMX
+      294   TRELLIS_FF
+
+=== Mapper165 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      185 wires
+      529 wire bits
+      185 public wires
+      529 public wire bits
+       21 ports
+      181 port bits
+      320 cells
+       89   $_TBUF_
+        7   CCU2C
+        4   L6MUX21
+      125   LUT4
+       20   PFUMX
+       75   TRELLIS_FF
+
+=== MMC3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      765 wires
+     1498 wire bits
+      765 public wires
+     1498 public wire bits
+       21 ports
+      181 port bits
+     1031 cells
+       89   $_TBUF_
+        4   CCU2C
+       78   L6MUX21
+      593   LUT4
+      152   PFUMX
+      115   TRELLIS_FF
+
+=== Rambo1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      210 wires
+      639 wire bits
+      210 public wires
+      639 public wire bits
+       21 ports
+      181 port bits
+      389 cells
+       89   $_TBUF_
+        8   CCU2C
+        5   L6MUX21
+      154   LUT4
+       15   PFUMX
+      118   TRELLIS_FF
+
+=== MMC4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      139 wires
+      412 wire bits
+      139 public wires
+      412 public wire bits
+       21 ports
+      181 port bits
+      222 cells
+       89   $_TBUF_
+       12   L6MUX21
+       71   LUT4
+       23   PFUMX
+       27   TRELLIS_FF
+
+=== MMC2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       87 wires
+      328 wire bits
+       87 public wires
+      328 public wire bits
+       21 ports
+      181 port bits
+      174 cells
+       89   $_TBUF_
+        2   L6MUX21
+       47   LUT4
+        9   PFUMX
+       27   TRELLIS_FF
+
+=== NesEvent ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      132 wires
+      412 wire bits
+      132 public wires
+      412 public wire bits
+       21 ports
+      181 port bits
+      151 cells
+       45   $_TBUF_
+       15   CCU2C
+       58   LUT4
+        1   PFUMX
+       32   TRELLIS_FF
+        1 submodules
+        1   MMC1
+
+=== MMC1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       85 wires
+      334 wire bits
+       85 public wires
+      334 public wire bits
+       21 ports
+      181 port bits
+      168 cells
+       89   $_TBUF_
+        1   L6MUX21
+       44   LUT4
+        9   PFUMX
+       25   TRELLIS_FF
+
+=== Mapper28 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      168 wires
+      476 wire bits
+      168 public wires
+      476 public wire bits
+       22 ports
+      189 port bits
+      273 cells
+       97   $_TBUF_
+       10   L6MUX21
+      118   LUT4
+       27   PFUMX
+       21   TRELLIS_FF
+
+=== Mapper107 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       30 wires
+      235 wire bits
+       30 public wires
+      235 public wire bits
+       21 ports
+      181 port bits
+      100 cells
+       89   $_TBUF_
+        4   LUT4
+        7   TRELLIS_FF
+
+=== Mapper89 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      296 wire bits
+       72 public wires
+      296 public wire bits
+       21 ports
+      181 port bits
+      146 cells
+       89   $_TBUF_
+        3   L6MUX21
+       35   LUT4
+        8   PFUMX
+       11   TRELLIS_FF
+
+=== Mapper79 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       86 wires
+      304 wire bits
+       86 public wires
+      304 public wire bits
+       21 ports
+      181 port bits
+      159 cells
+       89   $_TBUF_
+        5   L6MUX21
+       41   LUT4
+       16   PFUMX
+        8   TRELLIS_FF
+
+=== Mapper78 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       71 wires
+      293 wire bits
+       71 public wires
+      293 public wire bits
+       21 ports
+      181 port bits
+      141 cells
+       89   $_TBUF_
+        3   L6MUX21
+       33   LUT4
+        7   PFUMX
+        9   TRELLIS_FF
+
+=== Mapper77 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       33 wires
+      234 wire bits
+       33 public wires
+      234 public wire bits
+       21 ports
+      181 port bits
+      105 cells
+       89   $_TBUF_
+        8   LUT4
+        8   TRELLIS_FF
+
+=== Mapper71 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+      238 wire bits
+       41 public wires
+      238 public wire bits
+       21 ports
+      181 port bits
+      109 cells
+       89   $_TBUF_
+       15   LUT4
+        5   TRELLIS_FF
+
+=== Mapper34 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       79 wires
+      317 wire bits
+       79 public wires
+      317 public wire bits
+       21 ports
+      181 port bits
+      157 cells
+       89   $_TBUF_
+        4   L6MUX21
+       41   LUT4
+        9   PFUMX
+       14   TRELLIS_FF
+
+=== Mapper66 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      127 wires
+      394 wire bits
+      127 public wires
+      394 public wire bits
+       21 ports
+      181 port bits
+      227 cells
+       89   $_TBUF_
+        7   L6MUX21
+       93   LUT4
+       26   PFUMX
+       12   TRELLIS_FF
+
+=== Mapper30 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+      244 wire bits
+       41 public wires
+      244 public wire bits
+       21 ports
+      181 port bits
+      111 cells
+       89   $_TBUF_
+       13   LUT4
+        1   PFUMX
+        8   TRELLIS_FF
+
+=== Mapper13 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       32 wires
+      220 wire bits
+       32 public wires
+      220 public wire bits
+       21 ports
+      181 port bits
+       97 cells
+       89   $_TBUF_
+        6   LUT4
+        2   TRELLIS_FF
+
+=== MMC0 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+      213 wire bits
+       27 public wires
+      213 public wire bits
+       21 ports
+      181 port bits
+       91 cells
+       89   $_TBUF_
+        2   LUT4
+
+=== dpram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       32 wires
+       72 wire bits
+       32 public wires
+       72 public wire bits
+       12 ports
+       52 port bits
+        1 cells
+        1   DP16KD
+
+=== cart_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      280 wires
+      811 wire bits
+      280 public wires
+      811 public wire bits
+       38 ports
+      256 port bits
+      295 cells
+        5   CCU2C
+       19   L6MUX21
+      226   LUT4
+       45   PFUMX
+       49 submodules
+        1   JYCompany
+        1   MMC0
+        1   MMC1
+        1   MMC2
+        1   MMC3
+        1   MMC4
+        1   MMC5
+        1   Mapper107
+        1   Mapper111
+        1   Mapper13
+        1   Mapper15
+        1   Mapper162
+        1   Mapper164
+        1   Mapper165
+        1   Mapper18
+        1   Mapper218
+        1   Mapper225
+        1   Mapper228
+        1   Mapper234
+        1   Mapper28
+        1   Mapper30
+        1   Mapper32
+        1   Mapper34
+        1   Mapper41
+        1   Mapper42
+        1   Mapper65
+        1   Mapper66
+        1   Mapper67
+        1   Mapper68
+        1   Mapper71
+        1   Mapper72
+        1   Mapper77
+        1   Mapper78
+        1   Mapper79
+        1   Mapper89
+        1   N163
+        1   Nanjing
+        1   NesEvent
+        1   Rambo1
+        1   Sachen8259
+        1   SachenJV001
+        1   SachenNROM
+        1   VRC1
+        1   VRC24
+        1   VRC3
+        1   VRC6
+        1   mmc5_mixed
+        1   namco163_mixed
+        1   vrc6_mixed
+
+=== ApuLookupTable ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       77 wire bits
+       18 public wires
+       77 public wire bits
+        4 ports
+       33 port bits
+        9 cells
+        8   CCU2C
+        1   DP16KD
+
+=== APU ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      286 wires
+      539 wire bits
+      286 public wires
+      539 public wire bits
+       18 ports
+       77 port bits
+      280 cells
+       18   CCU2C
+       16   L6MUX21
+      170   LUT4
+       45   PFUMX
+       31   TRELLIS_FF
+        7 submodules
+        1   ApuLookupTable
+        1   DmcChan
+        1   LenCtr_Lookup
+        1   NoiseChan
+        2   SquareChan
+        1   TriangleChan
+
+=== DmcChan ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      239 wires
+      505 wire bits
+      239 public wires
+      505 public wire bits
+       16 ports
+       53 port bits
+      281 cells
+       25   CCU2C
+      137   LUT4
+       14   PFUMX
+      105   TRELLIS_FF
+
+=== NoiseChan ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      153 wires
+      322 wire bits
+      153 public wires
+      322 public wire bits
+       12 ports
+       30 port bits
+      182 cells
+       16   CCU2C
+       85   LUT4
+       15   PFUMX
+       66   TRELLIS_FF
+
+=== TriangleChan ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      144 wires
+      290 wire bits
+      144 public wires
+      290 public wire bits
+       12 ports
+       30 port bits
+      149 cells
+       17   CCU2C
+       65   LUT4
+       12   PFUMX
+       55   TRELLIS_FF
+
+=== SquareChan ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      408 wires
+      685 wire bits
+      408 public wires
+      685 public wire bits
+       15 ports
+       33 port bits
+      438 cells
+       22   CCU2C
+       37   L6MUX21
+      244   LUT4
+       72   PFUMX
+       63   TRELLIS_FF
+
+=== LenCtr_Lookup ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       27 wire bits
+       16 public wires
+       27 public wire bits
+        2 ports
+       13 port bits
+       21 cells
+       14   LUT4
+        7   PFUMX
+
+=== PPU ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      473 wires
+     1041 wire bits
+      473 public wires
+     1041 public wire bits
+       21 ports
+      107 port bits
+      523 cells
+       38   CCU2C
+       19   L6MUX21
+      329   LUT4
+       54   PFUMX
+       83   TRELLIS_FF
+        8 submodules
+        1   BgPainter
+        1   ClockGen
+        1   LoopyGen
+        1   PaletteRam
+        1   PixelMuxer
+        1   SpriteAddressGen
+        1   SpriteRAM
+        1   SpriteSet
+
+=== PixelMuxer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       22 wires
+       36 wire bits
+       22 public wires
+       36 public wire bits
+        5 ports
+       14 port bits
+       22 cells
+        2   L6MUX21
+       14   LUT4
+        6   PFUMX
+
+=== BgPainter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       58 wires
+      189 wire bits
+       58 public wires
+      189 public wire bits
+        9 ports
+       44 port bits
+      124 cells
+       50   LUT4
+        6   PFUMX
+       68   TRELLIS_FF
+
+=== SpriteAddressGen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+       88 wire bits
+       21 public wires
+       88 public wire bits
+       11 ports
+       68 port bits
+       37 cells
+       21   LUT4
+        1   PFUMX
+       15   TRELLIS_FF
+
+=== SpriteRAM ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      273 wires
+      502 wire bits
+      273 public wires
+      502 public wire bits
+       15 ports
+       45 port bits
+      279 cells
+        9   CCU2C
+        1   DP16KD
+       14   L6MUX21
+      157   LUT4
+       43   PFUMX
+        4   TRELLIS_DPR16X4
+       51   TRELLIS_FF
+
+=== SpriteSet ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       99 wires
+      423 wire bits
+       99 public wires
+      423 public wire bits
+        7 ports
+       40 port bits
+       94 cells
+       10   L6MUX21
+       62   LUT4
+       22   PFUMX
+        8 submodules
+        8   Sprite
+
+=== Sprite ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       68 wires
+      172 wire bits
+       68 public wires
+      172 public wire bits
+        7 ports
+       66 port bits
+       77 cells
+        4   CCU2C
+        3   L6MUX21
+       39   LUT4
+        4   PFUMX
+       27   TRELLIS_FF
+
+=== ClockGen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       95 wires
+      154 wire bits
+       95 public wires
+      154 public wire bits
+       15 ports
+       32 port bits
+       96 cells
+       10   CCU2C
+        4   L6MUX21
+       52   LUT4
+        9   PFUMX
+       21   TRELLIS_FF
+
+=== LoopyGen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      393 wires
+      648 wire bits
+      393 public wires
+      648 public wire bits
+       11 ports
+       44 port bits
+      406 cells
+       16   CCU2C
+       47   L6MUX21
+      222   LUT4
+       86   PFUMX
+       35   TRELLIS_FF
+
+=== NES ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      380 wires
+     1086 wire bits
+      380 public wires
+     1086 public wire bits
+       42 ports
+      353 port bits
+      371 cells
+       12   CCU2C
+       11   L6MUX21
+      263   LUT4
+       53   PFUMX
+       32   TRELLIS_FF
+        5 submodules
+        1   APU
+        1   DmaController
+        1   PPU
+        1   T65
+        1   cart_top
+
+=== DmaController ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       65 wires
+      161 wire bits
+       65 public wires
+      161 public wire bits
+       16 ports
+       67 port bits
+       84 cells
+        5   CCU2C
+        3   L6MUX21
+       44   LUT4
+        5   PFUMX
+       27   TRELLIS_FF
+
+=== usb_phy ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       44 wires
+       64 wire bits
+       44 public wires
+       64 public wire bits
+       23 ports
+       38 port bits
+       16 cells
+        3   CCU2C
+        6   LUT4
+        1   PFUMX
+        6   TRELLIS_FF
+        2 submodules
+        1   usb_rx_phy
+        1   usb_tx_phy
+
+=== top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      210 wires
+      773 wire bits
+      210 public wires
+      773 public wire bits
+       27 ports
+       90 port bits
+      174 cells
+       16   $_TBUF_
+       16   CCU2C
+       57   LUT4
+        4   ODDRX1F
+        1   PFUMX
+       79   TRELLIS_FF
+        1   USRMCLK
+       12 submodules
+        1   $paramod$18881d6de7f73a9ebac2909d536c3c2c8ed90269\ecp5pll
+        1   $paramod$5359f71b467cbf6635b3f48ce9586f35754e58e2\ecp5pll
+        1   $paramod$8a703f31ef66e4f51f3ecc7cdf696df00d7aaa47\usbh_host_hid
+        1   $paramod\usbh_report_decoder\c_autofire_hz=s32'00000000000000000000000000001010
+        1   $paramod\vga2dvid\c_shift_clock_synchronizer=1'0\c_ddr=1'1
+        1   NES
+        1   flash_loader
+        1   game_loader
+        1   sdram
+        1   sigma_delta_dac
+        1   vga
+        1   vga2
+
+=== t65_alu_Brtl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      224 wires
+      502 wire bits
+      224 public wires
+      502 public wire bits
+        8 ports
+       48 port bits
+      264 cells
+       29   CCU2C
+        8   L6MUX21
+      190   LUT4
+       37   PFUMX
+
+=== t65_mcode_Brtl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      372 wires
+      710 wire bits
+      372 public wires
+      710 public wire bits
+       29 ports
+       61 port bits
+      507 cells
+       35   L6MUX21
+      381   LUT4
+       91   PFUMX
+
+=== T65 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      811 wires
+     1542 wire bits
+      811 public wires
+     1542 public wire bits
+       29 ports
+      109 port bits
+      875 cells
+        3   $buf
+       59   CCU2C
+       35   L6MUX21
+      502   LUT4
+      126   PFUMX
+      150   TRELLIS_FF
+        2 submodules
+        1   t65_alu_Brtl
+        1   t65_mcode_Brtl
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+    25601 top
+        3 $paramod$18881d6de7f73a9ebac2909d536c3c2c8ed90269\ecp5pll
+        3 $paramod$5359f71b467cbf6635b3f48ce9586f35754e58e2\ecp5pll
+      577 $paramod$8a703f31ef66e4f51f3ecc7cdf696df00d7aaa47\usbh_host_hid
+       16   usb_phy
+      115     usb_rx_phy
+      129     usb_tx_phy
+      461   usbh_sie
+       28     usbh_crc16
+       30     usbh_crc5
+       73 $paramod\usbh_report_decoder\c_autofire_hz=s32'00000000000000000000000000001010
+       95 $paramod\vga2dvid\c_shift_clock_synchronizer=1'0\c_ddr=1'1
+      314   tmds_encoder
+      371 NES
+      280   APU
+        9     ApuLookupTable
+      281     DmcChan
+       21     LenCtr_Lookup
+      182     NoiseChan
+      438     SquareChan
+      149     TriangleChan
+       84   DmaController
+      523   PPU
+      124     BgPainter
+       96     ClockGen
+      406     LoopyGen
+       28     PaletteRam
+       22     PixelMuxer
+       37     SpriteAddressGen
+      279     SpriteRAM
+       94     SpriteSet
+       77       Sprite
+      875   T65
+      264     t65_alu_Brtl
+      507     t65_mcode_Brtl
+      295   cart_top
+      720     JYCompany
+       90       multiplier
+       91     MMC0
+      168     MMC1
+      174     MMC2
+     1031     MMC3
+      222     MMC4
+     1142     MMC5
+      100     Mapper107
+      101     Mapper111
+       97     Mapper13
+      110     Mapper15
+      160     Mapper162
+      123     Mapper164
+      320     Mapper165
+      503     Mapper18
+       97     Mapper218
+      116     Mapper225
+      110     Mapper228
+      128     Mapper234
+      273     Mapper28
+      111     Mapper30
+      307     Mapper32
+      157     Mapper34
+      109     Mapper41
+      170     Mapper42
+      418     Mapper65
+      227     Mapper66
+      355     Mapper67
+      287     Mapper68
+      109     Mapper71
+      111     Mapper72
+      105     Mapper77
+      141     Mapper78
+      159     Mapper79
+      146     Mapper89
+      122     N163
+      484       MAPN163
+      307     Nanjing
+      151     NesEvent
+      168       MMC1
+      389     Rambo1
+      397     Sachen8259
+      249     SachenJV001
+       98     SachenNROM
+      184     VRC1
+      603     VRC24
+      101       vrcIRQ
+      238     VRC3
+      105     VRC6
+      228       MAPVRC6
+      101         vrcIRQ
+       44     mmc5_mixed
+      280       APU
+        9         ApuLookupTable
+      281         DmcChan
+       21         LenCtr_Lookup
+      182         NoiseChan
+      438         SquareChan
+      149         TriangleChan
+      109     namco163_mixed
+      164       namco163_sound
+        1         dpram
+       50     vrc6_mixed
+      281       vrc6sound
+       53 flash_loader
+       95   flashmem
+      306 game_loader
+      192 sdram
+       28 sigma_delta_dac
+      280 vga
+       72   framebuffer
+      278 vga2
+       72   framebuffer
+
+        +----------Count including submodules.
+        | 
+    21242 wires
+    48774 wire bits
+    21242 public wires
+    48774 public wire bits
+     1923 ports
+    13041 port bits
+        - memories
+        - memory bits
+        - processes
+    25601 cells
+     4173   $_TBUF_
+        3   $buf
+      938   CCU2C
+       53   DP16KD
+        2   EHXPLLL
+     1094   L6MUX21
+    11791   LUT4
+        2   MULT18X18D
+        4   ODDRX1F
+     2817   PFUMX
+       39   TRELLIS_DPR16X4
+     4684   TRELLIS_FF
+        1   USRMCLK
+       12 submodules
+        1   $paramod$18881d6de7f73a9ebac2909d536c3c2c8ed90269\ecp5pll
+        1   $paramod$5359f71b467cbf6635b3f48ce9586f35754e58e2\ecp5pll
+        1   $paramod$8a703f31ef66e4f51f3ecc7cdf696df00d7aaa47\usbh_host_hid
+        1   $paramod\usbh_report_decoder\c_autofire_hz=s32'00000000000000000000000000001010
+        1   $paramod\vga2dvid\c_shift_clock_synchronizer=1'0\c_ddr=1'1
+        1   NES
+        1   flash_loader
+        1   game_loader
+        1   sdram
+        1   sigma_delta_dac
+        1   vga
+        1   vga2
+

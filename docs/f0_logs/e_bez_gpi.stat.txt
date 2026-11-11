@@ -1,0 +1,28 @@
+
+44. Printing statistics.
+
+=== top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    12287 wires
+    25706 wire bits
+    12287 public wires
+    25706 public wire bits
+       27 ports
+       90 port bits
+    15473 cells
+       18   $_TBUF_
+      118   $scopeinfo
+      781   CCU2C
+       28   DP16KD
+        2   EHXPLLL
+      259   L6MUX21
+     8686   LUT4
+        2   MULT18X18D
+        4   ODDRX1F
+     1265   PFUMX
+       81   TRELLIS_DPR16X4
+     4228   TRELLIS_FF
+        1   USRMCLK
+

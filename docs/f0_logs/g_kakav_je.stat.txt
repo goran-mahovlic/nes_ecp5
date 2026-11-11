@@ -1,0 +1,32 @@
+
+43. Printing statistics.
+
+=== top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    14241 wires
+    27583 wire bits
+     1304 public wires
+     7550 public wire bits
+       27 ports
+       90 port bits
+    20284 cells
+     2024   CC_ADDF
+        6   CC_BRAM_20K
+       18   CC_BRAM_40K
+        5   CC_BUFG
+     5155   CC_DFF
+        5   CC_IBUF
+       18   CC_IOBUF
+     6208   CC_L2T4
+     1903   CC_L2T5
+      278   CC_LUT1
+     1989   CC_LUT2
+        2   CC_MULT
+     2064   CC_MX2
+      532   CC_MX4
+       67   CC_OBUF
+        4   CC_ODDR
+        6   CC_PLL
+

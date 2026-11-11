@@ -1,0 +1,628 @@
+Info: Using uarch 'gatemate' for device 'CCGM1A1'
+Info: Using timing mode 'WORST'.
+Info: Using performance mode 'ECONOMY'.
+
+Info: Detected regions..
+Info:     top G_dvi.genblk1.ddr0_blue u
+Info:     top G_dvi.genblk1.ddr0_clock u
+Info:     top G_dvi.genblk1.ddr0_green u
+Info:     top G_dvi.genblk1.ddr0_red u
+Info:     top clk_dvi_usb_inst g0_own.g1_own.p1 genblk1.genblk1.g48.u pll
+Info:     top clk_dvi_usb_inst g0_own.p0 genblk1.g125.u pll
+Info:     top clk_dvi_usb_inst g3_own.p3 genblk1.genblk1.genblk1.genblk1.g25.u pll
+Info:     top clk_sdram_sys_inst p2 genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.g214.u pll
+Info:     top
+Info: Parsing CCF file..
+Info: Assign cell region based on attributes..
+Info: Packing constants..
+Info: Running cleanups..
+Info:         24 CC_DFF cells removed (iteration 1)
+Info: Packing IOs..
+Warning: IO '$iopadmap$top.usb_fpga_pu_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_pu_dp' to pad 'IO_SA_A0'.
+Warning: IO '$iopadmap$top.usb_fpga_pu_dn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_pu_dn' to pad 'IO_SA_B0'.
+Warning: IO '$iopadmap$top.usb_fpga_otg_id' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_otg_id' to pad 'IO_SA_A1'.
+Warning: IO '$iopadmap$top.usb_fpga_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_dp' to pad 'IO_SA_B1'.
+Warning: IO '$iopadmap$top.usb_fpga_bd_dp[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_bd_dp[0]' to pad 'IO_SA_A2'.
+Warning: IO '$iopadmap$top.usb_fpga_bd_dn[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.usb_fpga_bd_dn[0]' to pad 'IO_SA_B2'.
+Warning: IO '$iopadmap$top.sdram_wen' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_wen' to pad 'IO_SA_A3'.
+Warning: IO '$iopadmap$top.sdram_rasn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_rasn' to pad 'IO_SA_B3'.
+Warning: IO '$iopadmap$top.sdram_dqm_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_dqm_1' to pad 'IO_SA_A4'.
+Warning: IO '$iopadmap$top.sdram_dqm' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_dqm' to pad 'IO_SA_B4'.
+Warning: IO '$iopadmap$top.sdram_d[9]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[9]' to pad 'IO_SA_A5'.
+Warning: IO '$iopadmap$top.sdram_d[8]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[8]' to pad 'IO_SA_B5'.
+Warning: IO '$iopadmap$top.sdram_d[7]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[7]' to pad 'IO_SA_A6'.
+Warning: IO '$iopadmap$top.sdram_d[6]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[6]' to pad 'IO_SA_B6'.
+Warning: IO '$iopadmap$top.sdram_d[5]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[5]' to pad 'IO_SA_A7'.
+Warning: IO '$iopadmap$top.sdram_d[4]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[4]' to pad 'IO_SA_B7'.
+Warning: IO '$iopadmap$top.sdram_d[3]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[3]' to pad 'IO_SA_A8'.
+Warning: IO '$iopadmap$top.sdram_d[2]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[2]' to pad 'IO_SA_B8'.
+Warning: IO '$iopadmap$top.sdram_d[1]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[1]' to pad 'IO_SB_A0'.
+Warning: IO '$iopadmap$top.sdram_d[15]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[15]' to pad 'IO_SB_B0'.
+Warning: IO '$iopadmap$top.sdram_d[14]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[14]' to pad 'IO_SB_A1'.
+Warning: IO '$iopadmap$top.sdram_d[13]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[13]' to pad 'IO_SB_B1'.
+Warning: IO '$iopadmap$top.sdram_d[12]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[12]' to pad 'IO_SB_A2'.
+Warning: IO '$iopadmap$top.sdram_d[11]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[11]' to pad 'IO_SB_B2'.
+Warning: IO '$iopadmap$top.sdram_d[10]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[10]' to pad 'IO_SB_A3'.
+Warning: IO '$iopadmap$top.sdram_d[0]' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_d[0]' to pad 'IO_SB_B3'.
+Warning: IO '$iopadmap$top.sdram_csn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_csn' to pad 'IO_SB_A4'.
+Warning: IO '$iopadmap$top.sdram_clk' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_clk' to pad 'IO_SB_B4'.
+Warning: IO '$iopadmap$top.sdram_cke' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_cke' to pad 'IO_SB_A5'.
+Warning: IO '$iopadmap$top.sdram_casn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_casn' to pad 'IO_SB_B5'.
+Warning: IO '$iopadmap$top.sdram_ba_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_ba_1' to pad 'IO_SB_A6'.
+Warning: IO '$iopadmap$top.sdram_ba' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_ba' to pad 'IO_SB_B6'.
+Warning: IO '$iopadmap$top.sdram_a_9' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_9' to pad 'IO_SB_A7'.
+Warning: IO '$iopadmap$top.sdram_a_8' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_8' to pad 'IO_SB_B7'.
+Warning: IO '$iopadmap$top.sdram_a_7' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_7' to pad 'IO_SB_B8'.
+Warning: IO '$iopadmap$top.sdram_a_6' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_6' to pad 'IO_WA_A0'.
+Warning: IO '$iopadmap$top.sdram_a_5' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_5' to pad 'IO_WA_B0'.
+Warning: IO '$iopadmap$top.sdram_a_4' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_4' to pad 'IO_WA_A1'.
+Warning: IO '$iopadmap$top.sdram_a_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_3' to pad 'IO_WA_B1'.
+Warning: IO '$iopadmap$top.sdram_a_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_2' to pad 'IO_WA_A2'.
+Warning: IO '$iopadmap$top.sdram_a_12' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_12' to pad 'IO_WA_B2'.
+Warning: IO '$iopadmap$top.sdram_a_11' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_11' to pad 'IO_WA_A3'.
+Warning: IO '$iopadmap$top.sdram_a_10' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_10' to pad 'IO_WA_B3'.
+Warning: IO '$iopadmap$top.sdram_a_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a_1' to pad 'IO_WA_A4'.
+Warning: IO '$iopadmap$top.sdram_a' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.sdram_a' to pad 'IO_WA_B4'.
+Warning: IO '$iopadmap$top.n_extrst' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.n_extrst' to pad 'IO_WA_A5'.
+Warning: IO '$iopadmap$top.led_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_3' to pad 'IO_WA_B5'.
+Warning: IO '$iopadmap$top.led_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_2' to pad 'IO_WA_A6'.
+Warning: IO '$iopadmap$top.led_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led_1' to pad 'IO_WA_B6'.
+Warning: IO '$iopadmap$top.led' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.led' to pad 'IO_WA_A7'.
+Warning: IO '$iopadmap$top.gpio_9' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_9' to pad 'IO_WA_B7'.
+Warning: IO '$iopadmap$top.gpio_8' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_8' to pad 'IO_WA_A8'.
+Warning: IO '$iopadmap$top.gpio_7' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_7' to pad 'IO_WA_B8'.
+Warning: IO '$iopadmap$top.gpio_6' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_6' to pad 'IO_WB_A0'.
+Warning: IO '$iopadmap$top.gpio_5' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_5' to pad 'IO_EA_A0'.
+Warning: IO '$iopadmap$top.gpio_4' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_4' to pad 'IO_WB_B0'.
+Warning: IO '$iopadmap$top.gpio_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_3' to pad 'IO_EA_B0'.
+Warning: IO '$iopadmap$top.gpio_27' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_27' to pad 'IO_WB_A1'.
+Warning: IO '$iopadmap$top.gpio_26' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_26' to pad 'IO_EA_A1'.
+Warning: IO '$iopadmap$top.gpio_25' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_25' to pad 'IO_WB_B1'.
+Warning: IO '$iopadmap$top.gpio_24' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_24' to pad 'IO_EA_B1'.
+Warning: IO '$iopadmap$top.gpio_23' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_23' to pad 'IO_WB_A2'.
+Warning: IO '$iopadmap$top.gpio_22' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_22' to pad 'IO_EA_A2'.
+Warning: IO '$iopadmap$top.gpio_21' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_21' to pad 'IO_WB_B2'.
+Warning: IO '$iopadmap$top.gpio_20' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_20' to pad 'IO_EA_B2'.
+Warning: IO '$iopadmap$top.gpio_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_2' to pad 'IO_WB_A3'.
+Warning: IO '$iopadmap$top.gpio_19' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_19' to pad 'IO_EA_A3'.
+Warning: IO '$iopadmap$top.gpio_18' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_18' to pad 'IO_WB_B3'.
+Warning: IO '$iopadmap$top.gpio_17' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_17' to pad 'IO_EA_B3'.
+Warning: IO '$iopadmap$top.gpio_16' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_16' to pad 'IO_WB_A4'.
+Warning: IO '$iopadmap$top.gpio_15' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_15' to pad 'IO_EA_A4'.
+Warning: IO '$iopadmap$top.gpio_14' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_14' to pad 'IO_WB_B4'.
+Warning: IO '$iopadmap$top.gpio_13' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_13' to pad 'IO_EA_B4'.
+Warning: IO '$iopadmap$top.gpio_12' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_12' to pad 'IO_WB_A5'.
+Warning: IO '$iopadmap$top.gpio_11' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_11' to pad 'IO_EA_A5'.
+Warning: IO '$iopadmap$top.gpio_10' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_10' to pad 'IO_WB_B5'.
+Warning: IO '$iopadmap$top.gpio_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio_1' to pad 'IO_EA_B5'.
+Warning: IO '$iopadmap$top.gpio' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpio' to pad 'IO_WB_A6'.
+Warning: IO '$iopadmap$top.gpdi_dp_3' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_3' to pad 'IO_EA_A6'.
+Warning: IO '$iopadmap$top.gpdi_dp_2' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_2' to pad 'IO_WB_B6'.
+Warning: IO '$iopadmap$top.gpdi_dp_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp_1' to pad 'IO_EA_B6'.
+Warning: IO '$iopadmap$top.gpdi_dp' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.gpdi_dp' to pad 'IO_WB_A7'.
+Warning: IO '$iopadmap$top.flash_wpn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_wpn' to pad 'IO_EA_A7'.
+Warning: IO '$iopadmap$top.flash_mosi' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_mosi' to pad 'IO_WB_B7'.
+Warning: IO '$iopadmap$top.flash_miso' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_miso' to pad 'IO_EA_B7'.
+Warning: IO '$iopadmap$top.flash_holdn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_holdn' to pad 'IO_WB_A8'.
+Warning: IO '$iopadmap$top.flash_csn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.flash_csn' to pad 'IO_EA_A8'.
+Info:     Constraining '$iopadmap$top.clk_25mhz' to pad 'IO_SB_A8'.
+Warning: IO '$iopadmap$top.btn_1' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.btn_1' to pad 'IO_WB_B8'.
+Warning: IO '$iopadmap$top.btn' is unconstrained in CCF and will be automatically placed.
+Info:     Constraining '$iopadmap$top.btn' to pad 'IO_EA_B8'.
+Info: Insert clocking cells..
+Info: Packing PLLs..
+Info:     PLL fout= 21.4286 MHz (fout error 0.00000% of requested 21.4286 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161560' to 21.43 MHz
+Info:     PLL fout= 25.0000 MHz (fout error 0.00000% of requested 25.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161562' to 25.00 MHz
+Info:     PLL fout= 125.0000 MHz (fout error 0.00000% of requested 125.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161564' to 125.00 MHz
+Info:     PLL fout= 47.9167 MHz (fout error 0.17361% of requested 48.0000 MHz)
+Info: constraining clock net '$auto$clkbufmap.cc:269:execute$161566' to 48.00 MHz
+Info: Sort BUFGs..
+Info: Packing BUFGs..
+Info: Packing IO SELs..
+Info: Packing misc..
+Info: Packing RAMs..
+Info: Packing SERDES..
+Info: Packing multipliers...
+Info:     Configuring '$flatten\nes_i.\multi_mapper.\snd_n163.\n163.$mappers/Namco.sv:343$mul$5029' as a 8-bit * 8-bit = 8-bit multiplier.
+Info:         Created 41 CPEs.
+Info:     Configuring '$flatten\nes_i.\multi_mapper.\mmc5.$mappers/MMC5.sv:83$mul$3855' as a 12-bit * 12-bit = 16-bit multiplier.
+Info:         Created 73 CPEs.
+Info: Packing ADDFs..
+Info: Packing CPEs..
+Info: Removing unused constants..
+Info:     Removed unused VCC cell.
+Info:     Removed unused GND cell.
+Info: Fix cell assigned regions..
+Info: Checksum: 0xd803ed70
+
+Info: Device utilisation:
+Info: 	            USR_RSTN:       0/      1     0%
+Info: 	            CPE_COMP:      50/  20480     0%
+Info: 	         CPE_CPLINES:     317/  20480     1%
+Info: 	               IOSEL:      90/    162    55%
+Info: 	                GPIO:      90/    162    55%
+Info: 	               CLKIN:       1/      1   100%
+Info: 	              GLBOUT:       1/      1   100%
+Info: 	                 PLL:       4/      4   100%
+Info: 	            CFG_CTRL:       0/      1     0%
+Info: 	              SERDES:       0/      1     0%
+Info: 	              CPE_LT:   20880/  40960    50%
+Info: 	              CPE_FF:    5131/  40960    12%
+Info: 	           CPE_RAMIO:    1590/  40960     3%
+Info: 	            RAM_HALF:      42/     64    65%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 14750 cells, random placement wirelen = 2124838.
+Info: Running main analytical placer, max placement attempts per cell = 103622408.
+Info: HeAP Placer Time: 55.55s
+Info:   of which solving equations: 11.51s
+Info:   of which spreading cells: 1.72s
+Info:   of which strict legalisation: 37.21s
+
+Info: Running simulated annealing placer for refinement.
+Info: SA placement time 74.10s
+
+Info: Max frequency for clock      'G_dvi.genblk1.ddr0_blue.SCLK': 78.38 MHz (FAIL at 125.00 MHz)
+Info: Max frequency for clock 'G_dvi.vga2dvid_instance.clk_pixel': 62.30 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock                         'clk_48MHz': 88.45 MHz (PASS at 48.00 MHz)
+Info: Max frequency for clock                 'G_dvi.vga_i.I_CLK': 25.35 MHz (PASS at 21.43 MHz)
+
+Info: Max delay <async>                                   -> posedge G_dvi.vga_i.I_CLK           : 16.66 ns
+Info: Max delay <async>                                   -> posedge clk_48MHz                   : 8.16 ns
+Info: Max delay posedge G_dvi.vga2dvid_instance.clk_pixel -> posedge G_dvi.genblk1.ddr0_blue.SCLK: 2.00 ns
+Info: Max delay posedge clk_48MHz                         -> posedge G_dvi.vga_i.I_CLK           : 2.76 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 17 endpoint(s)
+Info:          + represents [1,17) endpoint(s)
+Info: [ -6579,  -3960) |+
+Info: [ -3960,  -1341) |+
+Info: [ -1341,   1278) |+
+Info: [  1278,   3897) |+
+Info: [  3897,   6516) |*+
+Info: [  6516,   9135) |+
+Info: [  9135,  11754) |+
+Info: [ 11754,  14373) |***************+
+Info: [ 14373,  16992) |******************************+
+Info: [ 16992,  19611) |***********************************+
+Info: [ 19611,  22230) |*******************************+
+Info: [ 22230,  24849) |************************************************************ 
+Info: [ 24849,  27468) |******************************************+
+Info: [ 27468,  30087) |*******************************************+
+Info: [ 30087,  32706) |**********************************************+
+Info: [ 32706,  35325) |*********************************************+
+Info: [ 35325,  37944) |***************************************+
+Info: [ 37944,  40563) |***********************************+
+Info: [ 40563,  43182) |****************+
+Info: [ 43182,  45801) |**************+
+Info: Checksum: 0xabb1bf15
+Info: Repacking RAMs..
+Info: Repacking CPEs..
+Info: Remove unused clocking cells..
+Info: Routing multipliers...
+Info: Routing clock nets...
+Info:     routing net 'clk_48MHz' to 405 users
+Info:     routing net 'G_dvi.genblk1.ddr0_blue.SCLK' to 46 users
+Info:     routing net 'G_dvi.vga2dvid_instance.clk_pixel' to 177 users
+Info:     routing net 'G_dvi.vga_i.I_CLK' to 4552 users
+Info: Clock router time 41.56s.
+Info: Running router2...
+Info: Setting up routing resources...
+Info: Running main router loop...
+Info: Checksum: 0xbc758d75
+Info: Router2 time 287.63s
+
+Info: Critical path report for clock 'G_dvi.genblk1.ddr0_blue.SCLK' (posedge -> negedge):
+Info:       type curr  total name
+Info:   clk-skew  3.16  3.16 Net G_dvi.genblk1.ddr0_blue.SCLK (85,91) -> (85,133)
+Info:                          Sink $iopadmap$top.gpdi_dp_1$iosel.CLOCK3
+Info:                          Defined in:
+Info:                               f0/gm_stubs.v:103.43-103.47
+Info:   clk-to-q  0.78  3.94 Source $auto$ff.cc:337:slice$41577.DOUT
+Info:    routing  4.42  8.35 Net G_dvi.vga2dvid_instance.shift_green[1] (85,91) -> (85,130)
+Info:                          Sink $iopadmap$top.gpdi_dp_1$iosel$OUT1_cpe.D0_10
+Info:                          Defined in:
+Info:                               vga2dvid.v:94.39-94.50
+Info:      logic  0.72  9.07 Source $iopadmap$top.gpdi_dp_1$iosel$OUT1_cpe.OUT
+Info:    routing  0.00  9.07 Net $iopadmap$top.gpdi_dp_1$iosel$OUT1_cpe$out (85,130) -> (85,130)
+Info:                          Sink $iopadmap$top.gpdi_dp_1$iosel$OUT1_ramo.I
+Info:      logic  0.25  9.32 Source $iopadmap$top.gpdi_dp_1$iosel$OUT1_ramo.RAM_O
+Info:    routing  0.00  9.32 Net $iopadmap$top.gpdi_dp_1$iosel$OUT1_cpe$ram_o (85,130) -> (85,133)
+Info:                          Sink $iopadmap$top.gpdi_dp_1$iosel.OUT1
+Info:      setup  0.13  9.45 Source $iopadmap$top.gpdi_dp_1$iosel.OUT1
+Info: 1.88 ns logic, 7.58 ns routing
+
+Info: Critical path report for clock 'G_dvi.vga2dvid_instance.clk_pixel' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-skew -4.11 -4.11 Net G_dvi.vga2dvid_instance.clk_pixel (131,67) -> (79,39)
+Info:                          Sink $auto$ff.cc:337:slice$91930.CLK_INT
+Info:                          Defined in:
+Info:                               vga2dvid.v:63.12-63.21
+Info:   clk-to-q  3.80 -0.32 Source G_dvi.vga_i.framebuffer_i.mem.0.8.DOB[0]
+Info:    routing  0.26 -0.06 Net G_dvi.vga_i.framebuffer_i.mem.0.8$DOB[0]_cpe$ram_i (131,67) -> (132,67)
+Info:                          Sink G_dvi.vga_i.framebuffer_i.mem.0.8$DOB[0]_rami.RAM_I
+Info:      logic  0.00 -0.06 Source G_dvi.vga_i.framebuffer_i.mem.0.8$DOB[0]_rami.OUT
+Info:    routing  7.85  7.79 Net $abc$143447$auto$memory_libmap.cc:1680:generate_mux$30219[2] (132,67) -> (70,52)
+Info:                          Sink $abc$143447$blif$143447$9957.D0_00
+Info:      logic  0.80  8.60 Source $abc$143447$blif$143447$9957.OUT
+Info:    routing  2.54  11.13 Net $abc$143447$new_n20620 (70,52) -> (76,48)
+Info:                          Sink $abc$143447$blif$143447$9958.D1_01
+Info:      logic  0.79  11.92 Source $abc$143447$blif$143447$9958.OUT
+Info:    routing  0.74  12.66 Net $auto$simplemap.cc:346:simplemap_bmux$49186[20] (76,48) -> (76,49)
+Info:                          Sink $auto$muxcover.cc:537:implement_best_cover$142663.IN4
+Info:      logic  0.67  13.34 Source $auto$muxcover.cc:537:implement_best_cover$142663.OUT1
+Info:    routing  10.23  23.56 Net G_dvi.vga_i.framebuffer_i.q_b[2] (76,49) -> (87,66)
+Info:                          Sink $abc$143447$blif$143447$646.D0_10
+Info:                          Defined in:
+Info:                               framebuffer.v:9.23-9.26
+Info:      logic  0.80  24.37 Source $abc$143447$blif$143447$646.OUT
+Info:    routing  4.04  28.41 Net $abc$143447$memory$flatten\G_dvi.vga_i.$auto$proc_rom.cc:155:do_switch$6739$rdmux[0][2][0]$a$32450[1] (87,66) -> (81,55)
+Info:                          Sink $abc$143447$blif$143447$11792.D0_01
+Info:      logic  0.73  29.14 Source $abc$143447$blif$143447$11792.OUT
+Info:    routing  2.42  31.56 Net $abc$143447$new_n22455 (81,55) -> (83,54)
+Info:                          Sink $abc$143447$blif$143447$11793.D0_01
+Info:      logic  0.62  32.19 Source $abc$143447$blif$143447$11793.OUT
+Info:    routing  1.43  33.61 Net $memory$flatten\G_dvi.vga_i.$auto$proc_rom.cc:155:do_switch$6739$rdmux[0][1][1]$a$32447[1] (83,54) -> (82,54)
+Info:                          Sink $auto$muxcover.cc:537:implement_best_cover$142701.IN3
+Info:      logic  0.70  34.31 Source $auto$muxcover.cc:537:implement_best_cover$142701.OUT1
+Info:    routing  1.46  35.78 Net G_dvi.vga_i.rgb[3] (82,54) -> (80,53)
+Info:                          Sink $abc$143447$blif$143447$5894.D0_01
+Info:                          Defined in:
+Info:                               vga.v:44.12-44.15
+Info:      logic  0.62  36.40 Source $abc$143447$blif$143447$5894.OUT
+Info:    routing  1.45  37.85 Net $abc$143447$new_n16557 (80,53) -> (81,53)
+Info:                          Sink $abc$143447$blif$143447$13890.D0_00
+Info:      logic  0.72  38.57 Source $abc$143447$blif$143447$13890.OUT
+Info:    routing  1.66  40.23 Net $auto$maccmap.cc:114:fulladd$39504.X[0] (81,53) -> (82,51)
+Info:                          Sink $auto$maccmap.cc:240:synth$39505.slice[1].addf_i.D0_01
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20261016/lib/../share/yosys/techmap.v:200.21-200.22
+Info:      logic  0.72  40.96 Source $auto$maccmap.cc:240:synth$39505.slice[1].addf_i.COUTY1
+Info:    routing  0.00  40.96 Net $auto$maccmap.cc:240:synth$39505.CO[1] (82,51) -> (82,52)
+Info:                          Sink $auto$maccmap.cc:240:synth$39505.slice[3].addf_i.CINY1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20261016/lib/../share/yosys/gatemate/arith_map.v:37.23-37.25
+Info:      logic  0.56  41.51 Source $auto$maccmap.cc:240:synth$39505.slice[3].addf_i.OUT2
+Info:    routing  3.77  45.28 Net G_dvi.vga2dvid_instance.u23.ones[3] (82,52) -> (82,49)
+Info:                          Sink $abc$143447$blif$143447$3459.D0_10
+Info:                          Defined in:
+Info:                               tmds_encoder.v:70.12-70.16
+Info:      logic  0.80  46.08 Source $abc$143447$blif$143447$3459.OUT
+Info:    routing  1.25  47.33 Net G_dvi.vga2dvid_instance.u23.data_word[1] (82,49) -> (81,48)
+Info:                          Sink $auto$gatemate_foldinv.cc:169:fold_output_inverters$156377.D0_01
+Info:                          Defined in:
+Info:                               tmds_encoder.v:72.11-72.24
+Info:      logic  0.73  48.07 Source $auto$gatemate_foldinv.cc:169:fold_output_inverters$156377.OUT
+Info:    routing  1.92  49.99 Net $abc$143447$new_n19351 (81,48) -> (81,46)
+Info:                          Sink $abc$143447$blif$143447$12728.D1_00
+Info:      logic  0.85  50.84 Source $abc$143447$blif$143447$12728.OUT
+Info:    routing  1.45  52.29 Net $auto$maccmap.cc:114:fulladd$39485.X[0] (81,46) -> (80,46)
+Info:                          Sink $auto$maccmap.cc:240:synth$39486.slice[1].addf_i.D0_01
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20261016/lib/../share/yosys/techmap.v:200.21-200.22
+Info:      logic  0.72  53.02 Source $auto$maccmap.cc:240:synth$39486.slice[1].addf_i.COUTY1
+Info:    routing  0.00  53.02 Net $auto$maccmap.cc:240:synth$39486.CO[1] (80,46) -> (80,47)
+Info:                          Sink $auto$maccmap.cc:240:synth$39486.slice[3].addf_i.CINY1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20261016/lib/../share/yosys/gatemate/arith_map.v:37.23-37.25
+Info:      logic  0.56  53.57 Source $auto$maccmap.cc:240:synth$39486.slice[3].addf_i.OUT2
+Info:    routing  3.22  56.79 Net G_dvi.vga2dvid_instance.u23.data_word_disparity[3] (80,47) -> (78,46)
+Info:                          Sink $abc$143447$blif$143447$6460.D1_10
+Info:                          Defined in:
+Info:                               tmds_encoder.v:73.12-73.31
+Info:      logic  0.62  57.41 Source $abc$143447$blif$143447$6460.OUT
+Info:    routing  1.94  59.35 Net $auto$alumacc.cc:578:replace_alu$29637.X[3] (78,46) -> (78,46)
+Info:                          Sink $abc$143447$blif$143447$6461.D1_01
+Info:                          Defined in:
+Info:                               /home/klaudio/app/raid/tools/oss-cad-suite-20261016/lib/../share/yosys/techmap.v:200.24-200.25
+Info:      logic  0.79  60.14 Source $abc$143447$blif$143447$6461.OUT
+Info:    routing  5.31  65.46 Net $abc$143447$auto$muxcover.cc:199:prepare_decode_mux$132543 (78,46) -> (79,40)
+Info:                          Sink $auto$muxcover.cc:537:implement_best_cover$142751.D0_02
+Info:      logic  0.72  66.17 Source $auto$muxcover.cc:537:implement_best_cover$142751.OUT1
+Info:    routing  1.90  68.07 Net $abc$143447$flatten\G_dvi.vga2dvid_instance.\u23.$procmux$8651_Y[7] (79,40) -> (79,39)
+Info:                          Sink $abc$143447$blif$143447$6111.D0_00
+Info:      logic  0.72  68.79 Source $abc$143447$blif$143447$6111.OUT
+Info:    routing  0.00  68.79 Net $abc$143447$flatten\G_dvi.vga2dvid_instance.\u23.$0\encoded[9:0][7] (79,39) -> (79,39)
+Info:                          Sink $auto$ff.cc:337:slice$91930.DIN
+Info:                          Defined in:
+Info:                               tmds_encoder.v:112.3-152.6
+Info:      setup  0.13  68.92 Source $auto$ff.cc:337:slice$91930.DIN
+Info: 18.19 ns logic, 50.73 ns routing
+
+Info: Critical path report for clock 'clk_48MHz' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-skew  0.58  0.58 Net clk_48MHz (75,30) -> (76,24)
+Info:                          Sink $auto$ff.cc:337:slice$44478.CLK_INT
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/g_fit4_s2/top.v:79.8-79.17
+Info:   clk-to-q  0.78  1.36 Source $auto$ff.cc:337:slice$46421.DOUT
+Info:    routing  2.28  3.63 Net genblk3.us2_hid_host_inst.usb_sie_core.state_q[2] (75,30) -> (74,28)
+Info:                          Sink $abc$143447$blif$143447$7160.D1_00
+Info:                          Defined in:
+Info:                               usb/usbhost/usbh_sie.v:113.21-113.28
+Info:      logic  0.85  4.49 Source $abc$143447$blif$143447$7160.OUT
+Info:    routing  0.77  5.26 Net $abc$143447$new_n17823 (74,28) -> (74,26)
+Info:                          Sink $abc$143447$blif$143447$7162.D1_10
+Info:      logic  0.73  5.99 Source $abc$143447$blif$143447$7162.OUT
+Info:    routing  10.13  16.13 Net $abc$143447$new_n17825 (74,26) -> (77,25)
+Info:                          Sink $abc$143447$blif$143447$14072.D1_00
+Info:      logic  0.75  16.88 Source $abc$143447$blif$143447$14072.OUT
+Info:    routing  1.28  18.17 Net $abc$143447$new_n24735 (77,25) -> (77,24)
+Info:                          Sink $abc$143447$blif$143447$14073.D1_00
+Info:      logic  0.85  19.02 Source $abc$143447$blif$143447$14073.OUT
+Info:    routing  1.47  20.49 Net $abc$143447$new_n24736 (77,24) -> (76,24)
+Info:                          Sink $abc$143447$blif$143447$14075.D1_00
+Info:      logic  0.75  21.24 Source $abc$143447$blif$143447$14075.OUT
+Info:    routing  0.00  21.24 Net $abc$143447$auto$rtlil.cc:3448:MuxGate$125833 (76,24) -> (76,24)
+Info:                          Sink $auto$ff.cc:337:slice$44478.DIN
+Info:      setup  0.13  21.37 Source $auto$ff.cc:337:slice$44478.DIN
+Info: 4.85 ns logic, 16.52 ns routing
+
+Info: Critical path report for clock 'G_dvi.vga_i.I_CLK' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-skew -0.89 -0.89 Net G_dvi.vga_i.I_CLK (79,101) -> (69,66)
+Info:                          Sink $auto$ff.cc:337:slice$45615.CLK_INT
+Info:                          Defined in:
+Info:                               vga.v:30.9-30.14
+Info:   clk-to-q  0.78 -0.11 Source $auto$ff.cc:337:slice$42659.DOUT
+Info:    routing  2.35  2.24 Net nes_i.cpu.DEBUG[I][0] (79,101) -> (81,104)
+Info:                          Sink $abc$143447$blif$143447$2718.D0_00
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/g_fit4_s2/t65_ghdl.v:1079.8-1079.13
+Info:      logic  0.72  2.96 Source $abc$143447$blif$143447$2718.OUT
+Info:    routing  5.92  8.88 Net $abc$143447$new_n13381 (81,104) -> (75,109)
+Info:                          Sink $abc$143447$blif$143447$4549.D1_00
+Info:      logic  0.75  9.63 Source $abc$143447$blif$143447$4549.OUT
+Info:    routing  8.24  17.88 Net $abc$143447$new_n15212 (75,109) -> (72,94)
+Info:                          Sink $abc$143447$blif$143447$9603.D1_00
+Info:      logic  0.85  18.73 Source $abc$143447$blif$143447$9603.OUT
+Info:    routing  3.15  21.88 Net nes_i.cpu.n176[6] (72,94) -> (60,84)
+Info:                          Sink $auto$muxcover.cc:537:implement_best_cover$142293.IN1
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/g_fit4_s2/t65_ghdl.v:6610.14-6610.18
+Info:      logic  0.69  22.57 Source $auto$muxcover.cc:537:implement_best_cover$142293.OUT1
+Info:    routing  1.92  24.49 Net memory_addr_cpu[6] (60,84) -> (60,85)
+Info:                          Sink $abc$143447$blif$143447$2431.D1_01
+Info:                          Defined in:
+Info:                               mappers/Sachen.sv:40.13-40.21
+Info:      logic  0.79  25.28 Source $abc$143447$blif$143447$2431.OUT
+Info:    routing  2.77  28.04 Net $abc$143447$new_n13094 (60,85) -> (50,83)
+Info:                          Sink $abc$143447$blif$143447$2443.D0_00
+Info:      logic  0.72  28.76 Source $abc$143447$blif$143447$2443.OUT
+Info:    routing  1.74  30.51 Net $abc$143447$new_n13106 (50,83) -> (50,75)
+Info:                          Sink $abc$143447$blif$143447$2445.D0_01
+Info:      logic  0.62  31.13 Source $abc$143447$blif$143447$2445.OUT
+Info:    routing  1.80  32.93 Net $abc$143447$new_n13108 (50,75) -> (48,74)
+Info:                          Sink $abc$143447$blif$143447$2559.D0_10
+Info:      logic  0.80  33.73 Source $abc$143447$blif$143447$2559.OUT
+Info:    routing  4.62  38.35 Net $abc$143447$new_n13222 (48,74) -> (26,102)
+Info:                          Sink $abc$143447$blif$143447$2567.D0_01
+Info:      logic  0.62  38.98 Source $abc$143447$blif$143447$2567.OUT
+Info:    routing  0.77  39.75 Net $abc$143447$new_n13230 (26,102) -> (24,102)
+Info:                          Sink $abc$143447$blif$143447$2568.D0_01
+Info:      logic  0.62  40.37 Source $abc$143447$blif$143447$2568.OUT
+Info:    routing  2.86  43.23 Net $abc$143447$new_n13231 (24,102) -> (22,81)
+Info:                          Sink $abc$143447$blif$143447$2609.D0_01
+Info:      logic  0.62  43.85 Source $abc$143447$blif$143447$2609.OUT
+Info:    routing  2.83  46.68 Net $abc$143447$new_n13272 (22,81) -> (24,75)
+Info:                          Sink $abc$143447$blif$143447$2682.D0_00
+Info:      logic  0.80  47.49 Source $abc$143447$blif$143447$2682.OUT
+Info:    routing  6.76  54.24 Net $abc$143447$new_n13345 (24,75) -> (48,68)
+Info:                          Sink $abc$143447$blif$143447$7720.D0_01
+Info:      logic  0.73  54.97 Source $abc$143447$blif$143447$7720.OUT
+Info:    routing  2.47  57.44 Net $abc$143447$new_n18383 (48,68) -> (38,67)
+Info:                          Sink $abc$143447$blif$143447$7721.D1_01
+Info:      logic  0.79  58.23 Source $abc$143447$blif$143447$7721.OUT
+Info:    routing  3.70  61.94 Net $abc$143447$flatten\nes_i.$6\raw_data_bus[7:0][3] (38,67) -> (60,67)
+Info:                          Sink $auto$muxcover.cc:537:implement_best_cover$141754.IN1
+Info:                          Defined in:
+Info:                               nes.v:525.1-544.4
+Info:      logic  0.69  62.63 Source $auto$muxcover.cc:537:implement_best_cover$141754.OUT1
+Info:    routing  4.81  67.44 Net $abc$143447$flatten\nes_i.$2\raw_data_bus[7:0][3] (60,67) -> (69,66)
+Info:                          Sink $abc$143447$blif$143447$14535.D0_00
+Info:                          Defined in:
+Info:                               nes.v:525.1-544.4
+Info:      logic  0.80  68.25 Source $abc$143447$blif$143447$14535.OUT
+Info:    routing  0.74  68.98 Net $abc$143447$new_n25198 (69,66) -> (69,66)
+Info:                          Sink $abc$143447$blif$143447$14536.D1_10
+Info:      logic  0.62  69.61 Source $abc$143447$blif$143447$14536.OUT
+Info:    routing  0.00  69.61 Net $abc$143447$auto$rtlil.cc:3448:MuxGate$120685 (69,66) -> (69,66)
+Info:                          Sink $auto$ff.cc:337:slice$45615.DIN
+Info:      setup  0.13  69.74 Source $auto$ff.cc:337:slice$45615.DIN
+Info: 13.18 ns logic, 56.56 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge G_dvi.vga_i.I_CLK':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source $iopadmap$top.btn.Y
+Info:    routing  0.00  0.00 Net $iopadmap$top.btn$conn$Y (93,133) -> (93,133)
+Info:                          Sink $iopadmap$top.btn$iosel.GPIO_IN
+Info:      logic  0.51  0.51 Source $iopadmap$top.btn$iosel.IN1
+Info:    routing  12.04  12.55 Net btn_start (93,133) -> (60,16)
+Info:                          Sink $auto$ff.cc:337:slice$52834$lt.D0_10
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/g_fit4_s2/top.v:58.9-58.18
+Info:      logic  0.72  13.27 Source $auto$ff.cc:337:slice$52834$lt.OUT
+Info:    routing  0.00  13.27 Net $auto$ff.cc:337:slice$52834$di (60,16) -> (60,16)
+Info:                          Sink $auto$ff.cc:337:slice$52834.DIN
+Info:      setup  0.13  13.40 Source $auto$ff.cc:337:slice$52834.DIN
+Info: 1.36 ns logic, 12.04 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk_48MHz':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source $iopadmap$top.usb_fpga_dp.Y
+Info:    routing  0.00  0.00 Net $iopadmap$top.usb_fpga_dp$conn$Y (0,33) -> (0,33)
+Info:                          Sink $iopadmap$top.usb_fpga_dp$iosel.GPIO_IN
+Info:      logic  0.51  0.51 Source $iopadmap$top.usb_fpga_dp$iosel.IN1
+Info:    routing  6.87  7.39 Net genblk3.us2_hid_host_inst.E_usb11_phy.E_rx_phy_emard.usb_dif (0,33) -> (47,15)
+Info:                          Sink $auto$ff.cc:337:slice$48101$lt.D0_10
+Info:                          Defined in:
+Info:                               usb/usb11_phy_vhdl/usb_rx_phy.v:37.12-37.19
+Info:      logic  0.72  8.10 Source $auto$ff.cc:337:slice$48101$lt.OUT
+Info:    routing  0.00  8.10 Net $auto$ff.cc:337:slice$48101$di (47,15) -> (47,15)
+Info:                          Sink $auto$ff.cc:337:slice$48101.DIN
+Info:      setup  0.13  8.23 Source $auto$ff.cc:337:slice$48101.DIN
+Info: 1.36 ns logic, 6.87 ns routing
+
+Info: Critical path report for cross-domain path 'posedge G_dvi.vga2dvid_instance.clk_pixel' -> 'posedge G_dvi.genblk1.ddr0_blue.SCLK':
+Info:       type curr  total name
+Info:   clk-to-q  0.78  0.78 Source $auto$ff.cc:337:slice$92213.DOUT
+Info:    routing  2.33  3.11 Net G_dvi.vga2dvid_instance.latched_blue[7] (80,39) -> (80,40)
+Info:                          Sink $abc$143447$blif$143447$5782.D1_01
+Info:                          Defined in:
+Info:                               vga2dvid.v:93.73-93.85
+Info:      logic  0.66  3.77 Source $abc$143447$blif$143447$5782.OUT
+Info:    routing  0.00  3.77 Net $abc$143447$auto$wreduce.cc:514:run$28474[7] (80,40) -> (80,40)
+Info:                          Sink $auto$ff.cc:337:slice$41518.DIN
+Info:                          Defined in:
+Info:                               vga2dvid.v:220.7-247.8
+Info:      setup  0.13  3.90 Source $auto$ff.cc:337:slice$41518.DIN
+Info: 1.57 ns logic, 2.33 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk_48MHz' -> 'posedge G_dvi.vga_i.I_CLK':
+Info:       type curr  total name
+Info:   clk-to-q  0.78  0.78 Source $auto$ff.cc:337:slice$91384.DOUT
+Info:    routing  1.27  2.05 Net genblk3.usbh_report_decoder_inst.o_btn[1] (61,6) -> (60,6)
+Info:                          Sink $abc$143447$blif$143447$12074.D1_10
+Info:                          Defined in:
+Info:                               usb/report_decoder/usbh_report_decoder_xbox360.v:14.23-14.28
+Info:      logic  0.73  2.78 Source $abc$143447$blif$143447$12074.OUT
+Info:    routing  1.86  4.64 Net $abc$143447$new_n22737 (60,6) -> (60,6)
+Info:                          Sink $abc$143447$blif$143447$12075.D0_00
+Info:      logic  0.72  5.36 Source $abc$143447$blif$143447$12075.OUT
+Info:    routing  0.00  5.36 Net $0\joypad_bits[7:0][1] (60,6) -> (60,6)
+Info:                          Sink $auto$ff.cc:337:slice$49839.DIN
+Info:                          Defined in:
+Info:                               /home/klaudio/app/tmp/zadaci/TASK-6067_nes-gatemate-f0-jelena-okvir/f0out/g_fit4_s2/top.v:420.7-431.10
+Info:      setup  0.13  5.49 Source $auto$ff.cc:337:slice$49839.DIN
+Info: 2.36 ns logic, 3.13 ns routing
+
+Warning: Max frequency for clock      'G_dvi.genblk1.ddr0_blue.SCLK': 79.42 MHz (FAIL at 125.00 MHz)
+Warning: Max frequency for clock 'G_dvi.vga2dvid_instance.clk_pixel': 14.51 MHz (FAIL at 25.00 MHz)
+Warning: Max frequency for clock                         'clk_48MHz': 46.79 MHz (FAIL at 48.00 MHz)
+Warning: Max frequency for clock                 'G_dvi.vga_i.I_CLK': 14.34 MHz (FAIL at 21.43 MHz)
+
+Info: Max delay <async>                                   -> posedge G_dvi.vga_i.I_CLK           : 13.40 ns
+Info: Max delay <async>                                   -> posedge clk_48MHz                   : 8.23 ns
+Info: Max delay posedge G_dvi.vga2dvid_instance.clk_pixel -> posedge G_dvi.genblk1.ddr0_blue.SCLK: 3.90 ns
+Info: Max delay posedge clk_48MHz                         -> posedge G_dvi.vga_i.I_CLK           : 5.49 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 16 endpoint(s)
+Info:          + represents [1,16) endpoint(s)
+Info: [-28919, -25234) |+
+Info: [-25234, -21549) |*+
+Info: [-21549, -17864) |+
+Info: [-17864, -14179) |**+
+Info: [-14179, -10494) |*******+
+Info: [-10494,  -6809) |************+
+Info: [ -6809,  -3124) |****************************+
+Info: [ -3124,    561) |******************************************+
+Info: [   561,   4246) |*******************************************+
+Info: [  4246,   7931) |****************************************+
+Info: [  7931,  11616) |******************************+
+Info: [ 11616,  15301) |*********************+
+Info: [ 15301,  18986) |******************************+
+Info: [ 18986,  22671) |***********************+
+Info: [ 22671,  26356) |************************************+
+Info: [ 26356,  30041) |************************************************************ 
+Info: [ 30041,  33726) |*******************************************+
+Info: [ 33726,  37411) |************************+
+Info: [ 37411,  41096) |**************+
+Info: [ 41096,  44781) |**********+
+Info: Update configuration based on routing..
+93 warnings, 0 errors
+
+Info: Program finished normally.
