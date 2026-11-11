@@ -1,0 +1,16 @@
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+  UART: F1 T=1 S=0 P=0 U=0 N=0 L=11 R=0000
+  UART: F1 T=2 S=12500 P=2500 U=595 N=1072 L=11 R=0000
+  UART: F1 T=3 S=12500 P=2500 U=595 N=1071 L=11 R=0000
+  ok   redak se parsira (7 polja)
+  ok   S=12500 (ocekivano 12500)
+  ok   P=2500 (ocekivano 2500 = S/5)
+  ok   U=595 (ocekivano 595,2 = S/21)
+  ok   N=1071 (ocekivano 1071,4)
+  ok   L=11 (oba PLL-a u locku)
+  ok   R=0000 (nijedna domena u resetu)
+  ok   T broji sekunde (redak 3)
+  ok   LED5/6 (lock) svijetle (aktivne u 0)
+F1 tb_f1_clkmeter: PASS 9 FAIL 0
+tb_f1_clkmeter.v:44: $finish called at 382380000000 (1fs)

@@ -1,0 +1,1 @@
+6c9f6d9266d057c1e9e354af06ef21e823b1d5b89ed9a4447251302b936567b5  /home/klaudio/app/raid/projekti/nes_ecp5/build/f1/clkmeter/f1_clkmeter.bit

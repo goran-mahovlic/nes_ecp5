@@ -1,0 +1,29 @@
+
+12. Printing statistics.
+
+=== f1_clkmeter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      801 wires
+     3226 wire bits
+       92 public wires
+     1093 public wire bits
+        6 ports
+       15 port bits
+     2372 cells
+      398   CC_ADDF
+        4   CC_BUFG
+     1046   CC_DFF
+        4   CC_IBUF
+      327   CC_L2T4
+      117   CC_L2T5
+      123   CC_LUT1
+      245   CC_LUT2
+       79   CC_MX2
+       14   CC_MX4
+       11   CC_OBUF
+        1   CC_ODDR
+        2   CC_PLL
+        1   CC_USR_RSTN
+

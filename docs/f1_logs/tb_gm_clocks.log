@@ -1,0 +1,21 @@
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+F1 tb_gm_clocks: start
+  ok   prije locka: svi reseti domena = 1
+  ok   prije locka: locked_* = 0
+  ok   nakon locka (+2 us): svi reseti otpusteni
+  bridova u 200 us: S=25000 P=5000 U=1191 N=2143
+  ok   clk_shift 125 MHz (25000/25000)
+  ok   clk_pixel = shift/5 (5000/5000)
+  ok   clk_usb = shift/21 (1191/1190.5)
+  ok   clk_nes 10,714 MHz (2143/2142.9)
+  ok   clk_pixel ispuna 70 % kao LiteX divide_5 (vis 28000..28000 ps)
+  ok   sdram_clk = ~clk_nes (0/4286 krivih)
+  ok   reset domene nikad otpusten bez locka
+  ok   otpustanje reseta sinkrono s vlastitim taktom
+  ok   rst_i=1: locked_* odmah 0
+  ok   rst_i=1: reseti domena odmah 1 (asinkrono)
+  ok   rst_i=0: reseti ponovno otpusteni
+  ok   nakon rst_i: redoslijed i dalje ispravan
+F1 tb_gm_clocks: PASS 15 FAIL 0
+tb_gm_clocks.v:98: $finish called at 225021000000 (1fs)
