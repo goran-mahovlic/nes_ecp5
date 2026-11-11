@@ -14,7 +14,10 @@ module top
   // choose one: C_flash_loader or C_esp32_loader
   parameter C_flash_loader=1, // fujprog -j flash -f 0x200000 100in1.img
   parameter C_esp32_loader=0, // usage: import nes # for OSD press together A B SELECT START or all 4 directions
-  parameter c_ddr    =  1  // 0:SDR 1:DDR
+  parameter c_ddr    =  1, // 0:SDR 1:DDR
+  // F0 (gatemate grana): iskljucivanje izlaza samo za mjerenje velicine; zadano = master
+  parameter C_dvi    =  1, // 0: bez vga + vga2dvid + ODDR (gpdi_dp = 0)
+  parameter C_gpi    =  1  // 0: bez vga2 (GPi RGB666 na gpio[0..27])
 )
 (
   input  clk_25mhz,
@@ -462,6 +465,7 @@ module top
    .ext_audio(1)
   );
 
+  generate if (C_dvi) begin : G_dvi
   wire blank;
   wire [7:0] r;
   wire [7:0] g;
@@ -508,7 +512,6 @@ module top
     .out_blue (tmds_blue )
   );
 
-  generate
     if(c_ddr)
     begin
       // vendor specific DDR modules
@@ -526,6 +529,9 @@ module top
       assign gpdi_dp[1] = tmds_green[0];
       assign gpdi_dp[0] = tmds_blue [0];
     end
+  end else begin : G_no_dvi
+    assign gpdi_dp = 4'b0000;
+  end
   endgenerate
 
   wire [3:0] audio;
@@ -571,6 +577,7 @@ module top
 
   endgenerate
 
+  generate if (C_gpi) begin : G_gpi
   wire blank2;
   wire [7:0] r2;
   wire [7:0] g2;
@@ -608,6 +615,11 @@ module top
   assign {gpio[25], gpio[24], gpio[23], gpio[22], gpio[21], gpio[20]} = r2[7:2];
   assign {gpio[17], gpio[16], gpio[15], gpio[14], gpio[13], gpio[12]} = g2[7:2];
   assign {gpio[9],  gpio[8],  gpio[7],  gpio[6],  gpio[5],  gpio[4]}  = b2[7:2];
+  end else begin : G_no_gpi
+    assign gpio[17:0] = 18'd0; // gpio[18],[19] = audio
+    assign gpio[27:20] = 8'd0;
+  end
+  endgenerate
 
 
 endmodule
