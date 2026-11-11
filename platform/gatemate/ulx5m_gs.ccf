@@ -1,0 +1,78 @@
+# ULX5M-GS (CCGM1A1) -- pinout za NES na GateMate (F1, TASK-6068).
+# Izvori (provjereno 11. 11. 2026.):
+#   * GateMate_demos/LiteX_DVI/intergalaktik_ulx5m_gs_platform.py @fb854bd (rev "0.3")
+#   * litex-eth-ulx5m-gs-1g-sbc @db4c97b gateware/target_soc.py (USB-C J5, UART na CM4 GPIO4/5)
+#   * shema github.com/intergalaktik/ulx5m-gs @98de83e (README "ULX5M-GS v005", PCB project_version
+#     v006): U4 pin -> net ispisan s ~/app/regoc_system/tools/kicad_netlist.py --ref U4
+#     (CLK0/IO_SB_A8=CLK_25MHz, LED0..7, BTN1..3, USB25_P/N, USB_PULL_P/N, DDMI0_*, GPIO4/5/14/15).
+# Imena portova = imena iz top.v / ulx4m_v002.lpf (ECP5), da NES jezgra ostane ista.
+# NE KORISTITI: IO_WA_* (JTAG + CFG_MD + SPI flash u istoj banci -> JTAG lockout, memorija
+#   gatemate-wa-bank-jtag-lockout) i IO_EA_A3 (USB_OTG_ID, 0R na GND na CM5-IO-BASE-A).
+#   Flash (F6) se dodaje tek uz zasebnu provjeru.
+# Ulaz/izlaz se NE ogranicava ovdje: nextpnr prijavi nekoristene nete kao upozorenje.
+Net "clk_25mhz" Loc = "IO_SB_A8" | SCHMITT_TRIGGER=true;
+Net "led[0]" Loc = "IO_SB_A0";
+Net "led[1]" Loc = "IO_SB_B0";
+Net "led[2]" Loc = "IO_SB_A1";
+Net "led[3]" Loc = "IO_SB_B1";
+Net "led[4]" Loc = "IO_SB_B2";
+Net "led[5]" Loc = "IO_SB_A2";
+Net "led[6]" Loc = "IO_SB_B3";
+Net "led[7]" Loc = "IO_SB_A3";
+Net "btn[0]" Loc = "IO_EA_B4" | PULLUP=true;
+Net "btn[1]" Loc = "IO_EA_A4" | PULLUP=true;
+Net "btn[2]" Loc = "IO_EA_B3" | PULLUP=true;
+Net "uart_tx" Loc = "IO_NB_B5";
+Net "uart_tx2" Loc = "IO_NA_A4";
+Net "uart_rx" Loc = "IO_NA_B6" | PULLUP=true;
+Net "gpdi_dp[0]" Loc = "IO_SB_A4";
+Net "gpdi_dn[0]" Loc = "IO_SB_B4";
+Net "gpdi_dp[1]" Loc = "IO_SB_A5";
+Net "gpdi_dn[1]" Loc = "IO_SB_B5";
+Net "gpdi_dp[2]" Loc = "IO_SB_A6";
+Net "gpdi_dn[2]" Loc = "IO_SB_B6";
+Net "gpdi_dp[3]" Loc = "IO_SB_A7";
+Net "gpdi_dn[3]" Loc = "IO_SB_B7";
+Net "sdram_clk" Loc = "IO_WC_A1" | SLEW=fast;
+Net "sdram_a[0]" Loc = "IO_WB_B8";
+Net "sdram_a[1]" Loc = "IO_NA_A0";
+Net "sdram_a[2]" Loc = "IO_NA_B0";
+Net "sdram_a[3]" Loc = "IO_WB_A1";
+Net "sdram_a[4]" Loc = "IO_WC_B8";
+Net "sdram_a[5]" Loc = "IO_WC_B7";
+Net "sdram_a[6]" Loc = "IO_WB_B7";
+Net "sdram_a[7]" Loc = "IO_WC_B6";
+Net "sdram_a[8]" Loc = "IO_WC_A7";
+Net "sdram_a[9]" Loc = "IO_WC_B0";
+Net "sdram_a[10]" Loc = "IO_NA_B1";
+Net "sdram_a[11]" Loc = "IO_WC_A0";
+Net "sdram_a[12]" Loc = "IO_WC_A8";
+Net "sdram_ba[0]" Loc = "IO_WB_A7";
+Net "sdram_ba[1]" Loc = "IO_WB_A8";
+Net "sdram_csn" Loc = "IO_WB_A0";
+Net "sdram_cke" Loc = "IO_WC_B1";
+Net "sdram_rasn" Loc = "IO_WB_A6";
+Net "sdram_casn" Loc = "IO_WB_B6";
+Net "sdram_wen" Loc = "IO_WB_B0";
+Net "sdram_d[0]" Loc = "IO_WB_B4";
+Net "sdram_d[1]" Loc = "IO_WB_B2";
+Net "sdram_d[2]" Loc = "IO_WB_A4";
+Net "sdram_d[3]" Loc = "IO_WB_A2";
+Net "sdram_d[4]" Loc = "IO_WB_A5";
+Net "sdram_d[5]" Loc = "IO_WB_B5";
+Net "sdram_d[6]" Loc = "IO_WB_B1";
+Net "sdram_d[7]" Loc = "IO_WB_B3";
+Net "sdram_d[8]" Loc = "IO_WC_A6";
+Net "sdram_d[9]" Loc = "IO_WC_B4";
+Net "sdram_d[10]" Loc = "IO_WC_A5";
+Net "sdram_d[11]" Loc = "IO_WC_A4";
+Net "sdram_d[12]" Loc = "IO_WC_B3";
+Net "sdram_d[13]" Loc = "IO_WC_B2";
+Net "sdram_d[14]" Loc = "IO_WC_A2";
+Net "sdram_d[15]" Loc = "IO_WC_A3";
+Net "sdram_dqm[0]" Loc = "IO_WB_A3";
+Net "sdram_dqm[1]" Loc = "IO_WC_B5";
+Net "usb_fpga_bd_dp" Loc = "IO_EA_A0";
+Net "usb_fpga_bd_dn" Loc = "IO_EA_B0";
+Net "usb_fpga_pu_dp" Loc = "IO_EA_A2";
+Net "usb_fpga_pu_dn" Loc = "IO_EA_B2";
