@@ -127,10 +127,10 @@ module ClockGen(
 reg even_frame_toggle = 0;
 
 // Dendy is 291 to 310
-wire [8:0] vblank_start_sl;
-wire [8:0] vblank_end_sl;
+reg [8:0] vblank_start_sl;
+reg [8:0] vblank_end_sl;
 wire [8:0] last_sl;
-wire skip_en;
+reg skip_en;
 
 always_comb begin
 	case (sys_type)
@@ -561,7 +561,7 @@ module PPU(
 	input         clk,
 	input         ce,
 	input         reset,            // input clock  21.48 MHz / 4. 1 clock cycle = 1 pixel
-	inout   [1:0] sys_type,         // System type. 0 = NTSC 1 = PAL 2 = Dendy 3 = Vs.
+	input   [1:0] sys_type,         // System type. 0 = NTSC 1 = PAL 2 = Dendy 3 = Vs.
 	output  [5:0] color,            // output color value, one pixel outputted every clock
 	input   [7:0] din,              // input data from bus
 	output  [7:0] dout,             // output data to CPU
@@ -685,7 +685,7 @@ wire [3:0] bg_pixel = {bg_pixel_noblank[3:2], show_bg_on_pixel ? bg_pixel_noblan
 
 // This will set oam_ptr to 0 right before the scanline 240 and keep it there throughout vblank.
 // this is triggered on the first tick after vblank is ended
-wire before_line;
+reg before_line;
 
 always_comb begin
 	before_line = 0;

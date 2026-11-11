@@ -1,0 +1,12 @@
+KADAR 1 CRC d4ab8819 pikseli 61440 taktova 163511 cpu_ce 27252 pauza 0 irq 0 nmi 0 PC 804b
+KADAR 2 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29780 pauza 0 irq 0 nmi 0 PC 8072
+KADAR 3 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 84f1
+KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 811b
+KADAR 5 CRC a9bd2b95 pikseli 61440 taktova 178684 cpu_ce 29780 pauza 0 irq 0 nmi 1 PC 811b
+KADAR 6 CRC 87f4c337 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 1 PC 8119
+KADAR 7 CRC cc4831f3 pikseli 61440 taktova 178682 cpu_ce 29780 pauza 0 irq 0 nmi 1 PC 8119
+KADAR 8 CRC cc4831f3 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 1 PC 8119
+- sim/f4/tb_f4_frame.v:71: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.053 devel
+- Verilator: $finish at 132ms; walltime 7.597 s; speed 17.375 ms/s
+- Verilator: cpu 7.595 s on 1 threads; allocated 4 MB

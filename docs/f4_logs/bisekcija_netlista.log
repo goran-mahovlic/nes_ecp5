@@ -1,0 +1,10 @@
+== prep: KADAR 8 CRC cc4831f3 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 1 PC 8119
+== synth: KADAR 8 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29780 pauza 0 irq 0 nmi 0 PC 804e
+== coarse: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 811b
+== memmap: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 811b
+== optfull: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 811b
+== tm0: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 811b
+== tm: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 804b
+== nofsm: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 804b
+== noshare: KADAR 4 CRC d4ab8819 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 0 PC 804b
+  assign \nes.cpu_tick_count  = 3'hx;

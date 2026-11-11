@@ -70,7 +70,14 @@ assign aout = dmc_ack ? dmc_dma_addr : !odd_cycle ? sprite_dma_addr : 16'h2004;
 
 endmodule
 
-module NES(
+module NES #(
+	// F4 (gatemate grana): djelitelji kao parametar. Zadano = master (21,477 MHz: CPU /12, PPU /4).
+	// Opcija C (GateMate): clk 10,714 MHz s DIV_CPU 6 i DIV_PPU 2 -> isti tempo CPU-a i PPU-a.
+	parameter [4:0] DIV_CPU   = 5'd12,
+	parameter [2:0] DIV_PPU   = 3'd4,
+	// 1 = samo NROM (mapper 0, cart_nrom) umjesto cart_top sa 49 mappera (53 % LUT4, F0)
+	parameter       CART_NROM = 0
+)(
 	input         clk,
 	input         reset_nes,
 	input   [1:0] sys_type,
@@ -117,7 +124,12 @@ module NES(
 	output        gg_avail,
 	input         gg_reset,
 	output  [2:0] emphasis,
-	output        save_written
+	output        save_written,
+	// F4 (gatemate): stanje CPU-a za UART/sim (top.v ih ne spaja)
+	output [15:0] dbg_cpu_addr,
+	output        dbg_cpu_sync,
+	output        dbg_cpu_ce,
+	output        dbg_nmi
 );
 
 
@@ -166,8 +178,8 @@ reg odd_or_even = 0; // 1 == odd, 0 == even
 
 // XXX: Because we are using div4 clock divider for PAL, master clock should be 21.2813696
 // Clock Dividers
-wire [4:0] div_cpu_n = 5'd12;
-wire [2:0] div_ppu_n = 3'd4; 
+wire [4:0] div_cpu_n = DIV_CPU;
+wire [2:0] div_ppu_n = DIV_PPU;
 
 // Counters
 reg [4:0] div_cpu = 5'd1;
@@ -197,7 +209,7 @@ wire use_fake_h = freeze_clocks && faux_pixel_cnt < 6;
 reg [1:0] ppu_tick = 0;
 
 reg [1:0] last_sys_type = 0;
-reg [2:0] cpu_tick_count;
+reg [2:0] cpu_tick_count = 3'd0; // F4: bez init (NTSC ga nikad ne pise) yosys ga pretvara u x -> CPU zapne na $2002 (docs/F4.md)
 
 wire skip_ppu_cycle = (cpu_tick_count == 4) && (ppu_tick == 0);
 
@@ -276,12 +288,19 @@ T65 cpu(
 
 	.IRQ_n  (~(apu_irq | mapper_irq)),
 	.NMI_n  (~nmi),
+	.Abort_n(1'b1),  // VHDL zadano '1'; u t65_ghdl.v (F3) zadane vrijednosti nestaju
+	.SO_n   (1'b1),
 	.R_W_n  (cpu_rnw),
+	.Sync   (dbg_cpu_sync),
 
 	.A      (cpu_addr),
 	.DI     (cpu_rnw ? from_data_bus : cpu_dout),
 	.DO     (cpu_dout)
 );
+
+assign dbg_cpu_addr = cpu_addr;
+assign dbg_cpu_ce   = cpu_ce;
+assign dbg_nmi      = nmi;
 
 wire [15:0] dma_aout;
 wire dma_aout_enable;
@@ -433,6 +452,55 @@ wire [15:0] sample_ext;
 
 assign save_written = (mapper_flags[7:0] == 8'h14) ? (prg_linaddr[21:18] == 4'b1111 && prg_write) : (prg_addr[15:13] == 3'b011 && prg_write) | bram_write;
 
+generate if (CART_NROM) begin : G_nrom
+cart_nrom multi_mapper (
+	// FPGA specific
+	.clk               (clk),
+	.reset             (reset),
+	.flags             (mapper_flags),            // iNES header data (use 0 while loading)
+	// Cart pins (slightly abstracted)
+	.ce                (cart_ce & ~reset),        // M2 (held in high impedance during reset)
+	.prg_ain           (prg_addr),                // CPU Address in (a15 abstracted from ROMSEL)
+	.prg_read          (prg_read),                // CPU RnW split
+	.prg_write         (prg_write),               // CPU RnW split
+	.prg_din           (prg_din),                 // CPU Data bus in (split from bid)
+	.prg_dout          (prg_dout_mapper),         // CPU Data bus out (split from bid)
+	.chr_ain           (chr_addr),                // PPU address in
+	.chr_read          (chr_read),                // PPU read (inverted, active high)
+	.chr_write         (chr_write),               // PPU write (inverted, active high)
+	.chr_din           (chr_from_ppu),            // PPU data bus in (split from bid)
+	.chr_dout          (chr_from_ppu_mapper),     // PPU data bus in (split from bid)
+	.vram_a10          (vram_a10),                // CIRAM a10 line
+	.vram_ce           (vram_ce),                 // CIRAM chip enable
+	.irq               (mapper_irq),              // IRQ (inverted, active high)
+	.audio_in          (audio_mappers),           // Amplified and inverted APU audio
+	.audio             (sample_ext),              // Mixed audio output from cart
+	// SDRAM Communication
+	.prg_aout          (prg_linaddr),             // SDRAM adjusted PRG RAM address
+	.prg_allow         (prg_allow),               // Simulates internal CE/Locking
+	.chr_aout          (chr_linaddr),             // SDRAM adjusted CHR RAM address
+	.chr_allow         (chr_allow),               // Simulates internal CE/Locking
+	// External hardware interface (EEPROM)
+	.mapper_addr       (bram_addr),
+	.mapper_data_in    (bram_din),
+	.mapper_data_out   (bram_dout),
+	.mapper_prg_write  (bram_write),
+	.mapper_ovr        (bram_override),
+	// Cheats
+	.prg_from_ram      (from_data_bus),           // Hacky cpu din <= get rid of this!
+	.ppuflags          (mapper_ppu_flags),        // Cheat for MMC5
+	.ppu_ce            (ppu_ce),                  // PPU Clock (cheat for MMC5/2/4)
+	// Behavior helper flags
+	.has_chr_dout      (has_chr_from_ppu_mapper), // Output specific data for CHR rather than from SDRAM
+	.prg_bus_write     (prg_bus_write),           // PRG data driven to bus
+	.prg_conflict      (prg_conflict),            // Simulate bus conflicts
+	// User input/FDS controls
+	.fds_eject         (fds_eject),               // Used to trigger FDS disk changes
+	.fds_busy          (fds_busy),                // Used to trigger FDS disk changes
+	.diskside_auto     (diskside_req),
+	.diskside          (diskside)
+);
+end else begin : G_cart
 cart_top multi_mapper (
 	// FPGA specific
 	.clk               (clk),
@@ -480,9 +548,10 @@ cart_top multi_mapper (
 	.diskside_auto     (diskside_req),
 	.diskside          (diskside)
 );
+end endgenerate
 
-wire genie_ovr;
-wire [7:0] genie_data;
+wire genie_ovr = 1'b0;      // F4: CODES (Game Genie) je zakomentiran -> inace nespojeno (x u sintezi)
+wire [7:0] genie_data = 8'h00;
 /*
 CODES codes (
 	.clk        (clk),

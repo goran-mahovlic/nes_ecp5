@@ -1,0 +1,12 @@
+ok   ispravan kadar s GS-a -> PASS (izlaz 0)
+ok   bez signala (svi 7) -> FAIL (izlaz 1)
+ok   F2 testna slika -> FAIL (izlaz 1)
+ok   stvarni kvar: CPU zapeo (crn kadar) -> FAIL (izlaz 1)
+ok   pomak 8 NES px vodoravno -> FAIL (izlaz 1)
+ok   pomak 8 NES redaka -> FAIL (izlaz 1)
+ok   R<->B -> FAIL (izlaz 1)
+ok   sum 10 % -> FAIL (izlaz 1)
+ok   pola kadra crno -> FAIL (izlaz 1)
+ok   bez natpisa -> FAIL (izlaz 1)
+ok   sivo (grayscale) -> FAIL (izlaz 1)
+11 pass, 0 fail

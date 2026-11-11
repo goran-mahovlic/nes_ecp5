@@ -1,0 +1,39 @@
+/dev/null: PRG 16 KB, CHR 8 KB, mapper 0, reset $C004; f4/nestest_chr.hex: CHR ROM, zrcaljenje H, mapper_flags 32'h00000000
+f4/tilt_prg.hex: PRG 32 KB, CHR 8 KB, mapper 0, reset $8035; f4/tilt_chr.hex: CHR ROM, zrcaljenje H, mapper_flags 32'h00000100
+=== 1: nestest kroz nes.v
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26563 clk=159383 los_razmak=0
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC -2, maska P 0xEF
+PODUDARNO: 8991/8991 redaka do prvog razilaza; ukupno razlicitih 0
+TRAG = REFERENCA
+CRC32 traga (8991 redaka): D4D52E3B; reference: D4D52E3B
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26563 clk=318761 los_razmak=0
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC -2, maska P 0xEF
+PODUDARNO: 8991/8991 redaka do prvog razilaza; ukupno razlicitih 0
+TRAG = REFERENCA
+CRC32 traga (8991 redaka): D4D52E3B; reference: D4D52E3B
+trag DIV 6/2 = 12/4 (cmp 0)
+=== 2: kadrovi Super Tilt Bro -> cynes
+120
+UKUPNO: kadrova s 0 krivih (nejednolikih) 115, jednolikih 0, krivih piksela ukupno 0
+=== 2b: tipka Start u kadrovima 60..69
+UKUPNO: kadrova s 0 krivih (nejednolikih) 191, jednolikih 4, krivih piksela ukupno 0
+=== 2c: 1000 kadrova -> referenca + CRC
+build/f4/sim/ref_tilt.txt: kadrovi 7..1000 (994), stalnih piksela 54728/61440, boje [13, 33, 48]
+ref = f4/ref_tilt.txt
+=== 2d: slucajno pocetno stanje (6 sjemena)
+sjeme 1: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+sjeme 2: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+sjeme 3: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+sjeme 4: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+sjeme 5: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+sjeme 6: KADAR 12 CRC e23ac89a pikseli 61440 taktova 178684 cpu_ce 29781 pauza 513 irq 0 nmi 1 PC 811b
+=== 3: cijeli f4_top
+UART: F4 T=0001 F=0006 H=00000000 G=87F4C337 N=0F000 PC=811B V=01 I=03 K=7
+UART: F4 T=0002 F=000D H=CC4831F3 G=E23AC89A N=0F000 PC=8119 V=01 I=07 K=7
+PASS 8 FAIL 0
+=== 4: netlist nakon synth_gatemate
+KADAR 7 CRC cc4831f3 pikseli 61440 taktova 178682 cpu_ce 29780 pauza 0 irq 0 nmi 1 PC 8119
+KADAR 8 CRC cc4831f3 pikseli 61440 taktova 178684 cpu_ce 29781 pauza 0 irq 0 nmi 1 PC 8119
+netlist = RTL (CRC kadrova 1..8)
+=== SAZETAK
+VRATA 1: PASS

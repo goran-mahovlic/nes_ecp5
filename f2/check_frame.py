@@ -4,6 +4,7 @@
   check_frame.py --spec f2     snap.jpg        # nasa testna slika (f2_testpat.v + paleta vga.v)
   check_frame.py --spec litex  snap.jpg        # LiteX_DVI colorbars (referenca snimaca)
   check_frame.py --spec f2 --exact sim.ppm     # kadar iz tb_f2_dvi: piksel po piksel, bez tolerancije
+  check_frame.py --spec f4 --ref f4/ref_tilt.txt snap.jpg   # F4 (TASK-6071): kadar NES igre prema simulaciji
 
 Snimac (MS2109, MJPEG 640x480): za svako podrucje (traka, okvir, crni rub) srednja boja
 unutrasnjosti (odmak od rubova zbog JPEG/kroma) mora biti NAJBLIZA svojoj ocekivanoj boji od
@@ -61,13 +62,58 @@ def regions_litex():
             (255, 0, 255), (255, 0, 0), (0, 0, 255), (0, 0, 0)]
     return [(f"traka{i}", 80 * i, 80 * i + 80, 0, H, c) for i, c in enumerate(cols)]
 
+def load_ref(path):
+    """F4: f4/mkref.py -> 240x256, indeks boje ili -1 (piksel se mijenja, ne provjerava se)."""
+    v = [-1 if l == "--" else int(l, 16) for l in Path(path).read_text().split()]
+    assert len(v) == 61440, len(v)
+    return np.array(v).reshape(240, 256)
+
+def check_f4(img, ref, a, rep):
+    """F4: (a) jednolike plocice 8x8 NES piksela (16x16 na VGA) stalnog dijela slike: srednja boja
+    najbliza svojoj od boja reference, unutar --tol, std <= --std; crni rubovi kao F2;
+    (b) svi stalni pikseli (NES rezolucija, srednja 2x2 VGA): najbliza boja = referenca u >= --min-match."""
+    pal = nes_palette()
+    cols = sorted({int(c) for c in np.unique(ref) if c >= 0})
+    prgb = np.array([pal[c] for c in cols], float)
+    rows = []; ok = True
+    for name, x0, x1 in (("rub_lijevo", 0, 65), ("rub_desno", 576, W)):
+        sub = img[:, x0 + a.inset:x1 - a.inset].reshape(-1, 3); m = sub.mean(0)
+        good = bool(np.abs(m).max() <= a.tol and sub.std(0).max() <= a.std); ok &= good
+        rows.append({"podrucje": name, "srednja": [round(v, 1) for v in m], "ok": good})
+    nb = nbad = 0
+    for ty in range(30):
+        for tx in range(32):
+            t = ref[ty * 8:ty * 8 + 8, tx * 8:tx * 8 + 8]
+            if (t < 0).any() or len(np.unique(t)) != 1: continue
+            c = int(t[0, 0]); x0, y0 = 65 + 16 * tx, 16 * ty
+            sub = img[y0 + a.inset:y0 + 16 - a.inset, x0 + a.inset:x0 + 16 - a.inset].reshape(-1, 3)
+            m = sub.mean(0); near = cols[int(np.argmin(((prgb - m) ** 2).sum(1)))]
+            good = near == c and np.abs(m - np.array(pal[c])).max() <= a.tol and sub.std(0).max() <= a.std
+            nb += 1; nbad += not good
+            if not good and nbad <= 10:
+                rows.append({"plocica": [tx, ty], "ocekivano": f"{c:02X}", "srednja": [round(v, 1) for v in m],
+                             "najbliza": f"{near:02X}", "max_std": round(float(sub.std(0).max()), 1), "ok": False})
+    # (b) NES rezolucija: VGA (65 + 2x .. +1, 2y .. +1) -> srednja -> najbliza boja reference
+    sm = img[:, 65:65 + 512].reshape(240, 2, 256, 2, 3).mean(axis=(1, 3))
+    near = np.array(cols)[np.argmin(((sm[:, :, None, :] - prgb[None, None]) ** 2).sum(-1), axis=-1)]
+    st = ref >= 0
+    match = float((near[st] == ref[st]).mean())
+    rep.update({"plocica_jednolikih": nb, "plocica_krivih": nbad, "stalnih_piksela": int(st.sum()),
+                "podudarnost_piksela": round(match, 4), "podrucja": rows})
+    print(f"  jednolikih plocica {nb}, krivih {nbad}; stalnih piksela {int(st.sum())}, podudarnost {match:.4f} (prag {a.min_match})")
+    for r in rows:
+        if not r["ok"]: print(f"  KRIVO {r}")
+    return ok and nb > 0 and nbad == 0 and match >= a.min_match
+
 def load(path):
     return np.asarray(Image.open(path).convert("RGB")).astype(int)
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
-    ap.add_argument("--spec", choices=["f2", "litex"], default="f2")
+    ap.add_argument("--spec", choices=["f2", "litex", "f4"], default="f2")
+    ap.add_argument("--ref", help="F4: referenca kadra iz f4/mkref.py")
+    ap.add_argument("--min-match", type=float, default=0.95, help="F4: min. udio stalnih piksela s tocnom bojom")
     ap.add_argument("--exact", action="store_true", help="tocna usporedba (kadar iz simulacije)")
     ap.add_argument("--tol", type=int, default=64, help="max |srednja - ocekivana| po kanalu (gruba granica)")
     ap.add_argument("--inset", type=int, default=4, help="odmak od granica podrucja (px)")
@@ -81,6 +127,8 @@ def main():
         rep["greska"] = f"oblik {img.shape} != {(H, W, 3)}"; ok = False
     elif img.min() == img.max():
         rep["greska"] = f"jednolika slika (svi pikseli {img.min()}) - NEMA SIGNALA na snimacu"; ok = False
+    elif a.spec == "f4":
+        ok = check_f4(img, load_ref(a.ref), a, rep)
     elif a.exact:
         exp = expected_f2()
         diff = np.any(img != exp, axis=2)

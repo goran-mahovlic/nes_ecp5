@@ -1,0 +1,13 @@
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+UART: F4 T=0001 F=0006 H=00000000 G=87F4C337 N=0F000 PC=811B V=01 I=03 K=7
+  ok   N=0F000 (61440 piksela u kadru)
+  ok   K=7 (tipke otpustene, PULLUP)
+UART: F4 T=0002 F=000D H=CC4831F3 G=E23AC89A N=0F000 PC=8119 V=01 I=07 K=7
+  ok   N=0F000 (61440 piksela u kadru)
+  ok   K=7 (tipke otpustene, PULLUP)
+  ok   H = CRC kadra 8 iz tb_f4_frame (CC4831F3)
+  ok   V=01 ($0701: igra je prepoznala NTSC)
+  ok   I>0 (NMI tece)
+  ok   F raste
+PASS 8 FAIL 0
