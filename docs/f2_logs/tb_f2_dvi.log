@@ -1,0 +1,9 @@
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+poravnanje: faza 8 (bit 3840518, t=15382090000000)
+H: ukupno 800..800  DE 640..640  hsync 96..96  DE->hsync 656..656
+V: linija 525..525  aktivnih 480..480  vsync 1600..1600 rijeci  fp 10..10  bp 33..33  okvira 2
+takt kanala: period 40000.0..40000.0 ps (847817)  dp!=~dn 0  kanali nesuglasni 0  G/R kontrola!=00 0  hsync u DE 0
+kadar: /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/sim/tb_f2_frame.ppm  (t=49294770000000)
+tb_f2_dvi: PASS 15 FAIL 0
+tb_f2_dvi.v:191: $finish called at 49294770000000 (1fs)

@@ -1,0 +1,31 @@
+
+17. Printing statistics.
+
+=== f2_dvi_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      833 wires
+     2706 wire bits
+       88 public wires
+      406 public wire bits
+        4 ports
+       17 port bits
+     1271 cells
+      279   CC_ADDF
+        9   CC_BRAM_40K
+        3   CC_BUFG
+      269   CC_DFF
+        1   CC_IBUF
+      235   CC_L2T4
+       41   CC_L2T5
+       49   CC_LUT1
+      198   CC_LUT2
+        4   CC_LVDS_OBUF
+       80   CC_MX2
+       89   CC_MX4
+        8   CC_OBUF
+        3   CC_ODDR
+        2   CC_PLL
+        1   CC_USR_RSTN
+

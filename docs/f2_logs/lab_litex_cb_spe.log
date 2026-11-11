@@ -1,0 +1,15 @@
+CFGRST       /home/klaudio/app/tmp/zadaci/TASK-6069_nes-gatemate-f2-jelena-dvi/litex_cb_cfgrst.bit
+f3f70661ff47adc2f8fa98347810ae378615d8767abdd3d6899b1fbe6ab58df9  /home/klaudio/app/tmp/zadaci/TASK-6069_nes-gatemate-f2-jelena-dvi/litex_cb_cfgrst.bit
+active
+== ucitavanje 1/1: fpga-jtag gs litex_cb.bit -r
+Done
+  snap 1/1 HTTP 200 6609 B
+  jednolika slika (svi pikseli 7) - NEMA SIGNALA na snimacu
+FAIL litex /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/litex_cb_20261111_200322/snap_1_1.jpg
+  snap 1/2 HTTP 200 6609 B
+  jednolika slika (svi pikseli 7) - NEMA SIGNALA na snimacu
+FAIL litex /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/litex_cb_20261111_200322/snap_1_2.jpg
+  snap 1/3 HTTP 200 6609 B
+  jednolika slika (svi pikseli 7) - NEMA SIGNALA na snimacu
+FAIL litex /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/litex_cb_20261111_200322/snap_1_3.jpg
+lab: /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/litex_cb_20261111_200322  rezultat: FAIL

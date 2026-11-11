@@ -1,0 +1,166 @@
+CFGRST       build/f2/dvi/f2_dvi.bit
+20996e17d8f578ae4c7bad0e41ef23114d5432f405a9a007d9bccb6536b77f84  build/f2/dvi/f2_dvi.bit
+active
+== kontrola 1/3: fpga-jtag gs kontrola.bit -r (bez DVI-ja)
+Done
+  kontrola 1 HTTP 200 6609 B
+  kontrola 1: NEMA SIGNALA (ocekivano)
+== ucitavanje 1/3: fpga-jtag gs f2_dvi.bit -r
+Done
+  snap 1/1 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_1_1.jpg
+  snap 1/2 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_1_2.jpg
+  snap 1/3 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_1_3.jpg
+== kontrola 2/3: fpga-jtag gs kontrola.bit -r (bez DVI-ja)
+Done
+  kontrola 2 HTTP 200 6609 B
+  kontrola 2: NEMA SIGNALA (ocekivano)
+== ucitavanje 2/3: fpga-jtag gs f2_dvi.bit -r
+Done
+  snap 2/1 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_2_1.jpg
+  snap 2/2 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_2_2.jpg
+  snap 2/3 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_2_3.jpg
+== kontrola 3/3: fpga-jtag gs kontrola.bit -r (bez DVI-ja)
+Done
+  kontrola 3 HTTP 200 6609 B
+  kontrola 3: NEMA SIGNALA (ocekivano)
+== ucitavanje 3/3: fpga-jtag gs f2_dvi.bit -r
+Done
+  snap 3/1 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_3_1.jpg
+  snap 3/2 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_3_2.jpg
+  snap 3/3 HTTP 200 22297 B
+  OK  rub_lijevo       ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  rub_desno        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.0  najbliza (0, 0, 0)
+  OK  okvir_gore       ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_dolje      ocek (252, 252, 252)  srednja (255.0,255.0,255.0)  |d|max   3.0  std   0.0  najbliza (252, 252, 252)
+  OK  okvir_lijevo     ocek (252, 252, 252)  srednja (255.0,252.0,255.0)  |d|max   3.0  std   1.0  najbliza (252, 252, 252)
+  OK  okvir_desno      ocek (252, 252, 252)  srednja (254.3,254.3,254.3)  |d|max   2.3  std   0.9  najbliza (252, 252, 252)
+  OK  traka0_01        ocek (0, 0, 252)      srednja (  0.0,  0.1,243.9)  |d|max   8.1  std   0.6  najbliza (0, 0, 252)
+  OK  traka1_16        ocek (248, 56, 0)     srednja (255.0, 52.0,  0.0)  |d|max   7.0  std   0.8  najbliza (248, 56, 0)
+  OK  traka2_14        ocek (216, 0, 204)    srednja (255.0,  0.0,248.1)  |d|max  44.1  std   2.0  najbliza (216, 0, 204)
+  OK  traka3_19        ocek (0, 184, 0)      srednja (  0.0,219.9,  0.0)  |d|max  35.9  std   0.4  najbliza (0, 184, 0)
+  OK  traka4_3C        ocek (0, 252, 252)    srednja ( 14.0,255.0,255.0)  |d|max  14.0  std   0.4  najbliza (0, 252, 252)
+  OK  traka5_28        ocek (248, 184, 0)    srednja (255.0,196.0,  0.0)  |d|max  12.0  std   1.0  najbliza (248, 184, 0)
+  OK  traka6_00        ocek (124, 124, 124)  srednja (132.0,132.1,132.0)  |d|max   8.1  std   2.0  najbliza (124, 124, 124)
+  OK  traka7_0F        ocek (0, 0, 0)        srednja (  0.0,  0.0,  0.0)  |d|max   0.0  std   0.3  najbliza (0, 0, 0)
+PASS f2 /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_3_3.jpg
+lab: /home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746  rezultat: PASS

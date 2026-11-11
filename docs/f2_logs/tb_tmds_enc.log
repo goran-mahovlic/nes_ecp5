@@ -1,0 +1,3 @@
+tmds: razlika=0 dekod_greske=0 max|disparitet|=4
+tb_tmds_enc: PASS 11 FAIL 0
+tb_tmds_enc.v:71: $finish called at 8000901000 (1ps)

@@ -1,0 +1,320 @@
+{
+ "slika": "/home/klaudio/app/raid/projekti/nes_ecp5/build/f2/lab/f2_dvi_20261111_200746/snap_2_3.jpg",
+ "spec": "f2",
+ "oblik": [
+  480,
+  640,
+  3
+ ],
+ "podrucja": [
+  {
+   "podrucje": "rub_lijevo",
+   "ocekivano": [
+    0,
+    0,
+    0
+   ],
+   "srednja": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "najbliza": [
+    0,
+    0,
+    0
+   ],
+   "max_odstupanje": 0.0,
+   "max_std": 0.0,
+   "piksela": 26904,
+   "ok": true
+  },
+  {
+   "podrucje": "rub_desno",
+   "ocekivano": [
+    0,
+    0,
+    0
+   ],
+   "srednja": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "najbliza": [
+    0,
+    0,
+    0
+   ],
+   "max_odstupanje": 0.0,
+   "max_std": 0.0,
+   "piksela": 26432,
+   "ok": true
+  },
+  {
+   "podrucje": "okvir_gore",
+   "ocekivano": [
+    252,
+    252,
+    252
+   ],
+   "srednja": [
+    255.0,
+    255.0,
+    255.0
+   ],
+   "najbliza": [
+    252,
+    252,
+    252
+   ],
+   "max_odstupanje": 3.0,
+   "max_std": 0.0,
+   "piksela": 752,
+   "ok": true
+  },
+  {
+   "podrucje": "okvir_dolje",
+   "ocekivano": [
+    252,
+    252,
+    252
+   ],
+   "srednja": [
+    255.0,
+    255.0,
+    255.0
+   ],
+   "najbliza": [
+    252,
+    252,
+    252
+   ],
+   "max_odstupanje": 3.0,
+   "max_std": 0.0,
+   "piksela": 752,
+   "ok": true
+  },
+  {
+   "podrucje": "okvir_lijevo",
+   "ocekivano": [
+    252,
+    252,
+    252
+   ],
+   "srednja": [
+    255.0,
+    252.0,
+    255.0
+   ],
+   "najbliza": [
+    252,
+    252,
+    252
+   ],
+   "max_odstupanje": 3.0,
+   "max_std": 1.0,
+   "piksela": 880,
+   "ok": true
+  },
+  {
+   "podrucje": "okvir_desno",
+   "ocekivano": [
+    252,
+    252,
+    252
+   ],
+   "srednja": [
+    254.3,
+    254.3,
+    254.3
+   ],
+   "najbliza": [
+    252,
+    252,
+    252
+   ],
+   "max_odstupanje": 2.3,
+   "max_std": 0.9,
+   "piksela": 1320,
+   "ok": true
+  },
+  {
+   "podrucje": "traka0_01",
+   "ocekivano": [
+    0,
+    0,
+    252
+   ],
+   "srednja": [
+    0.0,
+    0.1,
+    243.9
+   ],
+   "najbliza": [
+    0,
+    0,
+    252
+   ],
+   "max_odstupanje": 8.1,
+   "max_std": 0.6,
+   "piksela": 21888,
+   "ok": true
+  },
+  {
+   "podrucje": "traka1_16",
+   "ocekivano": [
+    248,
+    56,
+    0
+   ],
+   "srednja": [
+    255.0,
+    52.0,
+    0.0
+   ],
+   "najbliza": [
+    248,
+    56,
+    0
+   ],
+   "max_odstupanje": 7.0,
+   "max_std": 0.8,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka2_14",
+   "ocekivano": [
+    216,
+    0,
+    204
+   ],
+   "srednja": [
+    255.0,
+    0.0,
+    248.1
+   ],
+   "najbliza": [
+    216,
+    0,
+    204
+   ],
+   "max_odstupanje": 44.1,
+   "max_std": 2.0,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka3_19",
+   "ocekivano": [
+    0,
+    184,
+    0
+   ],
+   "srednja": [
+    0.0,
+    219.9,
+    0.0
+   ],
+   "najbliza": [
+    0,
+    184,
+    0
+   ],
+   "max_odstupanje": 35.9,
+   "max_std": 0.4,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka4_3C",
+   "ocekivano": [
+    0,
+    252,
+    252
+   ],
+   "srednja": [
+    14.0,
+    255.0,
+    255.0
+   ],
+   "najbliza": [
+    0,
+    252,
+    252
+   ],
+   "max_odstupanje": 14.0,
+   "max_std": 0.4,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka5_28",
+   "ocekivano": [
+    248,
+    184,
+    0
+   ],
+   "srednja": [
+    255.0,
+    196.0,
+    0.0
+   ],
+   "najbliza": [
+    248,
+    184,
+    0
+   ],
+   "max_odstupanje": 12.0,
+   "max_std": 1.0,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka6_00",
+   "ocekivano": [
+    124,
+    124,
+    124
+   ],
+   "srednja": [
+    132.0,
+    132.1,
+    132.0
+   ],
+   "najbliza": [
+    124,
+    124,
+    124
+   ],
+   "max_odstupanje": 8.1,
+   "max_std": 2.0,
+   "piksela": 25536,
+   "ok": true
+  },
+  {
+   "podrucje": "traka7_0F",
+   "ocekivano": [
+    0,
+    0,
+    0
+   ],
+   "srednja": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "najbliza": [
+    0,
+    0,
+    0
+   ],
+   "max_odstupanje": 0.0,
+   "max_std": 0.3,
+   "piksela": 21888,
+   "ok": true
+  }
+ ],
+ "rezultat": "PASS"
+}
