@@ -1,0 +1,34 @@
+{
+ "slika": "/home/klaudio/app/raid/projekti/nes_ecp5/build/f5/lab/kbd_s1_20261111_222834/snap_1_2.jpg",
+ "spec": "f4",
+ "oblik": [
+  480,
+  640,
+  3
+ ],
+ "plocica_jednolikih": 584,
+ "plocica_krivih": 0,
+ "stalnih_piksela": 54728,
+ "podudarnost_piksela": 0.9999,
+ "podrucja": [
+  {
+   "podrucje": "rub_lijevo",
+   "srednja": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ok": true
+  },
+  {
+   "podrucje": "rub_desno",
+   "srednja": [
+    0.0,
+    0.1,
+    0.3
+   ],
+   "ok": true
+  }
+ ],
+ "rezultat": "PASS"
+}

@@ -1,0 +1,25 @@
+  ok   tipkovnica Enter = Start -> 08
+  ok   tipkovnica otpusteno -> 00
+  ok   tipkovnica Up + X = Up|A -> 11
+  ok   tipkovnica Right + Left -> c0
+  ok   tipkovnica Down + Z = Down|B -> 22
+  ok   tipkovnica Space + desni Shift = Select -> 04
+  ok   tipkovnica LCtrl + LAlt = A|B -> 03
+  ok   tipkovnica rollover 0x01 = nista -> 00
+  ok   tipkovnica tipka 'a' = nista -> 00
+  ok   tipkovnica keypad Enter + Tab = Start|Select -> 0c
+  ok   dzojstik mirno -> 00
+  ok   dzojstik Start -> 08
+  ok   dzojstik Right + Up + A -> 91
+  ok   dzojstik Left + Down + B + Select -> 66
+  ok   bez valid -> tipke ostaju 00
+  ok   tipkovnica Enter (prije odspajanja) -> 08
+  ok   active=0 -> tipke otpustene
+  ok   tipkovnica lazni FF..FF uz active=0 -> 00
+  ok   active=1 bez izvjestaja -> 00 (ne stari dekoder)
+  ok   tipkovnica Up nakon ponovne enumeracije -> 10
+PASS 20 FAIL 0
+- sim/f5/tb_f5_decoder.v:66: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.053 devel
+- Verilator: $finish at 44us; walltime 0.001 s; speed 59.542 ms/s
+- Verilator: cpu 0.001 s on 1 threads; allocated 4 MB

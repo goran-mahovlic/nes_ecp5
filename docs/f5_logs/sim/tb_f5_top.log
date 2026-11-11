@@ -1,0 +1,29 @@
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+UART: F5 T=0001 F=0006 H=00000000 G=87F4C337 N=0F000 PC=811B V=01 I=03 K=7 J=00 U=0000 R=0000000000000000 L=60
+  ok   duljina retka 104 + CR
+  ok   redak F5
+  ok   N=0F000 (61440 piksela u kadru)
+  ok   K=7 (tipke GS-a otpustene)
+  ok   J=00 (nema pritisnute tipke ni s USB-a)
+  ok   U=0000 (nema HID izvjestaja)
+  ok   pull D+/D- = 0 (host pull-down)
+  ok   L: DETACHED, LINESTATE SE0 (nema uredaja)
+UART: F5 T=0002 F=000D H=CC4831F3 G=E23AC89A N=0F000 PC=8119 V=01 I=07 K=7 J=00 U=0000 R=0000000000000000 L=60
+  ok   duljina retka 104 + CR
+  ok   redak F5
+  ok   N=0F000 (61440 piksela u kadru)
+  ok   K=7 (tipke GS-a otpustene)
+  ok   J=00 (nema pritisnute tipke ni s USB-a)
+  ok   U=0000 (nema HID izvjestaja)
+  ok   pull D+/D- = 0 (host pull-down)
+  ok   L: DETACHED, LINESTATE SE0 (nema uredaja)
+  ok   H = CRC kadra 8 iz tb_f4_frame (CC4831F3)
+  ok   V=01 ($0701: igra je prepoznala NTSC)
+  ok   I>0 (NMI tece)
+  ok   F raste
+PASS 20 FAIL 0
+- sim/f5/tb_f5_top.v:55: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.053 devel
+- Verilator: $finish at 224ms; walltime 64.046 s; speed 3.504 ms/s
+- Verilator: cpu 63.985 s on 1 threads; allocated 4 MB

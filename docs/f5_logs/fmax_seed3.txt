@@ -1,0 +1,4 @@
+Info: Max frequency for clock        'clk_shift': 131.23 MHz (PASS at 125.00 MHz)
+Info: Max frequency for clock 'u_clk.u_usbdiv.q': 44.14 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock          'clk_nes': 17.85 MHz (PASS at 10.71 MHz)
+Info: Max frequency for clock        'clk_pixel': 29.14 MHz (PASS at 25.00 MHz)

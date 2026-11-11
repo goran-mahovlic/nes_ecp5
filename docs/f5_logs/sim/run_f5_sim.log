@@ -1,0 +1,28 @@
+=== 1a: HID izvjestaj -> tipke
+- Verilator: cpu 0.001 s on 1 threads; allocated 4 MB
+=== 1b: tipka iz HID izvjestaja -> kadrovi = F4 2b
+kbd: 200 kadrova; TIPKE 00 -> 08, 7 taktova clk_nes nakon kraja kadra 60;TIPKE 08 -> 00, 6 taktova clk_nes nakon kraja kadra 70;
+tipkovnica Enter: CRC kadrova 1..200 = F4 2b (cmp 0)
+joy: 200 kadrova; TIPKE 00 -> 08, 7 taktova clk_nes nakon kraja kadra 60;TIPKE 08 -> 00, 6 taktova clk_nes nakon kraja kadra 70;
+NES dzojstik Start: CRC kadrova 1..200 = F4 2b (cmp 0)
+=== 1c: kontrola, tipka 'a' (nije mapirana)
+krivo: 200 kadrova; 
+kontrola: 'a' != F4 2b, prvi razliciti kadar 72,200c72,200
+kontrola: 'a' = bez tipki (cmp 0)
+=== 1d: cijeli f5_top
+UART: F5 T=0001 F=0006 H=00000000 G=87F4C337 N=0F000 PC=811B V=01 I=03 K=7 J=00 U=0000 R=0000000000000000 L=60
+UART: F5 T=0002 F=000D H=CC4831F3 G=E23AC89A N=0F000 PC=8119 V=01 I=07 K=7 J=00 U=0000 R=0000000000000000 L=60
+PASS 20 FAIL 0
+DEV=1 (LS uredaj prikljucen):
+UART: F5 T=0001 F=0006 H=00000000 G=87F4C337 N=0F000 PC=811B V=01 I=03 K=7 J=00 U=0000 R=0000000000000000 L=67
+UART: F5 T=0002 F=000D H=CC4831F3 G=E23AC89A N=0F000 PC=8119 V=01 I=07 K=7 J=00 U=0000 R=0000000000000000 L=67
+PASS 20 FAIL 0
+=== 1e: f5_top uz slucajno pocetno stanje registara (Nalaz 1: lazni HID izvjestaj), 6 sjemena
+sjeme 1: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+sjeme 2: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+sjeme 3: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+sjeme 4: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+sjeme 5: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+sjeme 6: J=00 U=0000 R=0000000000000000 L=60 PASS 20 FAIL 0
+=== SAZETAK
+VRATA 1: PASS

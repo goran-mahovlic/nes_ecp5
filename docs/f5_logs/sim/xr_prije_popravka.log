@@ -1,0 +1,5 @@
+# tb_f5_top uz --x-initial unique, PRIJE popravka Nalaza 1 (f5_usb_joy bez provjere R_state), 11. 11. 2026. 22:2x
+sjeme 1: UART: F5 T=0002 ... K=7 J=83 U=0001 R=4F4F4F4F4F4F4F4F L=60  PASS 16 FAIL 4
+sjeme 2: UART: F5 T=0002 ... K=7 J=06 U=0001 R=3636363636363636 L=60  PASS 16 FAIL 4
+sjeme 3: UART: F5 T=0002 ... K=7 J=00 U=0000 R=0000000000000000 L=60  PASS 20 FAIL 0
+sjeme 4: UART: F5 T=0002 ... K=7 J=00 U=0001 R=C2C2C2C2C2C2C2C2 L=60  PASS 18 FAIL 2

@@ -1,0 +1,1 @@
+445e687d3b32b6de988a4f16288238a7be1a2b9777e04efc88af0653bddc3d73  /home/klaudio/app/raid/projekti/nes_ecp5/build/f5/kbd_s1/f5_top.bit
