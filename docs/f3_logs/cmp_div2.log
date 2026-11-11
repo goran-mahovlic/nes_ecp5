@@ -1,0 +1,7 @@
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC 0, maska P 0xEF
+PODUDARNO: 8991/8991 redaka do prvog razilaza; ukupno razlicitih 0
+TRAG = REFERENCA
+CRC32 traga (8991 redaka): D4D52E3B; reference: D4D52E3B
+PRVI RAZILAZ redak 1: polja ['P']
+  ref : C000 A:00 X:00 Y:00 P:24 SP:FD CYC:7
+  trag: C000 A:00 X:00 Y:00 P:34 SP:FD CYC:7

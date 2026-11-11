@@ -1,0 +1,3 @@
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26561 clk=318734 clk/ce=12.000 los_razmak=0
+TEMPO: f_cpu = 10714285.7 / 12 = 892857 Hz
+sim/f3/tb_f3_cpu.v:38: $finish called at 29750445835 (1ps)

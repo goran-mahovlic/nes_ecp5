@@ -1,0 +1,1 @@
+0e57ccacbb5176d74dd1a3ede5094389672ce79b285fa184eb219064fbf72007  /home/klaudio/app/raid/projekti/nes_ecp5/build/f3/nestest/f3_top.bit

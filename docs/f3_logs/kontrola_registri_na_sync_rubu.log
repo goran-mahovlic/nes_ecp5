@@ -1,0 +1,26 @@
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26560 clk=159362 clk/ce=6.000 los_razmak=0
+TEMPO: f_cpu = 10714285.7 / 6 = 1785714 Hz
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC 1, maska P 0xEF
+PODUDARNO: 2/8991 redaka
+PRVI RAZILAZ redak 3: polja ['P']
+  ref : C5F7 A:00 X:00 Y:00 P:26 SP:FD CYC:12
+  trag: C5F7 A:00 X:00 Y:00 P:34 SP:FD CYC:12
+CRC32 traga (8991 redaka): F26903F1; reference: D4D52E3B
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26560 clk=318722 clk/ce=12.000 los_razmak=0
+TEMPO: f_cpu = 10714285.7 / 12 = 892857 Hz
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC 1, maska P 0xEF
+PODUDARNO: 2/8991 redaka
+PRVI RAZILAZ redak 3: polja ['P']
+  ref : C5F7 A:00 X:00 Y:00 P:26 SP:FD CYC:12
+  trag: C5F7 A:00 X:00 Y:00 P:34 SP:FD CYC:12
+CRC32 traga (8991 redaka): F26903F1; reference: D4D52E3B
+KRAJ: n=8991 PC=0001 r02=00 r03=00 CPU ciklusa=26561 clk=53124 clk/ce=2.000 los_razmak=0
+TEMPO: f_cpu = 10714285.7 / 2 = 5357143 Hz
+referenca: 8991 redaka, trag: 8991 redaka, pomak CYC 0, maska P 0xEF
+PODUDARNO: 2/8991 redaka
+PRVI RAZILAZ redak 3: polja ['P']
+  ref : C5F7 A:00 X:00 Y:00 P:26 SP:FD CYC:12
+  trag: C5F7 A:00 X:00 Y:00 P:34 SP:FD CYC:12
+CRC32 traga (8991 redaka): F26903F1; reference: D4D52E3B
+--- trag DIV 6 / 12 / 2 (CYC od prvog retka) jednak = nema ovisnosti o medjutaktovima mastera:
+ISTO (cmp 0, 8991 redaka)

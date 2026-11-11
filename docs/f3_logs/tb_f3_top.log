@@ -1,0 +1,22 @@
+CC_PLL model: REF=25.0 OUT=125.0 MHz -> pola perioda 4000.0 ps
+CC_PLL model: REF=25.0 OUT=10.714285 MHz -> pola perioda 46666.7 ps
+UART: F3 T=0001 N=231F C=0067BF PC=0001 A=00 X=FF Y=15 P=37 S=FF R=0000 H=D4D52E3B E=1 I=00000034FD
+  ok   N=231F (8991 instrukcija)
+  ok   PC=0001 (RTS nesteta s praznog stoga)
+  ok   R=0000 ($02=$03=00: nestest PASS)
+  ok   E=1
+  ok   T=1: H = CRC nestest.log D4D52E3B
+UART: F3 T=0002 N=231F C=0067BF PC=0001 A=00 X=FF Y=15 P=37 S=FF R=0000 H=4769AB60 E=1 I=00FF1534FD
+  ok   N=231F (8991 instrukcija)
+  ok   PC=0001 (RTS nesteta s praznog stoga)
+  ok   R=0000 ($02=$03=00: nestest PASS)
+  ok   E=1
+UART: F3 T=0003 N=231F C=0067BF PC=0001 A=00 X=FF Y=15 P=37 S=FF R=0000 H=4769AB60 E=1 I=00FF1534FD
+  ok   N=231F (8991 instrukcija)
+  ok   PC=0001 (RTS nesteta s praznog stoga)
+  ok   R=0000 ($02=$03=00: nestest PASS)
+  ok   E=1
+  ok   T=2 i T=3: isti H (deterministicki drugi prolaz)
+H(T>=2) = 4769AB60
+PASS 14 FAIL 0
+sim/f3/tb_f3_top.v:42: $finish called at 45192236559920 (1fs)
