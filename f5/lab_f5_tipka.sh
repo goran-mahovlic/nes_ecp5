@@ -8,13 +8,16 @@
 #            i --ref f4/ref_tilt.txt FAIL (kadar se promijenio)
 #   UART   : prije pritiska CRC = sim (check_uart --usb-enum: uredaj enumeriran, L[1:0]=2), pritisak J != 00
 #   f5/lab_f5_tipka.sh [ime=kbd_s1] [TMAX=10800]     izlaz: build/f5/lab/tipka_<ime>_<ts>/ (REZULTAT.txt), rc 0 = PASS
+#   ATTACH=<ts> f5/lab_f5_tipka.sh ime TMAX          samo lokalni cekac za vec pokrenut lab na Piju (ako je cekac ubijen)
 set -uo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 ime=${1:-kbd_s1}; TMAX=${2:-10800}
 BIT=$ROOT/build/f5/$ime/f5_top.bit
 SIMLOG=${SIMLOG:-$ROOT/build/f4/sim/tb_f4_frame1000.log}
-PI=${PI:-pi@192.168.10.14}; TS=$(date +%Y%m%d_%H%M%S); RD=ulx5m-serdes/t6072/tipka_$TS
+PI=${PI:-pi@192.168.10.14}; TS=${ATTACH:-$(date +%Y%m%d_%H%M%S)}; RD=ulx5m-serdes/t6072/tipka_$TS
 OUT=$ROOT/build/f5/lab/tipka_${ime}_$TS; mkdir -p "$OUT"; LOG=$OUT/lab.log
+echo $$ > "$OUT/cekac.pid"
+if [ -z "${ATTACH:-}" ]; then
 sha256sum "$BIT" | tee "$LOG"
 ssh -o BatchMode=yes "$PI" "mkdir -p ~/$RD" && scp -q "$BIT" "$PI:~/$RD/f5_top.bit" || { echo "ssh/scp FAIL" | tee -a "$LOG"; exit 1; }
 ssh -o BatchMode=yes "$PI" "cat > ~/$RD/tipka.sh" <<REMOTE
@@ -44,6 +47,7 @@ echo \$hit > gotovo
 REMOTE
 ssh -o BatchMode=yes "$PI" "chmod +x ~/$RD/tipka.sh; setsid nohup ~/$RD/tipka.sh > ~/$RD/tipka.out 2>&1 < /dev/null & echo pi_pid=\$!" | tee -a "$LOG"
 echo "ceka $TMAX s na pritisak (Pi: ~/$RD)" | tee -a "$LOG"
+else echo "ATTACH $(date +%T) cekac pid=$$ (Pi: ~/$RD)" | tee -a "$LOG"; fi
 end=$(( $(date +%s) + TMAX + 600 ))
 while [ "$(date +%s)" -lt $end ]; do
   ssh -o BatchMode=yes -o ConnectTimeout=10 "$PI" "test -f ~/$RD/gotovo" 2>/dev/null && break
